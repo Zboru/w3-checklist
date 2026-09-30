@@ -88,6 +88,7 @@ const STRIP_RULES = [
   /\s+Complete$/i,
   /\s+Part\s+\d+$/i,
   /\s*\(Part\s+\d+\)$/i,
+  /\s*\(Basic\)$/i,
   /\((?:[IVX]+|\d+)\)$/
 ];
 

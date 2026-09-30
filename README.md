@@ -77,7 +77,10 @@ działa offline, korzystając z plików w `data/`.
 | Fandom (EN ↔ PL, interwiki) | polskie nazwy questów |
 | `data/overrides.json` | ręczne korekty dopasowań (opcjonalny) |
 
-Pokrycie nazw PL (stan bieżący): plan **334/458**, kolekcje **374/710**.
+Pokrycie nazw PL (stan bieżący): plan **440/458**, kolekcje **422/710**.
+Kategorie questów: główne 55/58, poboczne 127/134, dodatki 92/95, kontrakty 29/30,
+miejsca mocy 26/28. Uzupełnienia ręczne: `data/overrides.json` (nazwy potwierdzone
+linkiem zwrotnym na polskiej wiki).
 
 ## Ograniczenia
 

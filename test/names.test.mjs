@@ -86,6 +86,7 @@ test("nameVariants zdejmuje sufiksy Complete/Part/numery", () => {
   assert.ok(v.includes("Lilac and Gooseberries"));
   assert.ok(nameVariants("Deadly Crossing (II)").includes("Deadly Crossing"));
   assert.ok(nameVariants("Kaer Morhen Complete").includes("Kaer Morhen"));
+  assert.ok(nameVariants("Griffin School Gear (Basic)").includes("Griffin School Gear"));
 });
 
 test("lookupPl próbuje wariantów nazwy", () => {
