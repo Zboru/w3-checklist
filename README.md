@@ -11,6 +11,10 @@ odhaczać postęp — żeby niczego nie pominąć.
   mocy, diagramy sprzętu, bossowie, romanse i inne. Do robienia w dowolnym
   momencie.
 - Każda pozycja ma link do **IGN** po szczegóły.
+- **Mapa** (zakładka) — interaktywna mapa regionów z naszymi znacznikami
+  (miejsca mocy, kontrakty, karty Gwent, sprzęt…). Znacznik pokazuje nazwę
+  PL/EN, pozwala odhaczyć pozycję i przejść do IGN. Przy pozycjach jest też
+  link **„Na mapie"** (w apce) albo **„Mapa ↗"** (do mapy IGN).
 - Nazwy: **polskie + angielskie** (polskie z wiki Fandom, gdzie udało się
   zmapować; inaczej tylko angielska).
 
@@ -27,6 +31,15 @@ Wynik to jeden plik `index.html` — bez zależności, działa offline.
    zostało), **„pokaż wskazówki"** (odkrywa spoilery/uwagi), **szukajka**
    (działa po nazwach PL i EN).
 4. Postęp zapisuje się automatycznie w przeglądarce.
+
+### Mapa
+
+- Zakładka **Mapa** pokazuje 7 regionów z 409 znacznikami dopasowanymi do
+  pozycji z listy. Kafelki pobierane są **online** z serwera MapGenie, więc
+  mapa wymaga internetu — reszta aplikacji (i postęp) działa offline.
+- Gdy nie ma sieci, użyj linku **„Mapa ↗"**, który otwiera mapę IGN w przeglądarce.
+- Dane i grafika mapy należą do **MapGenie** (udostępniane przez IGN); aplikacja
+  tylko je wyświetla i nie hostuje.
 
 ### Zapis i przenoszenie postępu
 
@@ -50,16 +63,27 @@ W menu (☰):
 `index.html` jest już zbudowany i zacommitowany, więc Pages nie wymaga żadnego
 builda.
 
+> **Wersja bez mapy:** jeśli nie chcesz publikować wersji z osadzoną mapą
+> (hotlinkuje kafelki MapGenie), zbuduj bez niej i to wgraj na Pages:
+>
+> ```bash
+> npm run build:nomap
+> ```
+>
+> Powstanie `index.html` bez zakładki „Mapa", bez Leafletu i bez danych map
+> (~505 kB zamiast ~750 kB). Linki „Mapa ↗" do IGN zostają.
+
 ## Przebudowa / aktualizacja danych
 
 Wymagania: Node ≥ 24.
 
 ```bash
-npm install --ignore-scripts      # zależności builda (esbuild, playwright)
+npm install --ignore-scripts      # zależności builda (esbuild, leaflet, playwright)
 npx playwright install chromium   # tylko do smoke testu w przeglądarce
 
-npm run fetch                     # IGN + Google Sheet + nazwy PL -> data/*.json
+npm run fetch                     # IGN + Google Sheet + nazwy PL + mapy -> data/*.json
 npm run build                     # data/*.json + src/* -> index.html
+npm run build:nomap               # to samo, ale bez osadzonej mapy
 npm test                          # testy jednostkowe (node:test)
 npm run verify                    # asercje danych + smoke test (Playwright)
 npm run screenshot                # zrzuty do docs/screens/
@@ -72,7 +96,8 @@ działa offline, korzystając z plików w `data/`.
 
 | Źródło | Co daje |
 | --- | --- |
-| IGN GraphQL (`mollusk.apis.ign.com`) | 12 kategorii / 710 pozycji kolekcji, link do wiki IGN przy każdej |
+| IGN GraphQL (`mollusk.apis.ign.com`) | 12 kategorii / 710 pozycji kolekcji, link do wiki IGN i do mapy IGN przy każdej |
+| IGN / MapGenie (kafelki + znaczniki) | 7 regionów mapy, 409 znaczników dopasowanych do pozycji |
 | Arkusz „optimal order" (Google Sheets) | kolejność kroków planu, poziomy, wskazówki i znaczniki „nieprzepadające" |
 | Fandom (EN ↔ PL, interwiki) | polskie nazwy questów |
 | `data/overrides.json` | ręczne korekty dopasowań (opcjonalny) |
@@ -86,6 +111,9 @@ linkiem zwrotnym na polskiej wiki).
 
 - Nie każdy krok planu ma odpowiednik na IGN, więc część pozycji nie ma linku
   (te, które mają — pokazują „IGN ↗").
+- Link „Mapa" mają tylko pozycje z odpowiednikiem na mapie IGN (675/1168);
+  znacznik w apce ma 409 z nich.
+- Mapa w apce wymaga internetu (kafelki MapGenie) i nie działa offline.
 - Polskie nazwy pokrywają większość questów, ale nie wszystkie; brakujące
   wyświetlają się po angielsku.
 - Wskazówki pochodzą z angielskiego arkusza i są w oryginale (mogą zawierać
@@ -96,10 +124,10 @@ linkiem zwrotnym na polskiej wiki).
 ## Struktura
 
 ```
-scripts/            pipeline (fetch-ign/sheet/pl, build, verify, screenshot)
+scripts/            pipeline (fetch-ign/sheet/pl/maps, build, verify, screenshot)
   lib/              parser CSV, budowa planu, dopasowanie nazw
 data/               dane źródłowe (cache) — źródło prawdy dla build
-src/                template.html, app.js, core.js, styles.css
+src/                template.html, app.js, core.js, styles.css, leaflet-stub.js
 test/               testy jednostkowe (node:test)
 index.html          wynik (samodzielny plik)
 docs/               specyfikacja, plan, zrzuty ekranu

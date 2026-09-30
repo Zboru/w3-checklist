@@ -6,6 +6,7 @@ import { normalizeName, nameVariants, titleFromWikiUrl, buildPlIndex, lookupInde
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
+const WITH_MAP = !process.argv.includes("--no-map");
 
 const read = async (rel) => JSON.parse(await readFile(resolve(ROOT, rel), "utf8"));
 
@@ -15,20 +16,21 @@ function keyOf(name) {
   return "k:" + normalizeName(base);
 }
 
-/** Indeks dopasowania do stron IGN. */
+/** Indeks dopasowania do stron IGN (URL wiki + URL mapy). */
 function buildIgnIndex(categories) {
   const index = new Map();
-  const put = (name, url) => {
-    if (!name || !url) return;
+  const put = (name, value) => {
+    if (!name || !value || !value.url) return;
     for (const v of nameVariants(name)) {
       const k = normalizeName(v);
-      if (k && !index.has(k)) index.set(k, url);
+      if (k && !index.has(k)) index.set(k, value);
     }
   };
   for (const cat of categories) {
     for (const item of cat.items) {
-      put(item.name, item.wikiUrl);
-      put(titleFromWikiUrl(item.wikiUrl || ""), item.wikiUrl);
+      const value = { url: item.wikiUrl, mapUrl: item.mapUrl || null };
+      put(item.name, value);
+      put(titleFromWikiUrl(item.wikiUrl || ""), value);
     }
   }
   return index;
@@ -52,7 +54,8 @@ async function main() {
   let planWithPl = 0;
   for (const chapter of sheet.chapters) {
     const steps = chapter.steps.map((step) => {
-      const wikiUrl = lookupIndex(step.name, ignIndex) || null;
+      const hit = lookupIndex(step.name, ignIndex);
+      const wikiUrl = hit?.url || null;
       const namePl = lookupPl(step.name, plIndex);
       if (wikiUrl) planWithLink++;
       if (namePl) planWithPl++;
@@ -64,7 +67,8 @@ async function main() {
         level: step.level,
         tips: step.tips,
         nonMissable: step.nonMissable,
-        wikiUrl
+        wikiUrl,
+        mapUrl: hit?.mapUrl || null
       };
     });
     plan.push({ region: chapter.region, steps });
@@ -81,6 +85,7 @@ async function main() {
       name: item.name.replace(/\s+Complete$/i, ""),
       namePl: lookupPl(item.name, plIndex) || lookupPl(titleFromWikiUrl(item.wikiUrl || ""), plIndex),
       wikiUrl: item.wikiUrl,
+      mapUrl: item.mapUrl || null,
       groupId: item.groupId
     }))
   }));
@@ -100,11 +105,42 @@ async function main() {
   assert(planSteps > 100, `krokow planu > 100 (jest ${planSteps})`);
   assert(plan.every((c) => c.steps.every((s) => s.id && s.name)), "kazdy krok planu ma id i nazwe");
 
+  /* ---- mapy (opcjonalne, --no-map pomija) ---- */
+  let maps = [];
+  if (WITH_MAP) {
+    try {
+      const raw = await read("data/maps.json");
+      const taskToId = new Map();
+      for (const cat of ign.categories) {
+        for (const item of cat.items) taskToId.set(String(item.id), keyOf(item.name));
+      }
+      maps = (raw.maps || [])
+        .map((mp) => ({
+          ...mp,
+          markers: mp.markers.map((mk) => ({ ...mk, itemId: taskToId.get(mk.taskId) || null })).filter((mk) => mk.itemId)
+        }))
+        .filter((mp) => mp.tileUrl && mp.markers.length);
+
+      const order = ["white-orchard", "velen-novigrad", "skellige-isles", "kaer-morhen", "vizima-palace", "toussaint", "fablesphere"];
+      maps.sort((a, b) => {
+        const ia = order.indexOf(a.slug);
+        const ib = order.indexOf(b.slug);
+        return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+      });
+    } catch {
+      maps = [];
+    }
+    console.log(`Mapy: ${maps.length} regionow, ${maps.reduce((n, m) => n + m.markers.length, 0)} znacznikow`);
+  } else {
+    console.log("Mapy: pominiete (--no-map)");
+  }
+
   const data = {
     generatedAt: new Date().toISOString(),
-    counts: { planSteps, collectionItems: collectionItems.length },
+    counts: { planSteps, collectionItems: collectionItems.length, maps: maps.length, markers: maps.reduce((n, m) => n + m.markers.length, 0) },
     plan,
-    collections
+    collections,
+    maps
   };
 
   /* ---- bundle JS ---- */
@@ -115,10 +151,15 @@ async function main() {
     target: ["es2020"],
     minify: true,
     write: false,
-    legalComments: "none"
+    legalComments: "none",
+    ...(WITH_MAP ? {} : { alias: { leaflet: resolve(ROOT, "src", "leaflet-stub.js") } })
   });
   const js = built.outputFiles[0].text;
-  const css = await readFile(resolve(ROOT, "src", "styles.css"), "utf8");
+  let css = await readFile(resolve(ROOT, "src", "styles.css"), "utf8");
+  if (WITH_MAP) {
+    const leafletCss = await readFile(resolve(ROOT, "node_modules", "leaflet", "dist", "leaflet.css"), "utf8");
+    css = leafletCss + "\n" + css;
+  }
   const template = await readFile(resolve(ROOT, "src", "template.html"), "utf8");
 
   const safeJson = JSON.stringify(data).replace(/<\//g, "<\\/");

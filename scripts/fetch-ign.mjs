@@ -30,7 +30,7 @@ const CHECKLIST = `query Checklist($id: Int) {
     id slug name
     groups { id name }
     taskJoins { checklistTaskId checklistGroupId }
-    tasks { id name guidePages { title wikiUrl } }
+    tasks { id name mapUrl map { mapName } guidePages { title wikiUrl } }
   }
 }`;
 
@@ -50,7 +50,9 @@ async function main() {
         id: task.id,
         name: task.name,
         groupId: groupOf.get(task.id) ?? null,
-        wikiUrl: page ? WIKI_PREFIX + page.wikiUrl : null
+        wikiUrl: page ? WIKI_PREFIX + page.wikiUrl : null,
+        mapUrl: task.mapUrl ? WIKI_PREFIX + task.mapUrl : null,
+        mapName: task.map?.mapName ?? null
       };
     });
 

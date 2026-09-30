@@ -5,14 +5,16 @@
   "type": "module",
   "description": "Mobile-first, step-by-step checklist for The Witcher 3 (base + expansions), built from IGN checklists, a community quest-order sheet and Fandom interwiki names.",
   "scripts": {
-    "fetch": "node scripts/fetch-ign.mjs && node scripts/fetch-sheet.mjs && node scripts/fetch-pl.mjs",
+    "fetch": "node scripts/fetch-ign.mjs && node scripts/fetch-sheet.mjs && node scripts/fetch-pl.mjs && node scripts/fetch-maps.mjs",
     "build": "node scripts/build.mjs",
+    "build:nomap": "node scripts/build.mjs --no-map",
     "verify": "node scripts/verify.mjs",
     "screenshot": "node scripts/screenshot.mjs",
     "test": "node --test"
   },
   "devDependencies": {
     "esbuild": "^0.25.0",
+    "leaflet": "^1.9.4",
     "playwright": "^1.63.0"
   }
 }

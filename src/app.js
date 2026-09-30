@@ -6,8 +6,9 @@ import {
   nextStep,
   normalizeQuery
 } from "./core.js";
+import L from "leaflet";
 
-const DATA = window.__DATA__ || { plan: [], collections: [], generatedAt: null };
+const DATA = window.__DATA__ || { plan: [], collections: [], maps: [], generatedAt: null };
 const LS_KEY = "w3checklist.v1";
 
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -24,6 +25,15 @@ const byId = new Map();
 for (const item of allItems()) {
   if (!byId.has(item.id)) byId.set(item.id, []);
   byId.get(item.id).push(item);
+}
+
+/** Mapy i znaczniki (puste przy buildzie z --no-map). */
+const MAPS = (DATA.maps || []).filter((m) => m.tileUrl && m.markers.length);
+const markerByItem = new Map();
+for (const mp of MAPS) {
+  for (const mk of mp.markers) {
+    if (!markerByItem.has(mk.itemId)) markerByItem.set(mk.itemId, { mapSlug: mp.slug, marker: mk });
+  }
 }
 
 let state = loadState();
@@ -92,7 +102,10 @@ planEl.id = "plan";
 const collectionsEl = document.createElement("div");
 collectionsEl.id = "collections";
 collectionsEl.hidden = true;
-main.append(planEl, collectionsEl);
+const mapEl = document.createElement("div");
+mapEl.id = "map";
+mapEl.hidden = true;
+main.append(planEl, collectionsEl, mapEl);
 
 function itemVisible(item, q, hideDone) {
   if (hideDone && isDone(item.id)) return false;
@@ -153,6 +166,23 @@ function renderItem(item) {
     a.target = "_blank";
     a.rel = "noopener noreferrer";
     a.textContent = "IGN ↗";
+    meta.append(a);
+  }
+  if (item.mapUrl) {
+    const inApp = MAPS.length > 0 && markerByItem.has(item.id);
+    const a = document.createElement("a");
+    a.className = "link-ign";
+    a.href = item.mapUrl;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = inApp ? "Na mapie" : "Mapa ↗";
+    if (inApp) {
+      a.dataset.marker = "1";
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        focusOnMap(item.id);
+      });
+    }
     meta.append(a);
   }
   const noteBtn = document.createElement("button");
@@ -298,7 +328,7 @@ function applyFilter() {
 }
 
 function updateProgress() {
-  const items = activeTab === "plan" ? planSteps() : collectionItems();
+  const items = activeTab === "collections" ? collectionItems() : planSteps();
   const p = computeProgress(items, state.done);
   $("#fill").style.width = p.percent + "%";
   $("#pct").textContent = p.percent + "%";
@@ -325,14 +355,169 @@ function refresh() {
   updateNext();
 }
 
+/* ---------------- mapa ---------------- */
+
+const TYPE_COLORS = [
+  "#d8b56b", "#8ec07c", "#e06c75", "#83a598", "#d3869b", "#fabd2f", "#b8bb26", "#fe8019", "#7dd3fc", "#c4b5fd"
+];
+const colorForType = (slug) => {
+  let h = 0;
+  for (const ch of String(slug)) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  return TYPE_COLORS[h % TYPE_COLORS.length];
+};
+
+let leafletMap = null;
+let currentMapSlug = null;
+let pendingFocus = null;
+let circles = new Map();
+
+function renderMapRegions() {
+  const bar = document.createElement("div");
+  bar.className = "map-regions";
+  bar.id = "mapRegions";
+  for (const mp of MAPS) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.dataset.slug = mp.slug;
+    b.textContent = mp.name;
+    b.addEventListener("click", () => selectMap(mp.slug));
+    bar.append(b);
+  }
+  const canvas = document.createElement("div");
+  canvas.id = "mapCanvas";
+  const legend = document.createElement("div");
+  legend.className = "map-legend";
+  const note = document.createElement("p");
+  note.className = "muted small map-note";
+  note.textContent = "Kafelki pobierane online z serwera MapGenie. Pozycje bez znacznika nie mają odpowiednika na mapie.";
+  mapEl.append(bar, canvas, legend, note);
+}
+
+function popupFor(item) {
+  const box = document.createElement("div");
+  box.className = "map-pop";
+  const name = document.createElement("div");
+  name.className = "map-pop-name";
+  name.textContent = item.namePl || item.name;
+  box.append(name);
+  if (item.namePl && item.namePl !== item.name) {
+    const en = document.createElement("div");
+    en.className = "map-pop-en";
+    en.textContent = item.name;
+    box.append(en);
+  }
+  const row = document.createElement("label");
+  row.className = "map-pop-check";
+  const cb = document.createElement("input");
+  cb.type = "checkbox";
+  cb.checked = isDone(item.id);
+  cb.addEventListener("change", () => setDone(item.id, cb.checked));
+  row.append(cb, document.createTextNode(" zrobione"));
+  box.append(row);
+  if (item.wikiUrl) {
+    const a = document.createElement("a");
+    a.href = item.wikiUrl;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = "IGN ↗";
+    box.append(a);
+  }
+  return box;
+}
+
+function selectMap(slug) {
+  const mp = MAPS.find((m) => m.slug === slug) || MAPS[0];
+  if (!mp) return;
+  currentMapSlug = mp.slug;
+
+  for (const b of mapEl.querySelectorAll(".map-regions button")) {
+    b.classList.toggle("active", b.dataset.slug === mp.slug);
+  }
+  const legend = mapEl.querySelector(".map-legend");
+  legend.textContent = "";
+  for (const t of mp.types) {
+    if (!mp.markers.some((mk) => mk.typeSlug === t.slug)) continue;
+    const s = document.createElement("span");
+    const i = document.createElement("i");
+    i.style.background = colorForType(t.slug);
+    s.append(i, document.createTextNode(t.name));
+    legend.append(s);
+  }
+
+  if (leafletMap) {
+    leafletMap.remove();
+    leafletMap = null;
+  }
+  circles = new Map();
+  const canvas = mapEl.querySelector("#mapCanvas");
+  leafletMap = L.map(canvas, {
+    minZoom: Math.max(1, (mp.minZoom || 2)),
+    maxZoom: mp.maxZoom || 17,
+    zoomControl: true,
+    attributionControl: true
+  });
+  L.tileLayer(mp.tileUrl, {
+    minZoom: mp.minZoom || 2,
+    maxZoom: mp.maxZoom || 17,
+    attribution: "MapGenie / IGN",
+    maxNativeZoom: mp.maxZoom || 17
+  }).addTo(leafletMap);
+
+  const bounds = L.latLngBounds(mp.markers.map((mk) => [mk.lat, mk.lng]));
+  for (const mk of mp.markers) {
+    const [item] = byId.get(mk.itemId) || [];
+    const marker = L.circleMarker([mk.lat, mk.lng], {
+      radius: 7,
+      color: "#10131a",
+      weight: 2,
+      fillColor: colorForType(mk.typeSlug),
+      fillOpacity: 1
+    });
+    if (item) {
+      marker.bindPopup(() => popupFor(item), { minWidth: 190 });
+      circles.set(mk.itemId, marker);
+    } else {
+      marker.bindPopup(esc(mk.name));
+    }
+    marker.addTo(leafletMap);
+  }
+  leafletMap.fitBounds(bounds.pad(0.18));
+  applyMapFocus();
+}
+
+function applyMapFocus() {
+  if (!pendingFocus || !leafletMap) return;
+  const marker = circles.get(pendingFocus);
+  pendingFocus = null;
+  if (!marker) return;
+  leafletMap.setView(marker.getLatLng(), Math.max(leafletMap.getZoom(), 13));
+  marker.openPopup();
+}
+
+function focusOnMap(itemId) {
+  const hit = markerByItem.get(itemId);
+  if (!hit) return false;
+  switchTab("map");
+  selectMap(hit.mapSlug);
+  pendingFocus = itemId;
+  applyMapFocus();
+  return true;
+}
+
 /* ---------------- tabs ---------------- */
 
 function switchTab(name) {
   activeTab = name;
   planEl.hidden = name !== "plan";
   collectionsEl.hidden = name !== "collections";
+  mapEl.hidden = name !== "map";
   for (const t of document.querySelectorAll(".tab")) t.classList.toggle("active", t.dataset.tab === name);
   $("#nextBtn").hidden = name !== "plan";
+  window.scrollTo(0, 0);
+  if (name === "map") {
+    if (!leafletMap && MAPS.length) selectMap(currentMapSlug || MAPS[0].slug);
+    else if (leafletMap) leafletMap.invalidateSize();
+  }
   refresh();
 }
 
@@ -438,5 +623,11 @@ $("#resetBtn").addEventListener("click", () => {
 $("#generated").textContent = DATA.generatedAt
   ? `Wygenerowano ${new Date(DATA.generatedAt).toLocaleDateString("pl-PL")} · ${planSteps().length} kroków · ${collectionItems().length} pozycji kolekcji`
   : "";
+
+if (MAPS.length) {
+  $("#mapTab").hidden = false;
+  $("#mapCredit").hidden = false;
+  renderMapRegions();
+}
 
 renderAll();

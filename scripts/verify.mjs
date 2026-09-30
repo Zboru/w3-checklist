@@ -42,6 +42,21 @@ async function structural() {
   const withPl = planSteps.filter((s) => s.namePl).length;
   console.log(`INFO  plan: ${planSteps.length} krokow, ${planSteps.filter((s) => s.wikiUrl).length} z linkiem IGN, ${withPl} z nazwa PL`);
   console.log(`INFO  kolekcje: ${collectionItems.length} pozycji, ${collectionItems.filter((i) => i.namePl).length} z nazwa PL`);
+
+  const maps = data.maps || [];
+  if (maps.length) {
+    const markers = maps.flatMap((m) => m.markers);
+    const ids = new Set([...planSteps, ...collectionItems].map((i) => i.id));
+    check("mapy: 7 regionow", maps.length === 7, `jest ${maps.length}`);
+    check("mapy: kazdy region ma URL kafelkow", maps.every((m) => /^https:\/\/tiles\./.test(m.tileUrl || "")));
+    check("mapy: znaczniki maja itemId", markers.length > 300 && markers.every((m) => m.itemId), `${markers.length} znacznikow`);
+    check("mapy: znaczniki wskazuja istniejace pozycje", markers.every((m) => ids.has(m.itemId)));
+    check("mapy: wspolrzedne w zakresie", markers.every((m) => Math.abs(m.lat) <= 90 && Math.abs(m.lng) <= 180));
+    const withMap = [...planSteps, ...collectionItems].filter((i) => i.mapUrl).length;
+    console.log(`INFO  mapy: ${maps.length} regionow, ${markers.length} znacznikow; pozycji z linkiem do mapy: ${withMap}`);
+  } else {
+    console.log("INFO  brak map w buildzie (--no-map)");
+  }
 }
 
 async function smoke() {
@@ -59,6 +74,7 @@ async function smoke() {
   const page = await context.newPage();
   const errors = [];
   page.on("pageerror", (e) => errors.push(String(e)));
+  await page.route("**/*mapgenie.io/**", (r) => r.abort());
   await page.goto(url, { waitUntil: "load" });
 
   // Widok planu
@@ -112,6 +128,32 @@ async function smoke() {
   // Import: wyczysc i wczytaj zapisany stan przez localStorage -> reload
   const saved = await page.evaluate(() => localStorage.getItem("w3checklist.v1"));
   check("stan zapisany w localStorage", saved && saved.includes("\"done\""));
+
+  // Mapa (jesli build ja zawiera)
+  const hasMaps = await page.evaluate(() => ((window.__DATA__ && window.__DATA__.maps) || []).length > 0);
+  if (hasMaps) {
+    await page.locator('.tab[data-tab="map"]').click();
+    await page.waitForSelector("#mapCanvas.leaflet-container", { timeout: 8000 });
+    check("zakladka Mapa sie renderuje", (await page.locator("#mapCanvas.leaflet-container").count()) === 1);
+    const markerCount = await page.locator("#mapCanvas path.leaflet-interactive").count();
+    check("znaczniki na mapie (domyslny region)", markerCount > 5, `${markerCount}`);
+    check("regiony jako przelaczniki", (await page.locator("#mapRegions button").count()) === 7);
+    check("link 'Na mapie' przy pozycji", (await page.locator('#plan a[data-marker="1"]').count()) > 0);
+    check("link 'Mapa' do IGN przy pozycji", (await page.locator('#plan a.link-ign', { hasText: "Mapa" }).count()) > 0);
+    const switched = await page.locator("#mapRegions button").nth(2).textContent();
+    await page.locator("#mapRegions button").nth(2).click();
+    check("przelaczanie regionu", (await page.locator("#mapRegions button.active").textContent()) === switched, switched);
+
+    // integracja: link "Na mapie" przy pozycji otwiera mape ze znacznikiem
+    await page.locator('.tab[data-tab="plan"]').click();
+    await page.locator('#plan a[data-marker="1"]').first().click();
+    await page.waitForSelector("#mapCanvas.leaflet-container");
+    await page.waitForTimeout(300);
+    check("'Na mapie' otwiera popup na mapie", (await page.locator("#mapCanvas .leaflet-popup").count()) > 0);
+    check("brak bledow JS po mapie", errors.length === 0, errors.join("; "));
+  } else {
+    check("brak zakladki Mapa w buildzie --no-map", await page.locator("#mapTab").isHidden());
+  }
 
   // Reset przez menu
   await page.locator(".tab[data-tab=\"plan\"]").click();

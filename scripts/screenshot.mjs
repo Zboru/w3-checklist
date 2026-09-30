@@ -38,6 +38,18 @@ async function main() {
 
   await page.locator("#menuBtn").click();
   await page.screenshot({ path: resolve(outDir, "mobile-menu.png") });
+  await page.locator("#closeMenu").click();
+
+  if (await page.evaluate(() => ((window.__DATA__ && window.__DATA__.maps) || []).length > 0)) {
+    await page.locator('.tab[data-tab="map"]').click();
+    await page.waitForSelector("#mapCanvas.leaflet-container");
+    await page.waitForTimeout(3500);
+    await page.screenshot({ path: resolve(outDir, "mobile-map.png") });
+    const mk = page.locator("#mapCanvas path.leaflet-interactive").first();
+    await mk.click({ force: true });
+    await page.waitForTimeout(700);
+    await page.screenshot({ path: resolve(outDir, "mobile-map-popup.png") });
+  }
 
   await browser.close();
   await new Promise((r) => server.close(r));

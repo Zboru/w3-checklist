@@ -1,0 +1,4676 @@
+{
+  "fetchedAt": "2026-09-30T22:23:10.414Z",
+  "attribution": "MapGenie / IGN",
+  "maps": [
+    {
+      "slug": "fablesphere",
+      "name": "Fablesphere",
+      "tileUrl": "https://tiles.mapgenie.io/games/witcher-3/fablesphere/default-v1/{z}/{y}/{x}.jpg",
+      "minZoom": 8,
+      "maxZoom": 15,
+      "initialZoom": 12,
+      "initialLat": 83.89952,
+      "initialLng": -168.09729,
+      "backgroundColor": "#ffffff",
+      "types": [
+        {
+          "slug": "130",
+          "name": "Locations"
+        },
+        {
+          "slug": "605",
+          "name": "Notice Board"
+        },
+        {
+          "slug": "608",
+          "name": "Point of Interest"
+        },
+        {
+          "slug": "610",
+          "name": "Signpost"
+        },
+        {
+          "slug": "131",
+          "name": "Services"
+        },
+        {
+          "slug": "625",
+          "name": "Gwent Player"
+        },
+        {
+          "slug": "629",
+          "name": "Shopkeeper"
+        },
+        {
+          "slug": "132",
+          "name": "Quests"
+        },
+        {
+          "slug": "633",
+          "name": "Secondary Quest"
+        },
+        {
+          "slug": "133",
+          "name": "Items"
+        },
+        {
+          "slug": "646",
+          "name": "Quest Item"
+        },
+        {
+          "slug": "650",
+          "name": "Relic Item"
+        },
+        {
+          "slug": "134",
+          "name": "Other"
+        },
+        {
+          "slug": "647",
+          "name": "Miscellaneous"
+        },
+        {
+          "slug": "649",
+          "name": "NPC"
+        }
+      ],
+      "markers": [
+        {
+          "taskId": "64885365",
+          "lat": 83.90119,
+          "lng": -168.09328,
+          "name": "Duck, Duck, Goosed!",
+          "slug": "216179",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        }
+      ]
+    },
+    {
+      "slug": "kaer-morhen",
+      "name": "Kaer Morhen",
+      "tileUrl": "https://tiles.mapgenie.io/games/witcher-3/kaer-morhen/default-v1/{z}/{y}/{x}.jpg",
+      "minZoom": 8,
+      "maxZoom": 14,
+      "initialZoom": 13,
+      "initialLat": 83.92449,
+      "initialLng": -168.24205,
+      "backgroundColor": "#FFF",
+      "types": [
+        {
+          "slug": "130",
+          "name": "Locations"
+        },
+        {
+          "slug": "597",
+          "name": "Entrance"
+        },
+        {
+          "slug": "598",
+          "name": "Guarded Treasure"
+        },
+        {
+          "slug": "599",
+          "name": "Harbor"
+        },
+        {
+          "slug": "602",
+          "name": "Magic Lamp"
+        },
+        {
+          "slug": "607",
+          "name": "Place of Power"
+        },
+        {
+          "slug": "608",
+          "name": "Point of Interest"
+        },
+        {
+          "slug": "610",
+          "name": "Signpost"
+        },
+        {
+          "slug": "613",
+          "name": "Stash"
+        },
+        {
+          "slug": "131",
+          "name": "Services"
+        },
+        {
+          "slug": "619",
+          "name": "Armorer"
+        },
+        {
+          "slug": "620",
+          "name": "Armorer's Table"
+        },
+        {
+          "slug": "624",
+          "name": "Grindstone"
+        },
+        {
+          "slug": "132",
+          "name": "Quests"
+        },
+        {
+          "slug": "637",
+          "name": "Hidden Treasure"
+        },
+        {
+          "slug": "632",
+          "name": "Main Quest"
+        },
+        {
+          "slug": "633",
+          "name": "Secondary Quest"
+        },
+        {
+          "slug": "133",
+          "name": "Items"
+        },
+        {
+          "slug": "642",
+          "name": "Book"
+        },
+        {
+          "slug": "639",
+          "name": "Chest"
+        },
+        {
+          "slug": "638",
+          "name": "Witcher Gear"
+        },
+        {
+          "slug": "134",
+          "name": "Other"
+        },
+        {
+          "slug": "647",
+          "name": "Miscellaneous"
+        }
+      ],
+      "markers": [
+        {
+          "taskId": "64859898",
+          "lat": 83.90482,
+          "lng": -168.02756,
+          "name": "The Final Trial",
+          "slug": "154013",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859899",
+          "lat": 83.90482,
+          "lng": -168.01733,
+          "name": "The Isle of Mists",
+          "slug": "154019",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "65290241",
+          "lat": 83.9032,
+          "lng": -168.07556,
+          "name": "To Bait a Forktail...",
+          "slug": "22381",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "65289244",
+          "lat": 83.90482,
+          "lng": -168.03098,
+          "name": "Disturbance",
+          "slug": "555846",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "65290243",
+          "lat": 83.90482,
+          "lng": -168.02074,
+          "name": "Va Fail, Elaine",
+          "slug": "555848",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859900",
+          "lat": 83.90482,
+          "lng": -168.0134,
+          "name": "The Battle of Kaer Morhen",
+          "slug": "558198",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859901",
+          "lat": 83.904854,
+          "lng": -168.0097,
+          "name": "Blood on the Battlefield",
+          "slug": "558199",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64887937",
+          "lat": 83.90245,
+          "lng": -167.90569,
+          "name": "Wolven Boots - Superior",
+          "slug": "30612",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887938",
+          "lat": 83.89476,
+          "lng": -168.12476,
+          "name": "Wolven Gauntlets - Superior",
+          "slug": "superior-wolven-gauntlets",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887939",
+          "lat": 83.91158,
+          "lng": -168.16972,
+          "name": "Wolven Trousers - Superior",
+          "slug": "superior-wolven-trousers",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862406",
+          "lat": 83.88718,
+          "lng": -167.99371,
+          "name": "Wolven Gauntlets - Enhanced",
+          "slug": "wolven-gauntlets-enhanced",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861595",
+          "lat": 83.93573,
+          "lng": -168.06703,
+          "name": "Wolven Silver Sword",
+          "slug": "wolven-silver-sword-diagram",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861594",
+          "lat": 83.90432,
+          "lng": -168.16771,
+          "name": "Wolven Steel Sword",
+          "slug": "wolven-steel-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862404",
+          "lat": 83.93605,
+          "lng": -168.07402,
+          "name": "Wolven Steel Sword - Enhanced",
+          "slug": "wolven-steel-sword-enhanced",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862407",
+          "lat": 83.91998,
+          "lng": -168.01505,
+          "name": "Wolven Trousers - Enhanced",
+          "slug": "wolven-trousers-enhanced",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        }
+      ]
+    },
+    {
+      "slug": "skellige-isles",
+      "name": "Skellige Isles",
+      "tileUrl": "https://tiles.mapgenie.io/games/witcher-3/skellige/default-v1/{z}/{y}/{x}.jpg",
+      "minZoom": 8,
+      "maxZoom": 17,
+      "initialZoom": 12,
+      "initialLat": 83.901474,
+      "initialLng": -168.06337,
+      "backgroundColor": "#FFFFFF",
+      "types": [
+        {
+          "slug": "130",
+          "name": "Locations"
+        },
+        {
+          "slug": "595",
+          "name": "Abandoned Site"
+        },
+        {
+          "slug": "596",
+          "name": "Bandit Camp"
+        },
+        {
+          "slug": "617",
+          "name": "Contract"
+        },
+        {
+          "slug": "597",
+          "name": "Entrance"
+        },
+        {
+          "slug": "598",
+          "name": "Guarded Treasure"
+        },
+        {
+          "slug": "599",
+          "name": "Harbor"
+        },
+        {
+          "slug": "603",
+          "name": "Monster Den"
+        },
+        {
+          "slug": "604",
+          "name": "Monster Nest"
+        },
+        {
+          "slug": "605",
+          "name": "Notice Board"
+        },
+        {
+          "slug": "606",
+          "name": "Person in Distress"
+        },
+        {
+          "slug": "607",
+          "name": "Place of Power"
+        },
+        {
+          "slug": "608",
+          "name": "Point of Interest"
+        },
+        {
+          "slug": "610",
+          "name": "Signpost"
+        },
+        {
+          "slug": "611",
+          "name": "Smuggler's Cache"
+        },
+        {
+          "slug": "612",
+          "name": "Spoils of War"
+        },
+        {
+          "slug": "613",
+          "name": "Stash"
+        },
+        {
+          "slug": "131",
+          "name": "Services"
+        },
+        {
+          "slug": "618",
+          "name": "Alchemy Supplies"
+        },
+        {
+          "slug": "619",
+          "name": "Armorer"
+        },
+        {
+          "slug": "620",
+          "name": "Armorer's Table"
+        },
+        {
+          "slug": "621",
+          "name": "Barber"
+        },
+        {
+          "slug": "622",
+          "name": "Blacksmith"
+        },
+        {
+          "slug": "624",
+          "name": "Grindstone"
+        },
+        {
+          "slug": "627",
+          "name": "Herbalist"
+        },
+        {
+          "slug": "628",
+          "name": "Innkeep"
+        },
+        {
+          "slug": "629",
+          "name": "Shopkeeper"
+        },
+        {
+          "slug": "132",
+          "name": "Quests"
+        },
+        {
+          "slug": "635",
+          "name": "Fistfight"
+        },
+        {
+          "slug": "637",
+          "name": "Hidden Treasure"
+        },
+        {
+          "slug": "632",
+          "name": "Main Quest"
+        },
+        {
+          "slug": "633",
+          "name": "Secondary Quest"
+        },
+        {
+          "slug": "133",
+          "name": "Items"
+        },
+        {
+          "slug": "642",
+          "name": "Book"
+        },
+        {
+          "slug": "639",
+          "name": "Chest"
+        },
+        {
+          "slug": "641",
+          "name": "Gwent Card"
+        },
+        {
+          "slug": "643",
+          "name": "Mutagen"
+        },
+        {
+          "slug": "650",
+          "name": "Relic Item"
+        },
+        {
+          "slug": "638",
+          "name": "Witcher Gear"
+        },
+        {
+          "slug": "134",
+          "name": "Other"
+        },
+        {
+          "slug": "647",
+          "name": "Miscellaneous"
+        },
+        {
+          "slug": "649",
+          "name": "NPC"
+        }
+      ],
+      "markers": [
+        {
+          "taskId": "64889755",
+          "lat": 83.89727,
+          "lng": -168.07643,
+          "name": "Place of Power - Axii",
+          "slug": "29464",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889754",
+          "lat": 83.90734,
+          "lng": -167.92256,
+          "name": "Place of Power - Aard",
+          "slug": "place-of-power3",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889750",
+          "lat": 83.90671,
+          "lng": -168.05264,
+          "name": "Place of Power - Axii",
+          "slug": "place-of-power34",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889757",
+          "lat": 83.92538,
+          "lng": -167.91165,
+          "name": "Place of Power - Quen",
+          "slug": "place-of-power6",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889751",
+          "lat": 83.91283,
+          "lng": -168.03218,
+          "name": "Place of Power - Igni",
+          "slug": "place-of-power7",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889752",
+          "lat": 83.919556,
+          "lng": -168.21687,
+          "name": "Place of Power - Igni",
+          "slug": "place-of-power-igni",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889756",
+          "lat": 83.88629,
+          "lng": -167.90169,
+          "name": "Place of Power - Yrden",
+          "slug": "place-of-power-yrden",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889753",
+          "lat": 83.9048,
+          "lng": -167.95119,
+          "name": "Place of Power - Yrden",
+          "slug": "yrden-place-of-power",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64861111",
+          "lat": 83.90341,
+          "lng": -168.0441,
+          "name": "In the Heart of the Woods",
+          "slug": "156192",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885314",
+          "lat": 83.90225,
+          "lng": -168.10289,
+          "name": "Contract: The Phantom of Eldberg",
+          "slug": "213461",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885311",
+          "lat": 83.91893,
+          "lng": -168.19841,
+          "name": "Contract: Here Comes the Groom",
+          "slug": "267611",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885312",
+          "lat": 83.91055,
+          "lng": -168.05461,
+          "name": "Muire D'Yaeblen",
+          "slug": "29342",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885310",
+          "lat": 83.89788,
+          "lng": -168.01195,
+          "name": "Dragon",
+          "slug": "30526",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885313",
+          "lat": 83.905655,
+          "lng": -167.79037,
+          "name": "Contract: Strange Beast",
+          "slug": "beast-from-hindarsjfall",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64859890",
+          "lat": 83.906006,
+          "lng": -167.8214,
+          "name": "Nameless",
+          "slug": "153962",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859891",
+          "lat": 83.90656,
+          "lng": -167.82463,
+          "name": "The Calm Before the Storm",
+          "slug": "153963",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "65290246",
+          "lat": 83.91044,
+          "lng": -168.06361,
+          "name": "The Sunstone",
+          "slug": "213880",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859956",
+          "lat": 83.91037,
+          "lng": -168.06218,
+          "name": "The King is Dead - Long Live The King",
+          "slug": "555843",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859887",
+          "lat": 83.91164,
+          "lng": -168.06053,
+          "name": "Echoes of the Past",
+          "slug": "555844",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859888",
+          "lat": 83.9031,
+          "lng": -167.95403,
+          "name": "Missing Persons",
+          "slug": "555845",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64861132",
+          "lat": 83.90756,
+          "lng": -167.81252,
+          "name": "The Last Wish",
+          "slug": "153964",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861137",
+          "lat": 83.91048,
+          "lng": -168.05801,
+          "name": "Worthy of Trust (I)",
+          "slug": "29933",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885317",
+          "lat": 83.92411,
+          "lng": -167.9067,
+          "name": "The Tower Outta Nowheres",
+          "slug": "30533",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861131",
+          "lat": 83.910576,
+          "lng": -168.05043,
+          "name": "The Family Blade",
+          "slug": "30543",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861123",
+          "lat": 83.90728,
+          "lng": -167.95123,
+          "name": "Shock Therapy",
+          "slug": "30546",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861117",
+          "lat": 83.90786,
+          "lng": -167.94783,
+          "name": "Practicum in Advanced Alchemy",
+          "slug": "30549",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861128",
+          "lat": 83.90489,
+          "lng": -168.02528,
+          "name": "The Nithing",
+          "slug": "30560",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861125",
+          "lat": 83.89567,
+          "lng": -168.05583,
+          "name": "The Cave of Dreams",
+          "slug": "30570",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861101",
+          "lat": 83.90649,
+          "lng": -168.11253,
+          "name": "A Hallowed Horn",
+          "slug": "30578",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861130",
+          "lat": 83.886215,
+          "lng": -167.88383,
+          "name": "The Price of Honor",
+          "slug": "30580",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861109",
+          "lat": 83.90562,
+          "lng": -167.79785,
+          "name": "For Fame and Glory",
+          "slug": "30586",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861110",
+          "lat": 83.90581,
+          "lng": -167.78648,
+          "name": "In Wolf's Clothing",
+          "slug": "425997",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861102",
+          "lat": 83.91137,
+          "lng": -168.05151,
+          "name": "An Unpaid Debt",
+          "slug": "425998",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861124",
+          "lat": 83.90219,
+          "lng": -168.10345,
+          "name": "Stranger in a Strange Land",
+          "slug": "425999",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861133",
+          "lat": 83.912254,
+          "lng": -168.05983,
+          "name": "The Lord of Undvik",
+          "slug": "426000",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861113",
+          "lat": 83.91234,
+          "lng": -168.06247,
+          "name": "King's Gambit",
+          "slug": "426124",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861116",
+          "lat": 83.91228,
+          "lng": -168.06119,
+          "name": "Possession",
+          "slug": "426125",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885315",
+          "lat": 83.91229,
+          "lng": -168.07272,
+          "name": "Scavenger Hunt: Bear School Gear",
+          "slug": "426250",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861114",
+          "lat": 83.91869,
+          "lng": -168.17702,
+          "name": "Master of the Arena",
+          "slug": "master-of-the-arena",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861134",
+          "lat": 83.924904,
+          "lng": -167.8902,
+          "name": "The Path of Warriors",
+          "slug": "path-of-a-warrior",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861112",
+          "lat": 83.8862,
+          "lng": -167.86974,
+          "name": "Iron Maiden",
+          "slug": "secondary-quest-the-iron-maiden",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861135",
+          "lat": 83.905235,
+          "lng": -167.99,
+          "name": "The Sad Tale of the Grossbart Brothers",
+          "slug": "the-sad-tale-of-the-grossbard-brothers",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64862430",
+          "lat": 83.901245,
+          "lng": -168.18169,
+          "name": "Ursine Trousers - Enhanced",
+          "slug": "design-enhanced-ursine-trousers",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861161",
+          "lat": 83.89761,
+          "lng": -167.94191,
+          "name": "Ursine Armor - Enhanced",
+          "slug": "enhanced-ursine-armor",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861162",
+          "lat": 83.89731,
+          "lng": -168.07343,
+          "name": "Ursine Boots - Enhanced",
+          "slug": "enhanced-ursine-boots",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862429",
+          "lat": 83.91176,
+          "lng": -168.00555,
+          "name": "Ursine Gauntlets - Enhanced",
+          "slug": "enhanced-ursine-gauntlets",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861160",
+          "lat": 83.91073,
+          "lng": -167.96371,
+          "name": "Ursine Silver Sword - Enhanced",
+          "slug": "enhanced-ursine-silver-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862428",
+          "lat": 83.9096,
+          "lng": -168.177,
+          "name": "Ursine Steel Sword - Enhanced",
+          "slug": "enhanced-ursine-steel-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887905",
+          "lat": 83.88583,
+          "lng": -167.86877,
+          "name": "Feline Silver Sword - Mastercrafted",
+          "slug": "master-cat-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887904",
+          "lat": 83.90959,
+          "lng": -167.97914,
+          "name": "Feline Steel Sword - Mastercrafted",
+          "slug": "mastercrafted-feline-steel-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887894",
+          "lat": 83.907455,
+          "lng": -167.92073,
+          "name": "Griffin Armor - Mastercrafted",
+          "slug": "mastercrafted-griffin-armor",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887893",
+          "lat": 83.89992,
+          "lng": -168.0492,
+          "name": "Griffin Silver Sword - Mastercrafted",
+          "slug": "mastercrafted-griffin-silver-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887943",
+          "lat": 83.89715,
+          "lng": -168.19217,
+          "name": "Wolven Boots - Mastercrafted",
+          "slug": "mastercrafted-wolven-boots",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887944",
+          "lat": 83.903564,
+          "lng": -168.02412,
+          "name": "Wolven Gauntlets - Mastercrafted",
+          "slug": "mastercrafted-wolven-gauntlets",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887945",
+          "lat": 83.91679,
+          "lng": -168.21803,
+          "name": "Wolven Trousers - Mastercrafted",
+          "slug": "mastercrafted-wolven-trousers",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887906",
+          "lat": 83.88465,
+          "lng": -167.84921,
+          "name": "Feline Armor - Mastercrafted",
+          "slug": "master-feline-armor",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887892",
+          "lat": 83.90285,
+          "lng": -168.01123,
+          "name": "Griffin Steel Sword - Mastercrafted",
+          "slug": "master-griffin-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862593",
+          "lat": 83.91367,
+          "lng": -167.95293,
+          "name": "Griffin Armor - Superior",
+          "slug": "superior-griffin-armor",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862591",
+          "lat": 83.89143,
+          "lng": -167.99826,
+          "name": "Griffin Silver Sword - Superior",
+          "slug": "superior-griffin-silver-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862592",
+          "lat": 83.92545,
+          "lng": -167.91942,
+          "name": "Griffin Steel Sword - Superior",
+          "slug": "superior-griffin-steel-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861154",
+          "lat": 83.91588,
+          "lng": -168.22012,
+          "name": "Ursine Crossbow",
+          "slug": "ursine-crossbow",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861152",
+          "lat": 83.91315,
+          "lng": -168.0144,
+          "name": "Ursine Silver Sword",
+          "slug": "ursine-silver-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861153",
+          "lat": 83.896996,
+          "lng": -167.98639,
+          "name": "Ursine Steel Sword",
+          "slug": "ursine-steel-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887936",
+          "lat": 83.89658,
+          "lng": -168.02821,
+          "name": "Wolven Armor - Superior",
+          "slug": "wolven-armor-superior-",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887935",
+          "lat": 83.90116,
+          "lng": -168.09407,
+          "name": "Wolven Silver Sword - Superior",
+          "slug": "wolven-silver-sword-superior",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887934",
+          "lat": 83.905716,
+          "lng": -167.83786,
+          "name": "Wolven Steel Sword - Superior",
+          "slug": "wolven-steel-sword-superior",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "65302217",
+          "lat": 83.90722,
+          "lng": -167.95032,
+          "name": "Leshen",
+          "slug": "154872",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302222",
+          "lat": 83.89517,
+          "lng": -168.05788,
+          "name": "Vampire: Katakan",
+          "slug": "290548",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302174",
+          "lat": 83.91226,
+          "lng": -168.06049,
+          "name": "Draug",
+          "slug": "313679",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302081",
+          "lat": 83.907875,
+          "lng": -167.94847,
+          "name": "Mysterious Elf",
+          "slug": "426001",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302161",
+          "lat": 83.911285,
+          "lng": -168.04767,
+          "name": "Yaevinn",
+          "slug": "507197",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302206",
+          "lat": 83.90478,
+          "lng": -168.07887,
+          "name": "Birna Bran",
+          "slug": "426123",
+          "typeSlug": "649",
+          "typeName": "NPC"
+        }
+      ]
+    },
+    {
+      "slug": "toussaint",
+      "name": "Toussaint",
+      "tileUrl": "https://tiles.mapgenie.io/games/witcher-3/toussaint/default-v1/{z}/{y}/{x}.jpg",
+      "minZoom": 8,
+      "maxZoom": 16,
+      "initialZoom": 11,
+      "initialLat": 83.90416,
+      "initialLng": -168.14734,
+      "backgroundColor": "#FFFFFF",
+      "types": [
+        {
+          "slug": "130",
+          "name": "Locations"
+        },
+        {
+          "slug": "595",
+          "name": "Abandoned Site"
+        },
+        {
+          "slug": "596",
+          "name": "Bandit Camp"
+        },
+        {
+          "slug": "617",
+          "name": "Contract"
+        },
+        {
+          "slug": "597",
+          "name": "Entrance"
+        },
+        {
+          "slug": "598",
+          "name": "Guarded Treasure"
+        },
+        {
+          "slug": "600",
+          "name": "Hanse Base"
+        },
+        {
+          "slug": "599",
+          "name": "Harbor"
+        },
+        {
+          "slug": "601",
+          "name": "Knight in Distress"
+        },
+        {
+          "slug": "648",
+          "name": "Lebioda Monument"
+        },
+        {
+          "slug": "603",
+          "name": "Monster Den"
+        },
+        {
+          "slug": "604",
+          "name": "Monster Nest"
+        },
+        {
+          "slug": "605",
+          "name": "Notice Board"
+        },
+        {
+          "slug": "606",
+          "name": "Person in Distress"
+        },
+        {
+          "slug": "607",
+          "name": "Place of Power"
+        },
+        {
+          "slug": "608",
+          "name": "Point of Interest"
+        },
+        {
+          "slug": "614",
+          "name": "Portal"
+        },
+        {
+          "slug": "610",
+          "name": "Signpost"
+        },
+        {
+          "slug": "613",
+          "name": "Stash"
+        },
+        {
+          "slug": "615",
+          "name": "Vineyard Infestation"
+        },
+        {
+          "slug": "616",
+          "name": "Vintner's Contract"
+        },
+        {
+          "slug": "131",
+          "name": "Services"
+        },
+        {
+          "slug": "618",
+          "name": "Alchemy Supplies"
+        },
+        {
+          "slug": "619",
+          "name": "Armorer"
+        },
+        {
+          "slug": "620",
+          "name": "Armorer's Table"
+        },
+        {
+          "slug": "621",
+          "name": "Barber"
+        },
+        {
+          "slug": "622",
+          "name": "Blacksmith"
+        },
+        {
+          "slug": "623",
+          "name": "Brothel"
+        },
+        {
+          "slug": "624",
+          "name": "Grindstone"
+        },
+        {
+          "slug": "625",
+          "name": "Gwent Player"
+        },
+        {
+          "slug": "627",
+          "name": "Herbalist"
+        },
+        {
+          "slug": "628",
+          "name": "Innkeep"
+        },
+        {
+          "slug": "629",
+          "name": "Shopkeeper"
+        },
+        {
+          "slug": "132",
+          "name": "Quests"
+        },
+        {
+          "slug": "635",
+          "name": "Fistfight"
+        },
+        {
+          "slug": "637",
+          "name": "Hidden Treasure"
+        },
+        {
+          "slug": "632",
+          "name": "Main Quest"
+        },
+        {
+          "slug": "633",
+          "name": "Secondary Quest"
+        },
+        {
+          "slug": "133",
+          "name": "Items"
+        },
+        {
+          "slug": "639",
+          "name": "Chest"
+        },
+        {
+          "slug": "641",
+          "name": "Gwent Card"
+        },
+        {
+          "slug": "638",
+          "name": "Witcher Gear"
+        },
+        {
+          "slug": "134",
+          "name": "Other"
+        },
+        {
+          "slug": "647",
+          "name": "Miscellaneous"
+        }
+      ],
+      "markers": [
+        {
+          "taskId": "65303594",
+          "lat": 83.89889,
+          "lng": -168.1956,
+          "name": "Place of Power - Axii",
+          "slug": "29645",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889760",
+          "lat": 83.932396,
+          "lng": -168.03545,
+          "name": "Place of Power - Yrden",
+          "slug": "29647",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889759",
+          "lat": 83.89122,
+          "lng": -167.89156,
+          "name": "Place of Power - Quen",
+          "slug": "place-of-power",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889758",
+          "lat": 83.884094,
+          "lng": -168.11578,
+          "name": "Place of Power - Aard",
+          "slug": "place-of-power-aard",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889762",
+          "lat": 83.903015,
+          "lng": -167.81192,
+          "name": "Place of Power - Igni",
+          "slug": "place-of-power-igni",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64885408",
+          "lat": 83.89579,
+          "lng": -168.1993,
+          "name": "Vintner's Contract: Griffin-in-the-Vines",
+          "slug": "29655",
+          "typeSlug": "616",
+          "typeName": "Vintner's Contract"
+        },
+        {
+          "taskId": "64885405",
+          "lat": 83.90914,
+          "lng": -168.14565,
+          "name": "Vintner's Contract: Chucote Cave",
+          "slug": "29656",
+          "typeSlug": "616",
+          "typeName": "Vintner's Contract"
+        },
+        {
+          "taskId": "64885363",
+          "lat": 83.89118,
+          "lng": -168.09836,
+          "name": "Feet as Cold as Ice",
+          "slug": "216004",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885362",
+          "lat": 83.918434,
+          "lng": -167.9286,
+          "name": "Equine Phantoms",
+          "slug": "290523",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885361",
+          "lat": 83.90497,
+          "lng": -167.87976,
+          "name": "Contract: Bovine Blues",
+          "slug": "426014",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885364",
+          "lat": 83.90046,
+          "lng": -167.95215,
+          "name": "Contract: The Tufo Monster",
+          "slug": "426015",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885360",
+          "lat": 83.90686,
+          "lng": -168.03242,
+          "name": "Contract: Big Game Hunter",
+          "slug": "426016",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885339",
+          "lat": 83.91198,
+          "lng": -168.03206,
+          "name": "The Beast of Toussaint",
+          "slug": "29767",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64885340",
+          "lat": 83.89351,
+          "lng": -168.13213,
+          "name": "Blood Run",
+          "slug": "426131",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "65309732",
+          "lat": 83.89314,
+          "lng": -168.09393,
+          "name": "Turn and Face The Strange",
+          "slug": "215969",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885357",
+          "lat": 83.912926,
+          "lng": -168.1675,
+          "name": "A Knight's Tales",
+          "slug": "215992",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885389",
+          "lat": 83.89075,
+          "lng": -168.08801,
+          "name": "Till Death Do You Part",
+          "slug": "216002",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885369",
+          "lat": 83.89381,
+          "lng": -168.08342,
+          "name": "Goodness, Gracious, Great Balls of Granite!",
+          "slug": "216023",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885358",
+          "lat": 83.89305,
+          "lng": -168.09242,
+          "name": "A Portrait of the Witcher as an Old Man",
+          "slug": "216025",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885367",
+          "lat": 83.9011,
+          "lng": -168.19981,
+          "name": "Father Knows Worst",
+          "slug": "216026",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885377",
+          "lat": 83.89061,
+          "lng": -168.0916,
+          "name": "Of Sheers and a Witcher I Sing",
+          "slug": "249441",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885376",
+          "lat": 83.892586,
+          "lng": -168.09207,
+          "name": "Paperchase",
+          "slug": "403857",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64887679",
+          "lat": 83.9209,
+          "lng": -168.0067,
+          "name": "Wine Wars: The Deus in the Machina",
+          "slug": "423697",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885410",
+          "lat": 83.889595,
+          "lng": -168.0419,
+          "name": "Wine Wars: Belgaard",
+          "slug": "426012",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "65290181",
+          "lat": 83.90161,
+          "lng": -168.0298,
+          "name": "Amidst the Mill's Grist",
+          "slug": "426013",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885375",
+          "lat": 83.903984,
+          "lng": -168.07004,
+          "name": "No Place Like Home",
+          "slug": "426129",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885359",
+          "lat": 83.90421,
+          "lng": -167.88213,
+          "name": "Big Feet to Fill",
+          "slug": "953342",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885374",
+          "lat": 83.90699,
+          "lng": -168.03075,
+          "name": "Mutual of Beauclair's Wild Kingdom",
+          "slug": "953827",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885387",
+          "lat": 83.920135,
+          "lng": -168.1083,
+          "name": "The Words of the Prophet Are Written on Sarcophagi",
+          "slug": "953976",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885371",
+          "lat": 83.892944,
+          "lng": -168.10918,
+          "name": "Gwent: To Everything - Turn, Turn, Tournament",
+          "slug": "954203",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885370",
+          "lat": 83.89289,
+          "lng": -168.10815,
+          "name": "Gwent: Never Fear, Skellige's Here",
+          "slug": "954211",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885411",
+          "lat": 83.917915,
+          "lng": -168.08142,
+          "name": "Wine Wars: Coronata",
+          "slug": "954635",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885412",
+          "lat": 83.9179,
+          "lng": -168.08302,
+          "name": "Wine Wars: Vermentino",
+          "slug": "954637",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885366",
+          "lat": 83.88786,
+          "lng": -167.95001,
+          "name": "Extreme Cosplay",
+          "slug": "extreme-cosplay",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885388",
+          "lat": 83.89408,
+          "lng": -168.09126,
+          "name": "There Can Be Only One",
+          "slug": "there-can-only-be-one",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885392",
+          "lat": 83.88765,
+          "lng": -168.14134,
+          "name": "Hidden Treasure - But Other Than That, How Did You Enjoy the Play?",
+          "slug": "29735",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885399",
+          "lat": 83.888756,
+          "lng": -168.0882,
+          "name": "Hidden Treasure - The Last Exploits of Selina's Gang",
+          "slug": "29736",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885401",
+          "lat": 83.90351,
+          "lng": -168.2122,
+          "name": "Hidden Treasure - The Toussaint Prison Experiment",
+          "slug": "29737",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "65307045",
+          "lat": 83.9078,
+          "lng": -168.21172,
+          "name": "Hidden Treasure: The Suffering of Young Francois",
+          "slug": "29738",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885394",
+          "lat": 83.91661,
+          "lng": -168.14032,
+          "name": "Hidden Treasure - Don’t Take Candy From a Stranger",
+          "slug": "29739",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885393",
+          "lat": 83.91894,
+          "lng": -167.95572,
+          "name": "Hidden Treasure - Coin Doesn't Stink",
+          "slug": "29743",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885391",
+          "lat": 83.91884,
+          "lng": -168.00104,
+          "name": "Hidden Treasure - Around the World in…Eight Days",
+          "slug": "29744",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885390",
+          "lat": 83.89674,
+          "lng": -167.97546,
+          "name": "Hidden Treasure - Applied Escapology",
+          "slug": "29746",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885402",
+          "lat": 83.89457,
+          "lng": -167.85591,
+          "name": "Hidden Treasure - Waiting for Goe & Doh",
+          "slug": "29748",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64887915",
+          "lat": 83.931305,
+          "lng": -168.04994,
+          "name": "Feline Trousers / Boots",
+          "slug": "423692",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64878336",
+          "lat": 83.9293,
+          "lng": -167.99696,
+          "name": "Feline Armor",
+          "slug": "423695",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887911",
+          "lat": 83.92594,
+          "lng": -168.02382,
+          "name": "Feline Steel Sword / Silver Sword / Gauntlets",
+          "slug": "423696",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887947",
+          "lat": 83.89167,
+          "lng": -167.89436,
+          "name": "Wolven Armor / Trousers / Boots",
+          "slug": "grandmaster-wolven-school-diagrams",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887727",
+          "lat": 83.888054,
+          "lng": -167.91518,
+          "name": "Manticore Armor",
+          "slug": "manticore-armor-diagram",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887729",
+          "lat": 83.91622,
+          "lng": -167.85954,
+          "name": "Manticore Gauntlets",
+          "slug": "manticore-gauntlets-diagram",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887726",
+          "lat": 83.890076,
+          "lng": -168.1586,
+          "name": "Manticore Silver Sword",
+          "slug": "manticore-silver-sword-diagram",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887725",
+          "lat": 83.90391,
+          "lng": -168.20781,
+          "name": "Manticore Steel Sword",
+          "slug": "manticore-steel-sword-diagram",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "65302216",
+          "lat": 83.8929,
+          "lng": -168.10678,
+          "name": "Draig Bon-Dhu",
+          "slug": "216006",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302230",
+          "lat": 83.89422,
+          "lng": -168.10307,
+          "name": "King Bran",
+          "slug": "216016",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302228",
+          "lat": 83.89532,
+          "lng": -168.10118,
+          "name": "Young Berserker",
+          "slug": "423677",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302233",
+          "lat": 83.89713,
+          "lng": -168.04587,
+          "name": "Skellige Storm",
+          "slug": "423688",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302223",
+          "lat": 83.89724,
+          "lng": -168.04216,
+          "name": "Mardroeme",
+          "slug": "423689",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302227",
+          "lat": 83.90069,
+          "lng": -168.09787,
+          "name": "War Longship",
+          "slug": "507458",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302220",
+          "lat": 83.8927,
+          "lng": -168.09091,
+          "name": "Kambi / Hemdall",
+          "slug": "507461",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302211",
+          "lat": 83.892555,
+          "lng": -168.08525,
+          "name": "Clan Dimun Pirate",
+          "slug": "507462",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302224",
+          "lat": 83.89364,
+          "lng": -168.08424,
+          "name": "Olaf",
+          "slug": "507463",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302221",
+          "lat": 83.89379,
+          "lng": -168.09863,
+          "name": "Light Longship",
+          "slug": "507464",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302212",
+          "lat": 83.906876,
+          "lng": -168.02956,
+          "name": "Clan Drummond Shield Maiden",
+          "slug": "507465",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302208",
+          "lat": 83.89992,
+          "lng": -167.94441,
+          "name": "Cerys",
+          "slug": "507467",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302210",
+          "lat": 83.91278,
+          "lng": -168.14664,
+          "name": "Clan Brokvar Archer",
+          "slug": "507468",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        }
+      ]
+    },
+    {
+      "slug": "velen-novigrad",
+      "name": "Velen & Novigrad",
+      "tileUrl": "https://tiles.mapgenie.io/games/witcher-3/velen-novigrad/default-v1/{z}/{y}/{x}.jpg",
+      "minZoom": 8,
+      "maxZoom": 17,
+      "initialZoom": 11,
+      "initialLat": 83.93724,
+      "initialLng": -168.44212,
+      "backgroundColor": "#FFFFFF",
+      "types": [
+        {
+          "slug": "130",
+          "name": "Locations"
+        },
+        {
+          "slug": "595",
+          "name": "Abandoned Site"
+        },
+        {
+          "slug": "596",
+          "name": "Bandit Camp"
+        },
+        {
+          "slug": "617",
+          "name": "Contract"
+        },
+        {
+          "slug": "597",
+          "name": "Entrance"
+        },
+        {
+          "slug": "598",
+          "name": "Guarded Treasure"
+        },
+        {
+          "slug": "599",
+          "name": "Harbor"
+        },
+        {
+          "slug": "602",
+          "name": "Magic Lamp"
+        },
+        {
+          "slug": "603",
+          "name": "Monster Den"
+        },
+        {
+          "slug": "604",
+          "name": "Monster Nest"
+        },
+        {
+          "slug": "605",
+          "name": "Notice Board"
+        },
+        {
+          "slug": "606",
+          "name": "Person in Distress"
+        },
+        {
+          "slug": "607",
+          "name": "Place of Power"
+        },
+        {
+          "slug": "608",
+          "name": "Point of Interest"
+        },
+        {
+          "slug": "614",
+          "name": "Portal"
+        },
+        {
+          "slug": "610",
+          "name": "Signpost"
+        },
+        {
+          "slug": "611",
+          "name": "Smuggler's Cache"
+        },
+        {
+          "slug": "612",
+          "name": "Spoils of War"
+        },
+        {
+          "slug": "613",
+          "name": "Stash"
+        },
+        {
+          "slug": "131",
+          "name": "Services"
+        },
+        {
+          "slug": "618",
+          "name": "Alchemy Supplies"
+        },
+        {
+          "slug": "619",
+          "name": "Armorer"
+        },
+        {
+          "slug": "620",
+          "name": "Armorer's Table"
+        },
+        {
+          "slug": "621",
+          "name": "Barber"
+        },
+        {
+          "slug": "622",
+          "name": "Blacksmith"
+        },
+        {
+          "slug": "623",
+          "name": "Brothel"
+        },
+        {
+          "slug": "624",
+          "name": "Grindstone"
+        },
+        {
+          "slug": "625",
+          "name": "Gwent Player"
+        },
+        {
+          "slug": "627",
+          "name": "Herbalist"
+        },
+        {
+          "slug": "628",
+          "name": "Innkeep"
+        },
+        {
+          "slug": "630",
+          "name": "Runewright"
+        },
+        {
+          "slug": "629",
+          "name": "Shopkeeper"
+        },
+        {
+          "slug": "132",
+          "name": "Quests"
+        },
+        {
+          "slug": "635",
+          "name": "Fistfight"
+        },
+        {
+          "slug": "637",
+          "name": "Hidden Treasure"
+        },
+        {
+          "slug": "636",
+          "name": "Horse Race"
+        },
+        {
+          "slug": "632",
+          "name": "Main Quest"
+        },
+        {
+          "slug": "633",
+          "name": "Secondary Quest"
+        },
+        {
+          "slug": "133",
+          "name": "Items"
+        },
+        {
+          "slug": "642",
+          "name": "Book"
+        },
+        {
+          "slug": "639",
+          "name": "Chest"
+        },
+        {
+          "slug": "641",
+          "name": "Gwent Card"
+        },
+        {
+          "slug": "643",
+          "name": "Mutagen"
+        },
+        {
+          "slug": "646",
+          "name": "Quest Item"
+        },
+        {
+          "slug": "644",
+          "name": "Recipe"
+        },
+        {
+          "slug": "650",
+          "name": "Relic Item"
+        },
+        {
+          "slug": "638",
+          "name": "Witcher Gear"
+        },
+        {
+          "slug": "134",
+          "name": "Other"
+        },
+        {
+          "slug": "647",
+          "name": "Miscellaneous"
+        },
+        {
+          "slug": "649",
+          "name": "NPC"
+        }
+      ],
+      "markers": [
+        {
+          "taskId": "64889746",
+          "lat": 83.88673,
+          "lng": -167.99623,
+          "name": "Place of Power - Igni",
+          "slug": "19787",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889749",
+          "lat": 83.91841,
+          "lng": -167.98042,
+          "name": "Place of Power - Axii",
+          "slug": "axii-place-of-power",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889744",
+          "lat": 83.8778,
+          "lng": -168.15935,
+          "name": "Place of Power - Aard",
+          "slug": "place-of-power-aard",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889748",
+          "lat": 83.92487,
+          "lng": -168.112,
+          "name": "Place of Power - Igni",
+          "slug": "place-of-power-igni4",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889745",
+          "lat": 83.88228,
+          "lng": -168.0411,
+          "name": "Place of Power - Quen",
+          "slug": "place-of-power-quen",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889743",
+          "lat": 83.89364,
+          "lng": -167.47458,
+          "name": "Place of Power - Yrden",
+          "slug": "place-of-power-yrden",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889747",
+          "lat": 83.89203,
+          "lng": -168.02655,
+          "name": "Place of Power - Yrden",
+          "slug": "place-of-power-yrden0",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64885278",
+          "lat": 83.89354,
+          "lng": -167.95071,
+          "name": "Phantom of the Trade Route",
+          "slug": "19956",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885301",
+          "lat": 83.9158,
+          "lng": -168.10861,
+          "name": "Lord of the Wood",
+          "slug": "19974",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885303",
+          "lat": 83.91588,
+          "lng": -168.10861,
+          "name": "The White Lady",
+          "slug": "19975",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885299",
+          "lat": 83.919464,
+          "lng": -168.116,
+          "name": "Deadly Delights",
+          "slug": "20028",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885298",
+          "lat": 83.91919,
+          "lng": -168.09184,
+          "name": "An Elusive Thief",
+          "slug": "20032",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885305",
+          "lat": 83.910576,
+          "lng": -167.93282,
+          "name": "The Creature From Oxenfurt Forest",
+          "slug": "214257",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64860430",
+          "lat": 83.88197,
+          "lng": -167.89355,
+          "name": "Patrol Gone Missing",
+          "slug": "30633",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885275",
+          "lat": 83.892235,
+          "lng": -168.23232,
+          "name": "Jenny o' the Woods",
+          "slug": "contract-jenny-o-the-woods",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885276",
+          "lat": 83.90273,
+          "lng": -168.11896,
+          "name": "Missing Brother",
+          "slug": "contract-missing-brother",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885277",
+          "lat": 83.89608,
+          "lng": -168.08762,
+          "name": "Mysterious Tracks",
+          "slug": "contract-mysterious-tracks",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885279",
+          "lat": 83.89675,
+          "lng": -168.15448,
+          "name": "Shrieker",
+          "slug": "contract-shrieker",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885280",
+          "lat": 83.891426,
+          "lng": -168.01184,
+          "name": "Swamp Thing",
+          "slug": "contract-swamp-thing",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885302",
+          "lat": 83.92649,
+          "lng": -168.0473,
+          "name": "The Apiarian Phantom",
+          "slug": "contract-the-apiarian-phantom",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885281",
+          "lat": 83.89653,
+          "lng": -168.08325,
+          "name": "The Merry Widow",
+          "slug": "contract-the-merry-widow",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885282",
+          "lat": 83.88961,
+          "lng": -168.16061,
+          "name": "The Mystery of the Byways Murders",
+          "slug": "contract-the-mysterious-byways-murders",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885304",
+          "lat": 83.90944,
+          "lng": -167.98044,
+          "name": "The Oxenfurt Drunk",
+          "slug": "contract-the-oxenfurt-drunk",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885283",
+          "lat": 83.90819,
+          "lng": -168.08174,
+          "name": "Woodland Beast",
+          "slug": "contract-woodland-beast",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64885300",
+          "lat": 83.92027,
+          "lng": -168.1027,
+          "name": "Doors Slamming Shut",
+          "slug": "doosr-slamming-shut",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64859902",
+          "lat": 83.88176,
+          "lng": -168.0661,
+          "name": "Bald Mountain",
+          "slug": "155373",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859944",
+          "lat": 83.91812,
+          "lng": -168.09415,
+          "name": "Blindingly Obvious",
+          "slug": "155387",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859945",
+          "lat": 83.91855,
+          "lng": -168.11435,
+          "name": "The Great Escape",
+          "slug": "155396",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859957",
+          "lat": 83.918015,
+          "lng": -168.0938,
+          "name": "Through Time and Space",
+          "slug": "155397",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859946",
+          "lat": 83.91809,
+          "lng": -168.09314,
+          "name": "Payback",
+          "slug": "155409",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859560",
+          "lat": 83.919044,
+          "lng": -168.09644,
+          "name": "Novigrad Dreaming",
+          "slug": "20030",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64885318",
+          "lat": 83.91794,
+          "lng": -168.05534,
+          "name": "Evil's Soft First Touches",
+          "slug": "20085",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64860990",
+          "lat": 83.909325,
+          "lng": -167.982,
+          "name": "A Favor for Radovid",
+          "slug": "20475",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64885338",
+          "lat": 83.917885,
+          "lng": -168.05591,
+          "name": "Envoys, Wineboys",
+          "slug": "214245",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859471",
+          "lat": 83.88722,
+          "lng": -167.99133,
+          "name": "The Whispering Hillock",
+          "slug": "248634",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859412",
+          "lat": 83.89969,
+          "lng": -168.2133,
+          "name": "A Princess in Distress",
+          "slug": "250530",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64885319",
+          "lat": 83.909645,
+          "lng": -167.97266,
+          "name": "Open Sesame",
+          "slug": "426135",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64885320",
+          "lat": 83.908134,
+          "lng": -167.9803,
+          "name": "Dead Man's Party",
+          "slug": "426136",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64885321",
+          "lat": 83.92466,
+          "lng": -167.90732,
+          "name": "Scenes From A Marriage",
+          "slug": "426139",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64885322",
+          "lat": 83.90869,
+          "lng": -167.97641,
+          "name": "Whatsoever a Man Soweth",
+          "slug": "426140",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "65193900",
+          "lat": 83.90225,
+          "lng": -168.19473,
+          "name": "Bloody Baron",
+          "slug": "555354",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859879",
+          "lat": 83.8942,
+          "lng": -168.03362,
+          "name": "Ciri's Story: The King of the Wolves",
+          "slug": "555358",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859411",
+          "lat": 83.897964,
+          "lng": -168.16354,
+          "name": "Family Matters",
+          "slug": "555363",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859468",
+          "lat": 83.90225,
+          "lng": -168.1938,
+          "name": "Hunting a Witch",
+          "slug": "555828",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859469",
+          "lat": 83.884155,
+          "lng": -168.23412,
+          "name": "Wandering in the Dark",
+          "slug": "555829",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859470",
+          "lat": 83.88892,
+          "lng": -167.47633,
+          "name": "Ladies of the Wood",
+          "slug": "555830",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859473",
+          "lat": 83.88799,
+          "lng": -168.01973,
+          "name": "Ciri's Story: Fleeing the Bog",
+          "slug": "555831",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859559",
+          "lat": 83.92009,
+          "lng": -168.10454,
+          "name": "Pyres of Novigrad",
+          "slug": "555832",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859566",
+          "lat": 83.91991,
+          "lng": -168.11777,
+          "name": "Broken Flowers",
+          "slug": "555833",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859567",
+          "lat": 83.92046,
+          "lng": -168.10162,
+          "name": "Get Junior",
+          "slug": "555834",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859568",
+          "lat": 83.90791,
+          "lng": -167.96748,
+          "name": "Ciri's Story: Visiting Junior",
+          "slug": "555837",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859576",
+          "lat": 83.90791,
+          "lng": -167.9666,
+          "name": "The Play’s the Thing",
+          "slug": "555838",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859575",
+          "lat": 83.921196,
+          "lng": -168.10269,
+          "name": "Count Reuven's Treasure",
+          "slug": "555839",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859577",
+          "lat": 83.91933,
+          "lng": -168.10199,
+          "name": "A Poet Under Pressure",
+          "slug": "555840",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859578",
+          "lat": 83.92648,
+          "lng": -168.00702,
+          "name": "Ciri's Story: Breakneck Speed",
+          "slug": "555841",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859579",
+          "lat": 83.91837,
+          "lng": -168.11858,
+          "name": "Destination: Skellige",
+          "slug": "555842",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64860988",
+          "lat": 83.91814,
+          "lng": -168.09596,
+          "name": "A Dangerous Game",
+          "slug": "154532",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860994",
+          "lat": 83.91807,
+          "lng": -168.09537,
+          "name": "Cabaret",
+          "slug": "154533",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861062",
+          "lat": 83.92133,
+          "lng": -168.1026,
+          "name": "Reason of State",
+          "slug": "155392",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860018",
+          "lat": 83.8944,
+          "lng": -168.2176,
+          "name": "A Towerful of Mice",
+          "slug": "19890",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861071",
+          "lat": 83.91962,
+          "lng": -168.09558,
+          "name": "The Flame of Hatred",
+          "slug": "20033",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885306",
+          "lat": 83.91955,
+          "lng": -168.11505,
+          "name": "Gwent: Big City Players",
+          "slug": "20038",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860989",
+          "lat": 83.91373,
+          "lng": -167.9524,
+          "name": "An Eye for an Eye",
+          "slug": "20116",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861055",
+          "lat": 83.92105,
+          "lng": -168.12065,
+          "name": "Hey, You Wanna Look at My Stuff?",
+          "slug": "20119",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885337",
+          "lat": 83.92769,
+          "lng": -167.90924,
+          "name": "Without a Trace",
+          "slug": "20403",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861057",
+          "lat": 83.92113,
+          "lng": -168.08098,
+          "name": "Honor Among Thieves",
+          "slug": "20413",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885330",
+          "lat": 83.92872,
+          "lng": -167.95723,
+          "name": "Rose on a Red Field",
+          "slug": "214241",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861073",
+          "lat": 83.91032,
+          "lng": -167.94972,
+          "name": "The Most Truest of Basilisks",
+          "slug": "214260",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861059",
+          "lat": 83.92715,
+          "lng": -168.05942,
+          "name": "Novigrad Hospitality",
+          "slug": "214267",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861075",
+          "lat": 83.91959,
+          "lng": -168.10165,
+          "name": "The Soldier Statuette",
+          "slug": "215937",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860520",
+          "lat": 83.90332,
+          "lng": -168.04497,
+          "name": "In the Eternal Fire's Shadow",
+          "slug": "221247",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861091",
+          "lat": 83.91599,
+          "lng": -168.11322,
+          "name": "Witch Hunter Raids",
+          "slug": "248616",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885326",
+          "lat": 83.927444,
+          "lng": -167.87614,
+          "name": "Enchanting: Quality Has Its Price",
+          "slug": "267623",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885327",
+          "lat": 83.927444,
+          "lng": -167.87659,
+          "name": "Enchanting: Start-up Costs",
+          "slug": "267624",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860423",
+          "lat": 83.89349,
+          "lng": -168.00783,
+          "name": "Ghosts of the Past",
+          "slug": "282784",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861061",
+          "lat": 83.917595,
+          "lng": -168.11227,
+          "name": "Of Swords and Dumplings",
+          "slug": "30518",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860995",
+          "lat": 83.918106,
+          "lng": -168.0947,
+          "name": "Carnal Sins",
+          "slug": "425981",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861058",
+          "lat": 83.92044,
+          "lng": -168.10411,
+          "name": "Message From An Old Friend",
+          "slug": "425982",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861053",
+          "lat": 83.922325,
+          "lng": -168.09789,
+          "name": "Fencing Lessons",
+          "slug": "425983",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861060",
+          "lat": 83.90946,
+          "lng": -167.98032,
+          "name": "Now or Never",
+          "slug": "425984",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "65289184",
+          "lat": 83.909454,
+          "lng": -167.97531,
+          "name": "The Taxman Cometh",
+          "slug": "425985",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861074",
+          "lat": 83.9205,
+          "lng": -168.09036,
+          "name": "The Nobleman Statuette",
+          "slug": "425986",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860991",
+          "lat": 83.92047,
+          "lng": -168.09048,
+          "name": "A Matter of Life and Death",
+          "slug": "425987",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860987",
+          "lat": 83.91966,
+          "lng": -168.12498,
+          "name": "A Deadly Plot",
+          "slug": "425988",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860420",
+          "lat": 83.8884,
+          "lng": -168.18854,
+          "name": "For the Advancement of Learning",
+          "slug": "425990",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860421",
+          "lat": 83.89402,
+          "lng": -168.21672,
+          "name": "Forefather's Eve",
+          "slug": "425991",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885285",
+          "lat": 83.8979,
+          "lng": -168.16481,
+          "name": "Gwent: Velen Players",
+          "slug": "425993",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885287",
+          "lat": 83.89236,
+          "lng": -168.23343,
+          "name": "Scavenger Hunt: Griffin School Gear",
+          "slug": "425995",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861072",
+          "lat": 83.920135,
+          "lng": -168.11147,
+          "name": "The Gangs of Novigrad",
+          "slug": "425996",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860433",
+          "lat": 83.89143,
+          "lng": -168.00928,
+          "name": "Return To Crookback Bog",
+          "slug": "426126",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860428",
+          "lat": 83.89421,
+          "lng": -168.21492,
+          "name": "Magic Lamp",
+          "slug": "426127",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885323",
+          "lat": 83.92822,
+          "lng": -167.90683,
+          "name": "A Midnight Clear",
+          "slug": "426137",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885325",
+          "lat": 83.909615,
+          "lng": -167.97197,
+          "name": "Avid Collector",
+          "slug": "426138",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885307",
+          "lat": 83.85822,
+          "lng": -168.48997,
+          "name": "Scavenger Hunt: Cat School Gear",
+          "slug": "563226",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860015",
+          "lat": 83.889084,
+          "lng": -168.129,
+          "name": "A Dog's Life",
+          "slug": "a-dogs-life",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860016",
+          "lat": 83.8944,
+          "lng": -168.21672,
+          "name": "A Favor For a Friend",
+          "slug": "a-favor-for-a-friend",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860017",
+          "lat": 83.89038,
+          "lng": -168.19296,
+          "name": "A Greedy God",
+          "slug": "a-greedy-god",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860521",
+          "lat": 83.8944,
+          "lng": -168.2185,
+          "name": "An Invitation from Keira Metz",
+          "slug": "an-invitation-from-keira-metz",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860020",
+          "lat": 83.90705,
+          "lng": -168.08281,
+          "name": "Bitter Harvest",
+          "slug": "bitter-harvest",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860992",
+          "lat": 83.91984,
+          "lng": -168.11574,
+          "name": "Black Pearl",
+          "slug": "black-pearl",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860023",
+          "lat": 83.89797,
+          "lng": -168.1628,
+          "name": "Ciri's Room",
+          "slug": "ciris-room",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860414",
+          "lat": 83.907394,
+          "lng": -168.05147,
+          "name": "Death By Fire",
+          "slug": "death-by-fire",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860415",
+          "lat": 83.8975,
+          "lng": -168.19284,
+          "name": "Defender of the Faith",
+          "slug": "defender-of-the-faith",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861052",
+          "lat": 83.92113,
+          "lng": -168.01639,
+          "name": "Empty Coop",
+          "slug": "empty-coop-",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860416",
+          "lat": 83.90788,
+          "lng": -168.07812,
+          "name": "Fake Papers",
+          "slug": "fake-papers",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860422",
+          "lat": 83.90297,
+          "lng": -168.08794,
+          "name": "Funeral Pyres",
+          "slug": "funeral-pyres",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860425",
+          "lat": 83.905945,
+          "lng": -168.1674,
+          "name": "Harassing a Troll",
+          "slug": "harassing-a-troll",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860426",
+          "lat": 83.899055,
+          "lng": -168.20375,
+          "name": "Last Rites",
+          "slug": "last-rites",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861056",
+          "lat": 83.92644,
+          "lng": -168.04866,
+          "name": "Little Red",
+          "slug": "little-red",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860996",
+          "lat": 83.92053,
+          "lng": -168.11888,
+          "name": "Novigrad, Closed City - Part II (Bandits)",
+          "slug": "novigrad-closed-city",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861068",
+          "lat": 83.90933,
+          "lng": -167.9809,
+          "name": "Redania's Most Wanted",
+          "slug": "redanias-most-wanted",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860507",
+          "lat": 83.893105,
+          "lng": -167.95308,
+          "name": "The Truth is in the Stars",
+          "slug": "secondary-quest-the-truth-is-in-the-stars",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860429",
+          "lat": 83.90601,
+          "lng": -168.10599,
+          "name": "Man's Best Friend",
+          "slug": "starving-children",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861070",
+          "lat": 83.91877,
+          "lng": -168.07126,
+          "name": "The Dwarven Document Dilemma",
+          "slug": "the-dwarven-document-dilema",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860506",
+          "lat": 83.89627,
+          "lng": -168.08922,
+          "name": "The Fall of the House of Reardon",
+          "slug": "the-fall-of-the-house-of-reardon",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861076",
+          "lat": 83.90875,
+          "lng": -168.0012,
+          "name": "The Volunteer",
+          "slug": "the-volunteer",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861089",
+          "lat": 83.908455,
+          "lng": -168.08763,
+          "name": "Thou Shalt Not Pass",
+          "slug": "thou-shalt-not-pass",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64861090",
+          "lat": 83.91766,
+          "lng": -168.14574,
+          "name": "Warehouse of Woe",
+          "slug": "warehouse-of-woes",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860518",
+          "lat": 83.898285,
+          "lng": -168.20714,
+          "name": "Wild at Heart",
+          "slug": "wild-at-heart",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64860519",
+          "lat": 83.89617,
+          "lng": -168.08885,
+          "name": "Witcher Wannabe",
+          "slug": "witcher-wannabe",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885329",
+          "lat": 83.926926,
+          "lng": -167.87733,
+          "name": "Swift as the Western Winds",
+          "slug": "216189",
+          "typeSlug": "636",
+          "typeName": "Horse Race"
+        },
+        {
+          "taskId": "64885286",
+          "lat": 83.897194,
+          "lng": -168.1829,
+          "name": "Crow's Perch",
+          "slug": "races-crows-perch",
+          "typeSlug": "636",
+          "typeName": "Horse Race"
+        },
+        {
+          "taskId": "64885334",
+          "lat": 83.91771,
+          "lng": -167.84976,
+          "name": "Hidden Treasure - The Secret Life of Count Romilly",
+          "slug": "214269",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885328",
+          "lat": 83.927086,
+          "lng": -167.87605,
+          "name": "From Ofier's Distant Shores",
+          "slug": "267628",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885336",
+          "lat": 83.92663,
+          "lng": -167.99449,
+          "name": "Hidden Treasure - Tinker, Hunter, Soldier, Spy",
+          "slug": "29317",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "65286548",
+          "lat": 83.91761,
+          "lng": -167.8481,
+          "name": "Hidden Treasure - A Dark Legacy",
+          "slug": "932509",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885324",
+          "lat": 83.91507,
+          "lng": -167.8828,
+          "name": "Hidden Treasure - A Surprise Inheritance",
+          "slug": "guarded-treasure-griffin",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885289",
+          "lat": 83.89742,
+          "lng": -168.2611,
+          "name": "Hidden Treasure - A Costly Mistake",
+          "slug": "hidden-teasure",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885295",
+          "lat": 83.898125,
+          "lng": -168.24051,
+          "name": "Hidden Treasure - Sunken Treasure",
+          "slug": "hidden-treasure1",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885297",
+          "lat": 83.90193,
+          "lng": -168.0204,
+          "name": "Hidden Treasure - Tough Luck",
+          "slug": "hidden-treasure7",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885331",
+          "lat": 83.92835,
+          "lng": -167.8795,
+          "name": "Hidden Treasure - The Cursed Chapel",
+          "slug": "hidden-treasure8",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885335",
+          "lat": 83.92734,
+          "lng": -168.12262,
+          "name": "Hidden Treasure - The Sword, Famine and Perfidy",
+          "slug": "hidden-treasure-lv-25",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885332",
+          "lat": 83.9299,
+          "lng": -168.0391,
+          "name": "Hidden Treasure - The Drakenborg Redemption",
+          "slug": "l35-arachasaes",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885333",
+          "lat": 83.91635,
+          "lng": -167.91435,
+          "name": "Hidden Treasure - The Royal Airforce",
+          "slug": "secret-treasure-on-top-of-tower",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885294",
+          "lat": 83.88324,
+          "lng": -168.17052,
+          "name": "Hidden Treasure - Sunken Chest",
+          "slug": "sunken-treasure",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885288",
+          "lat": 83.899864,
+          "lng": -168.03827,
+          "name": "Hidden Treasure - An Unfortunate Turn of Events",
+          "slug": "treasure-hunt-an-unfortunate-turn-of-events",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885290",
+          "lat": 83.91054,
+          "lng": -168.01291,
+          "name": "Blood Gold",
+          "slug": "treasure-hunt-blood-gold",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885291",
+          "lat": 83.89928,
+          "lng": -167.9847,
+          "name": "Hidden Treasure - Hidden From The World",
+          "slug": "treasure-hunt-hidden-from-the-world",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885292",
+          "lat": 83.902916,
+          "lng": -167.95721,
+          "name": "Hidden Treasure - Lost Goods",
+          "slug": "treasure-hunt-lost-goods",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885293",
+          "lat": 83.89766,
+          "lng": -168.01231,
+          "name": "Hidden Treasure: Out of the Frying Pan, Into the Fire",
+          "slug": "treasure-hunt-out-of-the-frying-pan-into-the-fire",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885296",
+          "lat": 83.908295,
+          "lng": -168.11658,
+          "name": "The Things Men Do For Coin...",
+          "slug": "treasure-hunt-the-things-men-do-for-coin",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64887917",
+          "lat": 83.85527,
+          "lng": -168.31369,
+          "name": "Ursine Silver Sword - Superior",
+          "slug": "19806",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64860500",
+          "lat": 83.90967,
+          "lng": -168.0515,
+          "name": "Griffin Steel Sword",
+          "slug": "20392",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861150",
+          "lat": 83.89801,
+          "lng": -168.14241,
+          "name": "Griffin Trousers - Enhanced",
+          "slug": "diagram-enhanced-griffin-trousers",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861891",
+          "lat": 83.90877,
+          "lng": -167.88492,
+          "name": "Feline Armor - Enhanced",
+          "slug": "enhanced-feline-armor",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861892",
+          "lat": 83.95956,
+          "lng": -167.64374,
+          "name": "Feline Boots - Enhanced",
+          "slug": "enhanced-feline-boots",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861896",
+          "lat": 83.92083,
+          "lng": -168.07939,
+          "name": "Feline Silver Sword - Enhanced",
+          "slug": "enhanced-feline-silver-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861894",
+          "lat": 83.90757,
+          "lng": -167.96414,
+          "name": "Feline Trousers - Enhanced",
+          "slug": "enhanced-feline-trousers",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861713",
+          "lat": 83.86509,
+          "lng": -167.80766,
+          "name": "Griffin Silver Sword - Enhanced",
+          "slug": "enhanced-griffin-gear",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861144",
+          "lat": 83.91479,
+          "lng": -168.18814,
+          "name": "Feline Crossbow",
+          "slug": "feline-crossbow",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861142",
+          "lat": 83.914536,
+          "lng": -167.92197,
+          "name": "Feline Silver Sword",
+          "slug": "feline-school-silver-sword-diagram",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861145",
+          "lat": 83.85809,
+          "lng": -168.48882,
+          "name": "Feline Armor Set",
+          "slug": "feline-set-gear",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861143",
+          "lat": 83.91347,
+          "lng": -168.09752,
+          "name": "Feline Steel Sword",
+          "slug": "feline-steel-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64860501",
+          "lat": 83.84792,
+          "lng": -168.22163,
+          "name": "Griffin Armor Set",
+          "slug": "griffin-armor",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64860499",
+          "lat": 83.90797,
+          "lng": -168.2193,
+          "name": "Griffin Silver Sword",
+          "slug": "griffin-silver-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887922",
+          "lat": 83.86517,
+          "lng": -168.33965,
+          "name": "Ursine Steel Sword - Mastercrafted",
+          "slug": "mastercrafted-ursine-steel-sword-diagram",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887942",
+          "lat": 83.882545,
+          "lng": -168.2061,
+          "name": "Wolven Armor - Mastercrafted",
+          "slug": "mastercrafted-wolven-armor",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887940",
+          "lat": 83.88468,
+          "lng": -168.26654,
+          "name": "Wolven Steel Sword - Mastercrafted",
+          "slug": "mastercrafted-wolven-steel-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862604",
+          "lat": 83.845924,
+          "lng": -168.15442,
+          "name": "Feline Steel Sword - Superior",
+          "slug": "superior-feline-steel-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887918",
+          "lat": 83.863655,
+          "lng": -168.13864,
+          "name": "Ursine Armor Set - Superior",
+          "slug": "superior-ursine-armor-diagram",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887923",
+          "lat": 83.8841,
+          "lng": -168.09346,
+          "name": "Ursine Silver Sword - Mastercrafted",
+          "slug": "ursine-silver-sword-tier-2",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861893",
+          "lat": 83.90604,
+          "lng": -168.03743,
+          "name": "Feline Gauntlets - Enhanced",
+          "slug": "witcher-gear-enhanced-feline-gauntlets",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861895",
+          "lat": 83.86116,
+          "lng": -167.89693,
+          "name": "Feline Steel Sword - Enhanced",
+          "slug": "witcher-gear-enhanced-feline-steel-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861714",
+          "lat": 83.90879,
+          "lng": -168.00142,
+          "name": "Griffin Armor Set - Enhanced",
+          "slug": "witcher-gear-enhanced-griffin-armor",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861151",
+          "lat": 83.90748,
+          "lng": -168.16106,
+          "name": "Griffin Boots - Enhanced",
+          "slug": "witcher-gear-enhanced-griffin-boots",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861715",
+          "lat": 83.87976,
+          "lng": -168.15347,
+          "name": "Griffin Gauntlets - Enhanced",
+          "slug": "witcher-gear-enhanced-griffin-gauntlets",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64861149",
+          "lat": 83.89145,
+          "lng": -168.2819,
+          "name": "Griffin Steel Sword - Enhanced",
+          "slug": "witcher-gear-enhanced-griffin-steel-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887924",
+          "lat": 83.87982,
+          "lng": -168.00568,
+          "name": "Ursine Armor Set - Mastercrafted",
+          "slug": "witcher-gear-mastercrafted-ursine-armor",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862603",
+          "lat": 83.85045,
+          "lng": -168.32832,
+          "name": "Feline Silver Sword - Superior",
+          "slug": "witcher-gear-superior-cat-silver-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862605",
+          "lat": 83.89055,
+          "lng": -168.0648,
+          "name": "Feline Armor Set - Superior",
+          "slug": "witcher-gear-superior-feline-armor",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887916",
+          "lat": 83.889305,
+          "lng": -167.99565,
+          "name": "Ursine Steel Sword - Superior",
+          "slug": "witcher-gear-superior-ursine-steel-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862405",
+          "lat": 83.883064,
+          "lng": -168.16885,
+          "name": "Wolven Armor - Enhanced",
+          "slug": "wolven-armor-enhanced",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862408",
+          "lat": 83.89863,
+          "lng": -167.94685,
+          "name": "Wolven Boots - Enhanced",
+          "slug": "wolven-boots-enhanced",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64862403",
+          "lat": 83.865906,
+          "lng": -168.21506,
+          "name": "Wolven Silver Sword - Enhanced",
+          "slug": "wolven-silver-sword-enhanced",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64887941",
+          "lat": 83.885635,
+          "lng": -167.94046,
+          "name": "Wolven Silver Sword - Mastercrafted",
+          "slug": "wolven-silver-sword-mastercrafted",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "65302112",
+          "lat": 83.90746,
+          "lng": -167.96625,
+          "name": "Fringilla Vigo",
+          "slug": "156187",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302095",
+          "lat": 83.907425,
+          "lng": -167.96674,
+          "name": "John Natalis",
+          "slug": "156188",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302152",
+          "lat": 83.90741,
+          "lng": -167.96577,
+          "name": "Isengrim Faoiltiarna",
+          "slug": "156189",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302078",
+          "lat": 83.908554,
+          "lng": -167.97598,
+          "name": "Yennefer of Vengerberg",
+          "slug": "19728",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302194",
+          "lat": 83.91578,
+          "lng": -167.96878,
+          "name": "Vampire: Bruxa",
+          "slug": "20393",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302154",
+          "lat": 83.91585,
+          "lng": -167.96808,
+          "name": "Milva",
+          "slug": "20394",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302071",
+          "lat": 83.91579,
+          "lng": -167.96738,
+          "name": "Dandelion",
+          "slug": "20395",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302118",
+          "lat": 83.92283,
+          "lng": -168.10013,
+          "name": "Morvran Voorhis",
+          "slug": "20415",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302094",
+          "lat": 83.92145,
+          "lng": -168.10281,
+          "name": "Esterad Thyssen",
+          "slug": "20419",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302068",
+          "lat": 83.91537,
+          "lng": -168.14711,
+          "name": "Cirilla Fiona Elen Riannon",
+          "slug": "20422",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302201",
+          "lat": 83.92716,
+          "lng": -167.87732,
+          "name": "Eredin Bréacc Glas: The Treacherous",
+          "slug": "216191",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302074",
+          "lat": 83.92716,
+          "lng": -167.87807,
+          "name": "Gaunter O'Dimm: Darkness",
+          "slug": "216192",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302163",
+          "lat": 83.927155,
+          "lng": -167.87665,
+          "name": "Francesca Findabair: Hope of the Aen Seidhe",
+          "slug": "216193",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302115",
+          "lat": 83.88955,
+          "lng": -168.16602,
+          "name": "Letho of Gulet",
+          "slug": "249432",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302070",
+          "lat": 83.928375,
+          "lng": -167.90956,
+          "name": "Cow / Bovine Defense Force",
+          "slug": "249439",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302156",
+          "lat": 83.91365,
+          "lng": -167.9524,
+          "name": "Saesenthessis",
+          "slug": "282778",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302075",
+          "lat": 83.90869,
+          "lng": -167.97469,
+          "name": "Toad",
+          "slug": "426134",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302080",
+          "lat": 83.906815,
+          "lng": -168.06583,
+          "name": "Geralt of Rivia",
+          "slug": "435457",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302129",
+          "lat": 83.92047,
+          "lng": -168.09984,
+          "name": "Tibor Eggebracht",
+          "slug": "435464",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302172",
+          "lat": 83.893036,
+          "lng": -167.95432,
+          "name": "Crone: Weavess",
+          "slug": "505229",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302148",
+          "lat": 83.915184,
+          "lng": -168.0738,
+          "name": "Havekar Healer",
+          "slug": "506132",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302082",
+          "lat": 83.91518,
+          "lng": -168.07303,
+          "name": "Scorch",
+          "slug": "506133",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302133",
+          "lat": 83.91519,
+          "lng": -168.07135,
+          "name": "Young Emissary",
+          "slug": "506135",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302162",
+          "lat": 83.91519,
+          "lng": -168.07048,
+          "name": "Francesca Findabair: Daisy of the Valley",
+          "slug": "506136",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302136",
+          "lat": 83.91581,
+          "lng": -168.00336,
+          "name": "Emhyr var Emreis: Invader of the North",
+          "slug": "506142",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302103",
+          "lat": 83.91581,
+          "lng": -168.00255,
+          "name": "Foltest: Son of Medell",
+          "slug": "506143",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302157",
+          "lat": 83.916145,
+          "lng": -168.00128,
+          "name": "Schirrú",
+          "slug": "506156",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302160",
+          "lat": 83.92036,
+          "lng": -168.09695,
+          "name": "Vrihedd Brigade Veteran",
+          "slug": "507280",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302149",
+          "lat": 83.91807,
+          "lng": -168.05463,
+          "name": "Havekar Smuggler",
+          "slug": "507281",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302153",
+          "lat": 83.908554,
+          "lng": -167.97511,
+          "name": "Mahakaman Defender",
+          "slug": "507283",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302069",
+          "lat": 83.9024,
+          "lng": -168.11856,
+          "name": "Commander's Horn",
+          "slug": "507285",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302125",
+          "lat": 83.9024,
+          "lng": -168.11935,
+          "name": "Siege Engineer",
+          "slug": "507286",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302114",
+          "lat": 83.902405,
+          "lng": -168.11772,
+          "name": "Impera Brigade Guard",
+          "slug": "507289",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302144",
+          "lat": 83.908554,
+          "lng": -167.97556,
+          "name": "Dwarven Skirmisher",
+          "slug": "507291",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302142",
+          "lat": 83.922844,
+          "lng": -168.09677,
+          "name": "Dol Blathanna Archer",
+          "slug": "507296",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302119",
+          "lat": 83.9024,
+          "lng": -168.1169,
+          "name": "Nausicaa Cavalry Rider",
+          "slug": "507297",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302135",
+          "lat": 83.902405,
+          "lng": -168.11609,
+          "name": "Emhyr var Emreis: Emperor of Nilfgaard",
+          "slug": "507298",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302143",
+          "lat": 83.91969,
+          "lng": -168.11644,
+          "name": "Dol Blathanna Scout",
+          "slug": "507300",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302126",
+          "lat": 83.91969,
+          "lng": -168.11563,
+          "name": "Siege Technician",
+          "slug": "507301",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302139",
+          "lat": 83.91969,
+          "lng": -168.11406,
+          "name": "Barclay Els",
+          "slug": "507303",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302134",
+          "lat": 83.896614,
+          "lng": -168.15752,
+          "name": "Zerrikanian Fire Scorpion",
+          "slug": "507304",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302106",
+          "lat": 83.896614,
+          "lng": -168.15494,
+          "name": "Albrich",
+          "slug": "507306",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302072",
+          "lat": 83.8972,
+          "lng": -168.15689,
+          "name": "Decoy",
+          "slug": "507307",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302110",
+          "lat": 83.89722,
+          "lng": -168.15442,
+          "name": "Cynthia",
+          "slug": "507310",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302117",
+          "lat": 83.89254,
+          "lng": -168.22894,
+          "name": "Morteisen",
+          "slug": "507316",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302097",
+          "lat": 83.89255,
+          "lng": -168.22728,
+          "name": "Poor Fucking Infantry",
+          "slug": "507318",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302111",
+          "lat": 83.89636,
+          "lng": -168.08578,
+          "name": "Etolian Auxiliary Archers",
+          "slug": "507320",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302108",
+          "lat": 83.89637,
+          "lng": -168.08492,
+          "name": "Black Infantry Archer",
+          "slug": "507321",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302113",
+          "lat": 83.89638,
+          "lng": -168.08406,
+          "name": "Heavy Zerrikanian Fire Scorpion",
+          "slug": "507322",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302121",
+          "lat": 83.896385,
+          "lng": -168.0832,
+          "name": "Rainfarn",
+          "slug": "507323",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302145",
+          "lat": 83.918015,
+          "lng": -168.09528,
+          "name": "Eithné",
+          "slug": "901663",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        }
+      ]
+    },
+    {
+      "slug": "vizima-palace",
+      "name": "Royal Palace in Vizima",
+      "tileUrl": "https://tiles.mapgenie.io/games/witcher-3/vizima-palace/default-v6/{z}/{y}/{x}.jpg",
+      "minZoom": 8,
+      "maxZoom": 14,
+      "initialZoom": 11,
+      "initialLat": 83.90524,
+      "initialLng": -168.14908,
+      "backgroundColor": "#FFFFFF",
+      "types": [
+        {
+          "slug": "130",
+          "name": "Locations"
+        },
+        {
+          "slug": "608",
+          "name": "Point of Interest"
+        },
+        {
+          "slug": "610",
+          "name": "Signpost"
+        },
+        {
+          "slug": "132",
+          "name": "Quests"
+        },
+        {
+          "slug": "632",
+          "name": "Main Quest"
+        },
+        {
+          "slug": "133",
+          "name": "Items"
+        },
+        {
+          "slug": "642",
+          "name": "Book"
+        },
+        {
+          "slug": "639",
+          "name": "Chest"
+        },
+        {
+          "slug": "641",
+          "name": "Gwent Card"
+        },
+        {
+          "slug": "134",
+          "name": "Other"
+        },
+        {
+          "slug": "647",
+          "name": "Miscellaneous"
+        }
+      ],
+      "markers": [
+        {
+          "taskId": "64859305",
+          "lat": 83.92143,
+          "lng": -168.06018,
+          "name": "Imperial Audience",
+          "slug": "555352",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859307",
+          "lat": 83.89683,
+          "lng": -168.1586,
+          "name": "The Nilfgaardian Connection",
+          "slug": "555353",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "65302104",
+          "lat": 83.89959,
+          "lng": -168.07469,
+          "name": "Foltest: The Siegemaster",
+          "slug": "555246",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        }
+      ]
+    },
+    {
+      "slug": "white-orchard",
+      "name": "White Orchard",
+      "tileUrl": "https://tiles.mapgenie.io/games/witcher-3/white-orchard/default-v2/{z}/{y}/{x}.jpg",
+      "minZoom": 8,
+      "maxZoom": 16,
+      "initialZoom": 12,
+      "initialLat": 83.90767,
+      "initialLng": -168.1262,
+      "backgroundColor": "#FFFFFF",
+      "types": [
+        {
+          "slug": "130",
+          "name": "Locations"
+        },
+        {
+          "slug": "595",
+          "name": "Abandoned Site"
+        },
+        {
+          "slug": "596",
+          "name": "Bandit Camp"
+        },
+        {
+          "slug": "617",
+          "name": "Contract"
+        },
+        {
+          "slug": "597",
+          "name": "Entrance"
+        },
+        {
+          "slug": "598",
+          "name": "Guarded Treasure"
+        },
+        {
+          "slug": "604",
+          "name": "Monster Nest"
+        },
+        {
+          "slug": "605",
+          "name": "Notice Board"
+        },
+        {
+          "slug": "607",
+          "name": "Place of Power"
+        },
+        {
+          "slug": "608",
+          "name": "Point of Interest"
+        },
+        {
+          "slug": "610",
+          "name": "Signpost"
+        },
+        {
+          "slug": "611",
+          "name": "Smuggler's Cache"
+        },
+        {
+          "slug": "612",
+          "name": "Spoils of War"
+        },
+        {
+          "slug": "613",
+          "name": "Stash"
+        },
+        {
+          "slug": "131",
+          "name": "Services"
+        },
+        {
+          "slug": "619",
+          "name": "Armorer"
+        },
+        {
+          "slug": "620",
+          "name": "Armorer's Table"
+        },
+        {
+          "slug": "622",
+          "name": "Blacksmith"
+        },
+        {
+          "slug": "624",
+          "name": "Grindstone"
+        },
+        {
+          "slug": "627",
+          "name": "Herbalist"
+        },
+        {
+          "slug": "628",
+          "name": "Innkeep"
+        },
+        {
+          "slug": "629",
+          "name": "Shopkeeper"
+        },
+        {
+          "slug": "132",
+          "name": "Quests"
+        },
+        {
+          "slug": "637",
+          "name": "Hidden Treasure"
+        },
+        {
+          "slug": "632",
+          "name": "Main Quest"
+        },
+        {
+          "slug": "633",
+          "name": "Secondary Quest"
+        },
+        {
+          "slug": "133",
+          "name": "Items"
+        },
+        {
+          "slug": "642",
+          "name": "Book"
+        },
+        {
+          "slug": "639",
+          "name": "Chest"
+        },
+        {
+          "slug": "641",
+          "name": "Gwent Card"
+        },
+        {
+          "slug": "643",
+          "name": "Mutagen"
+        },
+        {
+          "slug": "646",
+          "name": "Quest Item"
+        },
+        {
+          "slug": "644",
+          "name": "Recipe"
+        },
+        {
+          "slug": "638",
+          "name": "Witcher Gear"
+        },
+        {
+          "slug": "134",
+          "name": "Other"
+        },
+        {
+          "slug": "647",
+          "name": "Miscellaneous"
+        }
+      ],
+      "markers": [
+        {
+          "taskId": "64889740",
+          "lat": 83.89483,
+          "lng": -168.01869,
+          "name": "Place of Power - Yrden",
+          "slug": "place-of-power",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889739",
+          "lat": 83.89286,
+          "lng": -168.12366,
+          "name": "Quen",
+          "slug": "place-of-power2",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889741",
+          "lat": 83.91419,
+          "lng": -167.91547,
+          "name": "Place of Power - Quen",
+          "slug": "place-of-power24",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889737",
+          "lat": 83.92088,
+          "lng": -168.10468,
+          "name": "Place of Power - Aard",
+          "slug": "place-of-power5",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889738",
+          "lat": 83.91123,
+          "lng": -168.17038,
+          "name": "Place of Power - Axii",
+          "slug": "place-of-power-axii",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64889736",
+          "lat": 83.916046,
+          "lng": -168.0994,
+          "name": "Place of Power - Igni",
+          "slug": "place-of-power-igni",
+          "typeSlug": "607",
+          "typeName": "Place of Power"
+        },
+        {
+          "taskId": "64885270",
+          "lat": 83.904594,
+          "lng": -168.11134,
+          "name": "Devil by the Well",
+          "slug": "contract-devil-by-the-well",
+          "typeSlug": "617",
+          "typeName": "Contract"
+        },
+        {
+          "taskId": "64859303",
+          "lat": 83.904976,
+          "lng": -168.06514,
+          "name": "The Incident in White Orchard",
+          "slug": "180892",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859302",
+          "lat": 83.917725,
+          "lng": -168.21387,
+          "name": "The Beast of White Orchard",
+          "slug": "180893",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "64859300",
+          "lat": 83.907524,
+          "lng": -167.90895,
+          "name": "Lilac and Gooseberries",
+          "slug": "20373",
+          "typeSlug": "632",
+          "typeName": "Main Quest"
+        },
+        {
+          "taskId": "65303145",
+          "lat": 83.90438,
+          "lng": -168.07106,
+          "name": "Faithful Friend",
+          "slug": "180894",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64859970",
+          "lat": 83.90789,
+          "lng": -168.12738,
+          "name": "A Frying Pan, Spick and Span",
+          "slug": "a-frying-pan-spick-and-span",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64859973",
+          "lat": 83.90058,
+          "lng": -167.92653,
+          "name": "Missing in Action",
+          "slug": "missing-in-action",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64859974",
+          "lat": 83.90511,
+          "lng": -168.17021,
+          "name": "On Death's Bed",
+          "slug": "on-deaths-bed",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64859975",
+          "lat": 83.91255,
+          "lng": -168.19489,
+          "name": "Precious Cargo",
+          "slug": "precious-cargo",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64859983",
+          "lat": 83.90376,
+          "lng": -168.08961,
+          "name": "Twisted Firestarter",
+          "slug": "twisted-firestarter",
+          "typeSlug": "633",
+          "typeName": "Secondary Quest"
+        },
+        {
+          "taskId": "64885271",
+          "lat": 83.91728,
+          "lng": -168.10512,
+          "name": "Scavenger Hunt: Viper School Gear",
+          "slug": "426264",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885272",
+          "lat": 83.91748,
+          "lng": -167.9978,
+          "name": "Deserter Gold",
+          "slug": "hidden-treasure",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885273",
+          "lat": 83.915215,
+          "lng": -168.02574,
+          "name": "Dirty Funds",
+          "slug": "hidden-treasure0",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64885274",
+          "lat": 83.91281,
+          "lng": -168.12909,
+          "name": "Temerian Valuables",
+          "slug": "treasure-hunt-temerian-valuables",
+          "typeSlug": "637",
+          "typeName": "Hidden Treasure"
+        },
+        {
+          "taskId": "64859976",
+          "lat": 83.90144,
+          "lng": -167.94733,
+          "name": "Diagram: Serpentine Steel Sword",
+          "slug": "serpentine-steel-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "64859977",
+          "lat": 83.91702,
+          "lng": -168.10435,
+          "name": "Diagram: Serpentine Silver Sword",
+          "slug": "witcher-gear-serpentine-silver-sword",
+          "typeSlug": "638",
+          "typeName": "Witcher Gear"
+        },
+        {
+          "taskId": "65302079",
+          "lat": 83.9054,
+          "lng": -168.07536,
+          "name": "Zoltan Chivay",
+          "slug": "180896",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302102",
+          "lat": 83.90539,
+          "lng": -168.06154,
+          "name": "Foltest: Lord Commander of the North",
+          "slug": "216199",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302092",
+          "lat": 83.90539,
+          "lng": -168.05983,
+          "name": "Catapult",
+          "slug": "216200",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302090",
+          "lat": 83.90539,
+          "lng": -168.0581,
+          "name": "Blue Stripes Commando",
+          "slug": "216201",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        },
+        {
+          "taskId": "65302093",
+          "lat": 83.90539,
+          "lng": -168.06326,
+          "name": "Crinfrid Reavers Dragon Hunter",
+          "slug": "216202",
+          "typeSlug": "641",
+          "typeName": "Gwent Card"
+        }
+      ]
+    }
+  ]
+}
