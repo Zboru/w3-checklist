@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="Checklista Wiedźmina 3 krok po kroku — baza, Serca z Kamienia i Krew i Wino. Bez pomijania, z linkami do IGN.">
+<title>Wiedźmin 3 — krok po kroku</title>
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-row">
+    <h1>Wiedźmin 3 <span class="sub">krok po kroku</span></h1>
+    <button id="menuBtn" class="icon-btn" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab active" role="tab" data-tab="plan">Plan gry</button>
+    <button class="tab" role="tab" data-tab="collections">Kolekcje</button>
+  </div>
+
+  <div class="progress" aria-live="polite">
+    <div class="bar"><div class="fill" id="fill"></div></div>
+    <span class="pct" id="pct">0%</span>
+    <span class="count" id="count">0/0</span>
+  </div>
+
+  <div class="controls">
+    <input id="search" type="search" placeholder="Szukaj (PL / EN)…" autocomplete="off" enterkeyhint="search">
+    <div class="toggles">
+      <label class="switch"><input type="checkbox" id="hideDone"><span>ukryj zrobione</span></label>
+      <label class="switch"><input type="checkbox" id="showTips"><span>pokaż wskazówki</span></label>
+    </div>
+  </div>
+
+  <button id="nextBtn" class="next">Następny krok <span aria-hidden="true">→</span></button>
+</header>
+
+<main id="main" class="main"></main>
+
+<section id="menu" class="menu" hidden>
+  <div class="menu-card">
+    <h2>Postęp</h2>
+    <p class="muted" id="menuSummary"></p>
+    <div class="menu-actions">
+      <button id="exportBtn" class="btn">Eksportuj (JSON)</button>
+      <label class="btn file">Importuj<input type="file" id="importInput" accept="application/json,.json" hidden></label>
+      <button id="shareBtn" class="btn">Kopiuj link z postępem</button>
+      <button id="resetBtn" class="btn danger">Reset</button>
+      <button id="closeMenu" class="btn ghost">Zamknij</button>
+    </div>
+    <p class="muted small" id="menuMsg" role="status"></p>
+  </div>
+</section>
+
+<footer class="foot">
+  <p>Dane: IGN (linki i kategorie) · arkusz „optimal order" · nazwy PL: Fandom.</p>
+  <p class="muted small" id="generated"></p>
+</footer>
+
+<script>window.__DATA__ = /*__DATA__*/;</script>
+<script>/*__JS__*/</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "witcher-checklist",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Mobile-first, step-by-step checklist for The Witcher 3 (base + expansions), built from IGN checklists, a community quest-order sheet and Fandom interwiki names.",
+  "scripts": {
+    "fetch": "node scripts/fetch-ign.mjs && node scripts/fetch-sheet.mjs && node scripts/fetch-pl.mjs",
+    "build": "node scripts/build.mjs",
+    "verify": "node scripts/verify.mjs",
+    "screenshot": "node scripts/screenshot.mjs",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "playwright": "^1.63.0"
+  }
+}

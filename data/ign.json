@@ -1,0 +1,4562 @@
+{
+  "objectId": "96dabe93-682c-4d61-9f49-e462af876af2",
+  "fetchedAt": "2026-09-30T19:51:42.900Z",
+  "categories": [
+    {
+      "id": 11463,
+      "slug": "the-wild-hunt-main-quests",
+      "name": "The Wild Hunt Main Quests",
+      "category": "Story Completion",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/09/21/ss-eda99e7f705a113d04ab2a7a36068f3e7b343d17-1920x1080-1790023225672.jpg",
+      "groups": [
+        {
+          "id": 8861,
+          "name": "Prologue Quests"
+        },
+        {
+          "id": 8862,
+          "name": "Act 1 - Velen"
+        },
+        {
+          "id": 8863,
+          "name": "Act 1 - Novigrad"
+        },
+        {
+          "id": 8864,
+          "name": "Act 1 - Skellige Isles"
+        },
+        {
+          "id": 8865,
+          "name": "Act 2"
+        },
+        {
+          "id": 8866,
+          "name": "Act 3"
+        }
+      ],
+      "items": [
+        {
+          "id": 64859123,
+          "name": "Kaer Morhen Complete",
+          "groupId": 8861,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Kaer_Morhen#kaer-morhen-complete"
+        },
+        {
+          "id": 64859300,
+          "name": "Lilac and Gooseberries Complete",
+          "groupId": 8861,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Lilac_and_Gooseberries#lilac-and-gooseberries-complete"
+        },
+        {
+          "id": 64859302,
+          "name": "The Beast of White Orchard Complete",
+          "groupId": 8861,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Monster_Hunts#the-beast-of-white-orchard-complete"
+        },
+        {
+          "id": 64859303,
+          "name": "The Incident at White Orchard Complete",
+          "groupId": 8861,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Incident_at_White_Orchard#the-incident-at-white-orchard-complete"
+        },
+        {
+          "id": 64859305,
+          "name": "Imperial Audience Complete",
+          "groupId": 8861,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Imperial_Audience#imperial-audience-complete"
+        },
+        {
+          "id": 64859306,
+          "name": "In Ciri's Footsteps Complete",
+          "groupId": 8861,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/In_Ciri%27s_Footsteps#in-ciris-footsteps-complete"
+        },
+        {
+          "id": 64859307,
+          "name": "The Nilfgaard Connection Complete",
+          "groupId": 8862,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Nilfgaard_Connection#the-nilfgaard-connection-complete"
+        },
+        {
+          "id": 65193900,
+          "name": "Bloody Baron Complete",
+          "groupId": 8862,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Bloody_Baron#bloody-baron-complete"
+        },
+        {
+          "id": 64859879,
+          "name": "Ciri's Story: King of the Wolves Complete",
+          "groupId": 8862,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ciri%27s_Story:_King_of_the_Wolves#ciris-story-king-of-the-wolves-complete"
+        },
+        {
+          "id": 64859411,
+          "name": "Family Matters Complete",
+          "groupId": 8862,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Family_Matters#family-matters-complete"
+        },
+        {
+          "id": 64859412,
+          "name": "A Princess in Distress Complete",
+          "groupId": 8862,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Princess_in_Distress#a-princess-in-distress-complete"
+        },
+        {
+          "id": 64859413,
+          "name": "Ciri's Story: The Race Complete",
+          "groupId": 8862,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ciri%27s_Story:_The_Race#ciris-story-the-race-complete"
+        },
+        {
+          "id": 64859467,
+          "name": "Ciri's Story: Out of the Shadows Complete",
+          "groupId": 8862,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ciri%27s_Story:_Out_of_the_Shadows#ciris-story-out-of-the-shadows-complete"
+        },
+        {
+          "id": 64859468,
+          "name": "Hunting a Witch Complete",
+          "groupId": 8862,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hunting_a_Witch#hunting-a-witch-complete"
+        },
+        {
+          "id": 64859469,
+          "name": "Wandering in the Dark Complete",
+          "groupId": 8862,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Walkthrough#wandering-in-the-dark-complete"
+        },
+        {
+          "id": 64859470,
+          "name": "Ladies of the Wood Complete",
+          "groupId": 8862,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ladies_of_the_Wood#ladies-of-the-wood-complete"
+        },
+        {
+          "id": 64859471,
+          "name": "The Whispering Hillock Complete",
+          "groupId": 8862,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Whispering_Hillock#the-whispering-hillock-complete"
+        },
+        {
+          "id": 64859473,
+          "name": "Ciri's Story: Fleeing the Bog Complete",
+          "groupId": 8862,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ciri%27s_Story:_Fleeing_the_Bog#ciris-story-fleeing-the-bog-complete"
+        },
+        {
+          "id": 64859559,
+          "name": "Pyres of Novigrad Complete",
+          "groupId": 8863,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Pyres_of_Novigrad#pyres-of-novigrad-complete"
+        },
+        {
+          "id": 64859560,
+          "name": "Novigrad Dreaming Complete",
+          "groupId": 8863,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Dreaming#novigrad-dreaming-complete"
+        },
+        {
+          "id": 64859566,
+          "name": "Broken Flowers Complete",
+          "groupId": 8863,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Broken_Flowers#broken-flowers-complete"
+        },
+        {
+          "id": 64859567,
+          "name": "Get Junior Complete",
+          "groupId": 8863,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Get_Junior#get-junior-complete"
+        },
+        {
+          "id": 64859568,
+          "name": "Ciri's Story: Visiting Junior Complete",
+          "groupId": 8863,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ciri%27s_Story:_Visiting_Junior#ciris-story-visiting-junior-complete"
+        },
+        {
+          "id": 64859575,
+          "name": "Count Reuven's Treasure Complete",
+          "groupId": 8863,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Count_Reuven%27s_Treasure#count-reuvens-treasure-complete"
+        },
+        {
+          "id": 64859576,
+          "name": "The Play's The Thing Complete",
+          "groupId": 8863,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Play%27s_The_Thing#the-plays-the-thing-complete"
+        },
+        {
+          "id": 64859577,
+          "name": "Poet Under Pressure Complete",
+          "groupId": 8863,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Poet_Under_Pressure#poet-under-pressure-complete"
+        },
+        {
+          "id": 64859578,
+          "name": "Ciri's Story: Breakneck Speed Complete",
+          "groupId": 8863,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ciri%27s_Story:_Breakneck_Speed#ciris-story-breakneck-speed-complete"
+        },
+        {
+          "id": 64859579,
+          "name": "Destination: Skellige Complete",
+          "groupId": 8864,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Destination:_Skellige#destination-skellige-complete"
+        },
+        {
+          "id": 64859956,
+          "name": "The King is Dead - Long Live the King Complete",
+          "groupId": 8864,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_King_is_Dead_-_Long_Live_The_King#the-king-is-dead-long-live-the-king-complete"
+        },
+        {
+          "id": 64859887,
+          "name": "Echoes of the Past Complete",
+          "groupId": 8864,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Echoes_of_the_Past#echoes-of-the-past-complete"
+        },
+        {
+          "id": 64859888,
+          "name": "Missing Persons Complete",
+          "groupId": 8864,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Missing_Persons#missing-persons-complete"
+        },
+        {
+          "id": 64859890,
+          "name": "Nameless Complete",
+          "groupId": 8864,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Nameless#nameless-complete"
+        },
+        {
+          "id": 64859891,
+          "name": "The Calm Before the Storm Complete",
+          "groupId": 8864,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Calm_Before_the_Storm#the-calm-before-the-storm-complete"
+        },
+        {
+          "id": 64859898,
+          "name": "Ugly Baby Complete",
+          "groupId": 8865,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ugly_Baby#ugly-baby-complete"
+        },
+        {
+          "id": 64859899,
+          "name": "The Isle of Mists Complete",
+          "groupId": 8865,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Isle_of_Mists#the-isle-of-mists-complete"
+        },
+        {
+          "id": 64859900,
+          "name": "The Battle of Kaer Morhen Complete",
+          "groupId": 8865,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Battle_of_Kaer_Morhen#the-battle-of-kaer-morhen-complete"
+        },
+        {
+          "id": 64859901,
+          "name": "Blood on the Battlefield Complete",
+          "groupId": 8865,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_on_the_Battlefield#blood-on-the-battlefield-complete"
+        },
+        {
+          "id": 64859902,
+          "name": "Bald Mountain Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Bald_Mountain#bald-mountain-complete"
+        },
+        {
+          "id": 64859944,
+          "name": "Blindingly Obvious Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blindingly_Obvious#blindingly-obvious-complete"
+        },
+        {
+          "id": 64859945,
+          "name": "The Great Escape Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Final_Preparations"
+        },
+        {
+          "id": 64859946,
+          "name": "Payback Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Final_Preparations"
+        },
+        {
+          "id": 64859957,
+          "name": "Through Time and Space Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Final_Preparations"
+        },
+        {
+          "id": 64859947,
+          "name": "Final Preparations Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Final_Preparations#final-preparations-complete"
+        },
+        {
+          "id": 64859949,
+          "name": "Battle Preparations Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Battle_Preparations#battle-preparations-complete"
+        },
+        {
+          "id": 64859950,
+          "name": "On Thin Ice Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/On_Thin_Ice#on-thin-ice-complete"
+        },
+        {
+          "id": 64859951,
+          "name": "Tedd Deireadh, The Final Age Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Tedd_Deireadh,_The_Final_Age#tedd-deireadh-the-final-age-complete"
+        },
+        {
+          "id": 65289244,
+          "name": "Disturbance Complete",
+          "groupId": 8865,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Disturbance#disturbance-complete"
+        },
+        {
+          "id": 65290241,
+          "name": "To Bait a Forktail... Complete",
+          "groupId": 8865,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/To_Bait_a_Forktail...#to-bait-a-forktail-complete"
+        },
+        {
+          "id": 65290242,
+          "name": "The Final Trial Complete",
+          "groupId": 8865,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Final_Trial#the-final-trial-complete"
+        },
+        {
+          "id": 65290243,
+          "name": "Va Fail, Elaine Complete",
+          "groupId": 8865,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Va_Fail,_Elaine#va-fail-elaine-complete"
+        },
+        {
+          "id": 65290245,
+          "name": "Brothers in Arms: Nilfgaard Complete",
+          "groupId": 8865,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Brothers_in_Arms:_Nilfgaard#brothers-in-arms-nilfgaard-complete"
+        },
+        {
+          "id": 64860993,
+          "name": "Brothers in Arms: Novigrad Complete",
+          "groupId": 8865,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Brothers_in_Arms:_Novigrad#brothers-in-arms-novigrad-complete"
+        },
+        {
+          "id": 64885309,
+          "name": "Brothers in Arms: Skellige Complete",
+          "groupId": 8865,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Brothers_in_Arms:_Skellige#brothers-in-arms-skellige-complete"
+        },
+        {
+          "id": 64860022,
+          "name": "Brothers in Arms: Velen Complete",
+          "groupId": 8865,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Brothers_in_Arms:_Velen#brothers-in-arms-velen-complete"
+        },
+        {
+          "id": 65290246,
+          "name": "The Sunstone Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Sunstone#the-sunstone-complete"
+        },
+        {
+          "id": 65290247,
+          "name": "Veni Vidi Vigo Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Veni_Vidi_Vigo#veni-vidi-vigo-complete"
+        },
+        {
+          "id": 65290248,
+          "name": "Child of the Elder Blood Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Child_of_the_Elder_Blood#child-of-the-elder-blood-complete"
+        },
+        {
+          "id": 65308857,
+          "name": "Skjall's Grave Complete",
+          "groupId": 8866,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Skjall%27s_Grave#skjalls-grave-complete"
+        }
+      ]
+    },
+    {
+      "id": 14624,
+      "slug": "side-quests",
+      "name": "Side Quests",
+      "category": "Story Completion",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/09/21/ss-64eb760f9a2b67f6731a71cce3a8fb684b9af267-1920x1080-1790023320830.jpg",
+      "groups": [
+        {
+          "id": 3470,
+          "name": "White Orchard Side Quests"
+        },
+        {
+          "id": 3471,
+          "name": "Velen Side Quests"
+        },
+        {
+          "id": 3472,
+          "name": "Novigrad Side Quests"
+        },
+        {
+          "id": 3473,
+          "name": "Skellige Side Quests"
+        },
+        {
+          "id": 8860,
+          "name": "Heart of Stones Side Quests"
+        }
+      ],
+      "items": [
+        {
+          "id": 64859970,
+          "name": "A Frying Pan, Spick and Span Complete",
+          "groupId": 3470,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Frying_Pan,_Spick_and_Span#a-frying-pan-spick-and-span-complete"
+        },
+        {
+          "id": 64885270,
+          "name": "Contract: Devil by the Well Complete",
+          "groupId": 3470,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Devil_by_the_Well#contract-devil-by-the-well-complete"
+        },
+        {
+          "id": 64859973,
+          "name": "Missing in Action Complete",
+          "groupId": 3470,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Missing_in_Action#missing-in-action-complete"
+        },
+        {
+          "id": 64859974,
+          "name": "On Death's Bed Complete",
+          "groupId": 3470,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/On_Death%27s_Bed#on-deaths-bed-complete"
+        },
+        {
+          "id": 64859975,
+          "name": "Precious Cargo Complete",
+          "groupId": 3470,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Precious_Cargo#precious-cargo-complete"
+        },
+        {
+          "id": 64885271,
+          "name": "Scavenger Hunt: Viper School Gear Complete",
+          "groupId": 3470,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Viper_School_Gear#scavenger-hunt-viper-school-gear-complete"
+        },
+        {
+          "id": 64885272,
+          "name": "Treasure Hunt: Deserter Gold Complete",
+          "groupId": 3470,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#treasure-hunt-deserter-gold-complete"
+        },
+        {
+          "id": 64885273,
+          "name": "Treasure Hunt: Dirty Funds Complete",
+          "groupId": 3470,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#treasure-hunt-dirty-funds-complete"
+        },
+        {
+          "id": 64885274,
+          "name": "Treasure Hunt: Temerian Valuables Complete",
+          "groupId": 3470,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#treasure-hunt-temerian-valuables-complete"
+        },
+        {
+          "id": 64859983,
+          "name": "Twisted Firestarter Complete",
+          "groupId": 3470,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#twisted-firestarter-complete"
+        },
+        {
+          "id": 64860015,
+          "name": "A Dog's Life Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Dog%27s_Life#a-dogs-life-complete"
+        },
+        {
+          "id": 64860016,
+          "name": "A Favor for a Friend Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Favor_for_a_Friend#a-favor-for-a-friend-complete"
+        },
+        {
+          "id": 64860017,
+          "name": "A Greedy God Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Greedy_God#a-greedy-god-complete"
+        },
+        {
+          "id": 64860018,
+          "name": "A Towerful of Mice Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Towerful_of_Mice#a-towerful-of-mice-complete"
+        },
+        {
+          "id": 64860521,
+          "name": "An Invitation from Keira Metz Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/An_Invitation_from_Keira_Metz#an-invitation-from-keira-metz-complete"
+        },
+        {
+          "id": 64860020,
+          "name": "Bitter Harvest Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Bitter_Harvest#bitter-harvest-complete"
+        },
+        {
+          "id": 64860022,
+          "name": "Brothers in Arms: Velen Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Brothers_in_Arms:_Velen#brothers-in-arms-velen-complete"
+        },
+        {
+          "id": 64860023,
+          "name": "Ciri's Room Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ciri%27s_Room#ciris-room-complete"
+        },
+        {
+          "id": 64885275,
+          "name": "Contract: Jenny o' the Woods Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Jenny_o%27_the_Woods#contract-jenny-o-the-woods-complete"
+        },
+        {
+          "id": 64885276,
+          "name": "Contract: Missing Brother Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Missing_Brother#contract-missing-brother-complete"
+        },
+        {
+          "id": 64885277,
+          "name": "Contract: Mysterious Tracks Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Mysterious_Tracks#contract-mysterious-tracks-complete"
+        },
+        {
+          "id": 64885278,
+          "name": "Contract: Phantom of the Trade Route Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Phantom_of_the_Trade_Route#contract-phantom-of-the-trade-route-complete"
+        },
+        {
+          "id": 64885279,
+          "name": "Contract: Shrieker Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Shrieker#contract-shrieker-complete"
+        },
+        {
+          "id": 64885280,
+          "name": "Contract: Swamp Thing Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Swamp_Thing#contract-swamp-thing-complete"
+        },
+        {
+          "id": 64885281,
+          "name": "Contract: The Merry Widow Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_Merry_Widow#contract-the-merry-widow-complete"
+        },
+        {
+          "id": 64885282,
+          "name": "Contract: The Mystery of the Byways Murders Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_Mystery_of_the_Byways_Murders#contract-the-mystery-of-the-byways-murders-complete"
+        },
+        {
+          "id": 64885283,
+          "name": "Contract: Woodland Beast Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Woodland_Beast#contract-woodland-beast-complete"
+        },
+        {
+          "id": 64860414,
+          "name": "Death by Fire Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Death_by_Fire#death-by-fire-complete"
+        },
+        {
+          "id": 64860415,
+          "name": "Defender of the Faith Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Defender_of_the_Faith#defender-of-the-faith-complete"
+        },
+        {
+          "id": 64860416,
+          "name": "Fake Papers Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Fake_Papers#fake-papers-complete"
+        },
+        {
+          "id": 64860420,
+          "name": "For the Advancement of Learning Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/For_the_Advancement_of_Learning#for-the-advancement-of-learning-complete"
+        },
+        {
+          "id": 64860421,
+          "name": "Forefather's Eve Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Forefather%27s_Eve#forefathers-eve-complete"
+        },
+        {
+          "id": 64860422,
+          "name": "Funeral Pyres Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Funeral_Pyres#funeral-pyres-complete"
+        },
+        {
+          "id": 64860423,
+          "name": "Ghosts of the Past Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ghosts_of_the_Past#ghosts-of-the-past-complete"
+        },
+        {
+          "id": 64885285,
+          "name": "Gwent: Velen Players Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent:_Velen_Players#gwent-velen-players-complete"
+        },
+        {
+          "id": 64860425,
+          "name": "Harassing a Troll Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Harassing_a_Troll#harassing-a-troll-complete"
+        },
+        {
+          "id": 64860426,
+          "name": "Last Rites Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Last_Rites#last-rites-complete"
+        },
+        {
+          "id": 64860428,
+          "name": "Magic Lamp Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Magic_Lamp#magic-lamp-complete"
+        },
+        {
+          "id": 64860429,
+          "name": "Man's Best Friend Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Man%27s_Best_Friend#mans-best-friend-complete"
+        },
+        {
+          "id": 64860430,
+          "name": "Patrol Gone Missing Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Patrol_Gone_Missing#patrol-gone-missing-complete"
+        },
+        {
+          "id": 64885286,
+          "name": "Races: Crow's Perch Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Races:_Crow%27s_Perch#races-crows-perch-complete"
+        },
+        {
+          "id": 64860433,
+          "name": "Return to Crookback Bog Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Return_to_Crookback_Bog#return-to-crookback-bog-complete"
+        },
+        {
+          "id": 64885287,
+          "name": "Scavenger Hunt: Griffin School Gear Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Griffin_School_Gear#scavenger-hunt-griffin-school-gear-complete"
+        },
+        {
+          "id": 64860506,
+          "name": "The Fall of the House of Reardon Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#the-fall-of-the-house-of-reardon-complete"
+        },
+        {
+          "id": 64860507,
+          "name": "The Truth is in the Stars Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#the-truth-is-in-the-stars-complete"
+        },
+        {
+          "id": 64885288,
+          "name": "Treasure Hunt: An Unfortunate Turn of Events Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hidden_Treasure#treasure-hunt-an-unfortunate-turn-of-events-complete"
+        },
+        {
+          "id": 64885289,
+          "name": "Treasure Hunt: A Costly Mistake Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hidden_Treasure#treasure-hunt-a-costly-mistake-complete"
+        },
+        {
+          "id": 64885290,
+          "name": "Treasure Hunt: Blood Gold Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hidden_Treasure#treasure-hunt-blood-gold-complete"
+        },
+        {
+          "id": 64885291,
+          "name": "Treasure Hunt: Hidden From the World Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hidden_Treasure#treasure-hunt-hidden-from-the-world-complete"
+        },
+        {
+          "id": 64885292,
+          "name": "Treasure Hunt: Lost Goods Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hidden_Treasure#treasure-hunt-lost-goods-complete"
+        },
+        {
+          "id": 64885293,
+          "name": "Treasure Hunt: Out of the Frying Pan, Into the Fire Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hidden_Treasure#treasure-hunt-out-of-the-frying-pan-into-the-fire-complete"
+        },
+        {
+          "id": 64885294,
+          "name": "Treasure Hunt: Sunken Chest Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hidden_Treasure#treasure-hunt-sunken-chest-complete"
+        },
+        {
+          "id": 64885295,
+          "name": "Treasure Hunt: Sunken Treasure Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hidden_Treasure#treasure-hunt-sunken-treasure-complete"
+        },
+        {
+          "id": 64885296,
+          "name": "Treasure Hunt: The Things Men Do For Coin... Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hidden_Treasure#treasure-hunt-the-things-men-do-for-coin-complete"
+        },
+        {
+          "id": 64885297,
+          "name": "Treasure Hunt: Tough Luck Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hidden_Treasure#treasure-hunt-tough-luck-complete"
+        },
+        {
+          "id": 64860518,
+          "name": "Wild at Heart Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#wild-at-heart-complete"
+        },
+        {
+          "id": 64860519,
+          "name": "Witcher Wannabe Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#witcher-wannabe-complete"
+        },
+        {
+          "id": 64860520,
+          "name": "In The Eternal Fire's Shadow Complete",
+          "groupId": 3471,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/In_the_Eternal_Fire%27s_Shadow#in-the-eternal-fires-shadow-complete"
+        },
+        {
+          "id": 64860987,
+          "name": "A Deadly Plot Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Deadly_Plot#a-deadly-plot-complete"
+        },
+        {
+          "id": 64860988,
+          "name": "A Dangerous Game Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Dangerous_Game#a-dangerous-game-complete"
+        },
+        {
+          "id": 64860989,
+          "name": "An Eye for an Eye Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/An_Eye_for_an_Eye#an-eye-for-an-eye-complete"
+        },
+        {
+          "id": 64860990,
+          "name": "A Favor For Radovid Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Favor_For_Radovid#a-favor-for-radovid-complete"
+        },
+        {
+          "id": 64860991,
+          "name": "A Matter of Life and Death Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Matter_of_Life_and_Death#a-matter-of-life-and-death-complete"
+        },
+        {
+          "id": 64860992,
+          "name": "Black Pearl Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Black_Pearl#black-pearl-complete"
+        },
+        {
+          "id": 64860993,
+          "name": "Brothers in Arms: Novigrad Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Brothers_in_Arms:_Novigrad#brothers-in-arms-novigrad-complete"
+        },
+        {
+          "id": 64860994,
+          "name": "Cabaret Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Cabaret#cabaret-complete"
+        },
+        {
+          "id": 64860995,
+          "name": "Carnal Sins Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Carnal_Sins#carnal-sins-complete"
+        },
+        {
+          "id": 64860996,
+          "name": "Closed City Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Closed_City#closed-city-complete"
+        },
+        {
+          "id": 64885298,
+          "name": "Contract: An Elusive Thief Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_An_Elusive_Thief#contract-an-elusive-thief-complete"
+        },
+        {
+          "id": 64885299,
+          "name": "Contract: Deadly Delight Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Deadly_Delight#contract-deadly-delight-complete"
+        },
+        {
+          "id": 64885300,
+          "name": "Contract: Doors Slamming Shut Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Doors_Slamming_Shut#contract-doors-slamming-shut-complete"
+        },
+        {
+          "id": 64885301,
+          "name": "Contract: Lord of the Wood Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Lord_of_the_Wood#contract-lord-of-the-wood-complete"
+        },
+        {
+          "id": 64885302,
+          "name": "Contract: The Apiarian Phantom Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_Apiarian_Phantom#contract-the-apiarian-phantom-complete"
+        },
+        {
+          "id": 64885304,
+          "name": "Contract: The Oxenfurt Drunk Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_Oxenfurt_Drunk#contract-the-oxenfurt-drunk-complete"
+        },
+        {
+          "id": 64885305,
+          "name": "Contract: The Creature from Oxenfurt Forest Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_Creature_from_Oxenfurt_Forest#contract-the-creature-from-oxenfurt-forest-complete"
+        },
+        {
+          "id": 64885303,
+          "name": "Contract: The White Lady Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_White_Lady#contract-the-white-lady-complete"
+        },
+        {
+          "id": 64861052,
+          "name": "Empty Coop Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Empty_Coop#empty-coop-complete"
+        },
+        {
+          "id": 64861053,
+          "name": "Fencing Lessons Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Fencing_Lessons#fencing-lessons-complete"
+        },
+        {
+          "id": 64885306,
+          "name": "Gwent: Big City Players Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent:_Big_City_Players#gwent-big-city-players-complete"
+        },
+        {
+          "id": 64861055,
+          "name": "Hey, You Wanna Look At My Stuff Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hey,_You_Wanna_Look_At_My_Stuff%3F#hey-you-wanna-look-at-my-stuff-complete"
+        },
+        {
+          "id": 64861056,
+          "name": "Little Red Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Little_Red#little-red-complete"
+        },
+        {
+          "id": 64861057,
+          "name": "Honor Among Thieves Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Honor_Among_Thieves#honor-among-thieves-complete"
+        },
+        {
+          "id": 64861058,
+          "name": "Message from an Old Friend Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Message_from_an_Old_Friend#message-from-an-old-friend-complete"
+        },
+        {
+          "id": 64861059,
+          "name": "Novigrad Hospitality Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Hospitality#novigrad-hospitality-complete"
+        },
+        {
+          "id": 64861060,
+          "name": "Now or Never Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#now-or-never-complete"
+        },
+        {
+          "id": 64861061,
+          "name": "Of Swords and Dumplings Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#of-swords-and-dumplings-complete"
+        },
+        {
+          "id": 64861062,
+          "name": "Reason of State Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#reason-of-state-complete"
+        },
+        {
+          "id": 64861068,
+          "name": "Redania's Most Wanted Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#redanias-most-wanted-complete"
+        },
+        {
+          "id": 64861070,
+          "name": "The Dwarven Document Dilemma Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#the-dwarven-document-dilemma-complete"
+        },
+        {
+          "id": 64861071,
+          "name": "The Flame of Hatred Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#the-flame-of-hatred-complete"
+        },
+        {
+          "id": 64861072,
+          "name": "The Gangs of Novigrad Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#the-gangs-of-novigrad-complete"
+        },
+        {
+          "id": 64861073,
+          "name": "The Most Truest of Basilisks Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#the-most-truest-of-basilisks-complete"
+        },
+        {
+          "id": 64861074,
+          "name": "The Nobleman Statuette Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#the-nobleman-statuette-complete"
+        },
+        {
+          "id": 64861075,
+          "name": "The Soldier Statuette Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#the-soldier-statuette-complete"
+        },
+        {
+          "id": 64861076,
+          "name": "The Volunteer Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#the-volunteer-complete"
+        },
+        {
+          "id": 64885307,
+          "name": "Scavenger Hunt: Cat School Gear Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#scavenger-hunt-cat-school-gear-complete"
+        },
+        {
+          "id": 64885308,
+          "name": "Scavenger Hunt: Griffin School Diagrams - Part 1 Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#scavenger-hunt-griffin-school-diagrams-part-1-complete"
+        },
+        {
+          "id": 64861089,
+          "name": "Thou Shalt Not Pass Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#thou-shalt-not-pass-complete"
+        },
+        {
+          "id": 64861090,
+          "name": "Warehouse of Woe Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#warehouse-of-woe-complete"
+        },
+        {
+          "id": 64861091,
+          "name": "Witch Hunter Raids Complete",
+          "groupId": 3472,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#witch-hunter-raids-complete"
+        },
+        {
+          "id": 64861101,
+          "name": "A Hallowed Horn Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Hallowed_Horn#a-hallowed-horn-complete"
+        },
+        {
+          "id": 64861102,
+          "name": "An Unpaid Debt Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/An_Unpaid_Debt#an-unpaid-debt-complete"
+        },
+        {
+          "id": 64885309,
+          "name": "Brothers in Arms: Skellige Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Brothers_in_Arms:_Skellige#brothers-in-arms-skellige-complete"
+        },
+        {
+          "id": 64885310,
+          "name": "Contract: Dragon Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Dragon#contract-dragon-complete"
+        },
+        {
+          "id": 64885311,
+          "name": "Contract: Here Comes the Groom Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Here_Comes_the_Groom#contract-here-comes-the-groom-complete"
+        },
+        {
+          "id": 64885312,
+          "name": "Contract: Muire D'yaeblen Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Muire_D%27yaeblen#contract-muire-dyaeblen-complete"
+        },
+        {
+          "id": 64885313,
+          "name": "Contract: Strange Beast Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Strange_Beast#contract-strange-beast-complete"
+        },
+        {
+          "id": 64885314,
+          "name": "Contract: The Phantom of Eldberg Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_Phantom_of_Eldberg#contract-the-phantom-of-eldberg-complete"
+        },
+        {
+          "id": 64861109,
+          "name": "For Fame and Glory Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/For_Fame_and_Glory#for-fame-and-glory-complete"
+        },
+        {
+          "id": 64861110,
+          "name": "In Wolf's Clothing Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/In_Wolf%27s_Clothing#in-wolfs-clothing-complete"
+        },
+        {
+          "id": 64861111,
+          "name": "In the Heart of the Woods Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/In_the_Heart_of_the_Woods#in-the-heart-of-the-woods-complete"
+        },
+        {
+          "id": 64861112,
+          "name": "Iron Maiden Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Iron_Maiden#iron-maiden-complete"
+        },
+        {
+          "id": 64861113,
+          "name": "King's Gambit Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/King%27s_Gambit#kings-gambit-complete"
+        },
+        {
+          "id": 64861114,
+          "name": "Master of the Arena Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Master_of_the_Arena#master-of-the-arena-complete"
+        },
+        {
+          "id": 64861116,
+          "name": "Possession Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Possession#possession-complete"
+        },
+        {
+          "id": 64861117,
+          "name": "Practicum in Advanced Alchemy Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Practicum_in_Advanced_Alchemy#practicum-in-advanced-alchemy-complete"
+        },
+        {
+          "id": 64885315,
+          "name": "Scavenger Hunt: Bear School Gear Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Bear_School_Gear#scavenger-hunt-bear-school-gear-complete"
+        },
+        {
+          "id": 64885316,
+          "name": "Scavenger Hunt: Bear School Gear Upgrade Diagrams - Part 1 Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Bear_School_Gear_Upgrade_Diagrams_-_Part_1#scavenger-hunt-bear-school-gear-upgrade-diagrams-part-1-complete"
+        },
+        {
+          "id": 64861123,
+          "name": "Shock Therapy Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Shock_Therapy#shock-therapy-complete"
+        },
+        {
+          "id": 64861124,
+          "name": "Stranger in a Strange Land Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#stranger-in-a-strange-land-complete"
+        },
+        {
+          "id": 64861125,
+          "name": "The Cave of Dreams Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#the-cave-of-dreams-complete"
+        },
+        {
+          "id": 64861128,
+          "name": "The Nithing Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#the-nithing-complete"
+        },
+        {
+          "id": 64861130,
+          "name": "The Price of Honor Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#the-price-of-honor-complete"
+        },
+        {
+          "id": 64861131,
+          "name": "The Family Blade Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#the-family-blade-complete"
+        },
+        {
+          "id": 64861132,
+          "name": "The Last Wish Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#the-last-wish-complete"
+        },
+        {
+          "id": 64861133,
+          "name": "The Lord of Undvik Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#the-lord-of-undvik-complete"
+        },
+        {
+          "id": 64861134,
+          "name": "The Path of Warriors Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#the-path-of-warriors-complete"
+        },
+        {
+          "id": 64861135,
+          "name": "The Sad Tale of the Grossbard Brothers Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#the-sad-tale-of-the-grossbard-brothers-complete"
+        },
+        {
+          "id": 64885317,
+          "name": "The Tower Outta Nowheres Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#the-tower-outta-nowheres-complete"
+        },
+        {
+          "id": 64861137,
+          "name": "Worthy of Trust Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Side_Quests#worthy-of-trust-complete"
+        },
+        {
+          "id": 65289184,
+          "name": "The Taxman Cometh Complete",
+          "groupId": 8860,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hearts_of_Stone#the-taxman-cometh-complete"
+        },
+        {
+          "id": 65303145,
+          "name": "Faithful Friend Complete",
+          "groupId": 3470,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Faithful_Friend#faithful-friend-complete"
+        },
+        {
+          "id": 65307087,
+          "name": "The Sad Tale of the Grossbart Brothers Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Sad_Tale_of_the_Grossbart_Brothers#the-sad-tale-of-the-grossbart-brothers-complete"
+        },
+        {
+          "id": 65309491,
+          "name": "Contract: Missing Son Complete",
+          "groupId": 3473,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Missing_Son#contract-missing-son-complete"
+        }
+      ]
+    },
+    {
+      "id": 16931,
+      "slug": "dlc-quests",
+      "name": "DLC Quests",
+      "category": "Story Completion",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/09/21/ss-0901e64e9d4b8ebaea8348c194e7a3644d2d832d-1920x1080-1790023389845.jpg",
+      "groups": [
+        {
+          "id": 3612,
+          "name": "Hearts of Stone Main Quests"
+        },
+        {
+          "id": 3613,
+          "name": "Hearts of Stone Side Quests"
+        },
+        {
+          "id": 3614,
+          "name": "Blood and Wine Main Quests"
+        },
+        {
+          "id": 3615,
+          "name": "Blood and Wine Side Quests"
+        }
+      ],
+      "items": [
+        {
+          "id": 64885318,
+          "name": "Evil's First Soft Touches Complete",
+          "groupId": 3612,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Evil%27s_First_Soft_Touches_Walkthrough#evils-first-soft-touches-complete"
+        },
+        {
+          "id": 64885319,
+          "name": "Open Sesame! Complete",
+          "groupId": 3612,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hearts_of_Stone#open-sesame-complete"
+        },
+        {
+          "id": 64885320,
+          "name": "Dead Man's Party Complete",
+          "groupId": 3612,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Dead_Man%27s_Party_Walkthrough#dead-mans-party-complete"
+        },
+        {
+          "id": 64885321,
+          "name": "Scenes From a Marriage Complete",
+          "groupId": 3612,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hearts_of_Stone#scenes-from-a-marriage-complete"
+        },
+        {
+          "id": 64885322,
+          "name": "Whatsoever a Man Soweth Complete",
+          "groupId": 3612,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hearts_of_Stone#whatsoever-a-man-soweth-complete"
+        },
+        {
+          "id": 64885323,
+          "name": "A Midnight Clear Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Midnight_Clear_Walkthrough#a-midnight-clear-complete"
+        },
+        {
+          "id": 64885324,
+          "name": "A Surprise Inheritance Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Surprise_Inheritance_Walkthrough#a-surprise-inheritance-complete"
+        },
+        {
+          "id": 64885325,
+          "name": "Avid Collector Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Avid_Collector#avid-collector-complete"
+        },
+        {
+          "id": 64885326,
+          "name": "Enchanting: Quality Has Its Price Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enchanting:_Quality_Has_Its_Price_Walkthrough#enchanting-quality-has-its-price-complete"
+        },
+        {
+          "id": 64885327,
+          "name": "Enchanting: Start-up Costs Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enchanting:_Start-up_Costs_Walkthrough#enchanting-start-up-costs-complete"
+        },
+        {
+          "id": 64885328,
+          "name": "From Ofier's Distant Shores Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/From_Ofier%27s_Distant_Shores_Walkthrough#from-ofiers-distant-shores-complete"
+        },
+        {
+          "id": 64885329,
+          "name": "Races: Swift as the Western Winds Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hearts_of_Stone#races-swift-as-the-western-winds-complete"
+        },
+        {
+          "id": 64885330,
+          "name": "Roses on a Red Field Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hearts_of_Stone#roses-on-a-red-field-complete"
+        },
+        {
+          "id": 64885331,
+          "name": "The Cursed Chapel Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hearts_of_Stone#the-cursed-chapel-complete"
+        },
+        {
+          "id": 64885332,
+          "name": "The Drakenborg Redemption Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enchanting:_Quality_Has_Its_Price_Walkthrough#the-drakenborg-redemption-complete"
+        },
+        {
+          "id": 64885333,
+          "name": "The Royal Air Force Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hearts_of_Stone#the-royal-air-force-complete"
+        },
+        {
+          "id": 64885334,
+          "name": "The Secret Life of Count Romilly Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Dark_Legacy_Walkthrough#the-secret-life-of-count-romilly-complete"
+        },
+        {
+          "id": 64885335,
+          "name": "The Sword, Famine and Perfidy Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hearts_of_Stone#the-sword-famine-and-perfidy-complete"
+        },
+        {
+          "id": 64885336,
+          "name": "Tinker, Hunter, Soldier, Spy Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hearts_of_Stone#tinker-hunter-soldier-spy-complete"
+        },
+        {
+          "id": 64885337,
+          "name": "Without a Trace Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Hearts_of_Stone#without-a-trace-complete"
+        },
+        {
+          "id": 64885357,
+          "name": "A Knight's Tales Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Knight%27s_Tales_Walkthrough#a-knights-tales-complete"
+        },
+        {
+          "id": 64885358,
+          "name": "A Portrait of the Witcher as an Old Man Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Portrait_of_the_Witcher_as_an_Old_Man_Walkthrough#a-portrait-of-the-witcher-as-an-old-man-complete"
+        },
+        {
+          "id": 64885359,
+          "name": "Big Feet to Fill Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Big_Feet_to_Fill_Walkthrough#big-feet-to-fill-complete"
+        },
+        {
+          "id": 64885360,
+          "name": "Contract: Big Game Hunter Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#contract-big-game-hunter-complete"
+        },
+        {
+          "id": 64885361,
+          "name": "Contract: Bovine Blues Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#contract-bovine-blues-complete"
+        },
+        {
+          "id": 64885362,
+          "name": "Contract: Equine Phantoms Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#contract-equine-phantoms-complete"
+        },
+        {
+          "id": 64885363,
+          "name": "Contract: Feet as Cold as Ice Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#contract-feet-as-cold-as-ice-complete"
+        },
+        {
+          "id": 64885364,
+          "name": "Contract: The Tufo Monster Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#contract-the-tufo-monster-complete"
+        },
+        {
+          "id": 64885365,
+          "name": "Duck, Duck, Goosed! Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#duck-duck-goosed-complete"
+        },
+        {
+          "id": 64885366,
+          "name": "Extreme Cosplay Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#extreme-cosplay-complete"
+        },
+        {
+          "id": 64885367,
+          "name": "Father Knows Worst Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#father-knows-worst-complete"
+        },
+        {
+          "id": 64885368,
+          "name": "Fists of Fury: Toussaint Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#fists-of-fury-toussaint-complete"
+        },
+        {
+          "id": 64885369,
+          "name": "Goodness, Gracious, Great Balls of Granite! Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#goodness-gracious-great-balls-of-granite-complete"
+        },
+        {
+          "id": 64885370,
+          "name": "Gwent: Never Fear, Skellige's Here Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#gwent-never-fear-skelliges-here-complete"
+        },
+        {
+          "id": 64885371,
+          "name": "Gwent: To Everything - Turn, Turn, Tournament! Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#gwent-to-everything-turn-turn-tournament-complete"
+        },
+        {
+          "id": 64885372,
+          "name": "Knight for Hire Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#knight-for-hire-complete"
+        },
+        {
+          "id": 64885373,
+          "name": "Master Master Master Master! Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#master-master-master-master-complete"
+        },
+        {
+          "id": 64885374,
+          "name": "Mutual of Beauclair's Wild Kingdom Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#mutual-of-beauclairs-wild-kingdom-complete"
+        },
+        {
+          "id": 64885375,
+          "name": "No Place Like Home Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#no-place-like-home-complete"
+        },
+        {
+          "id": 64885377,
+          "name": "Of Sheers and a Witcher I Sing Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#of-sheers-and-a-witcher-i-sing-complete"
+        },
+        {
+          "id": 64885376,
+          "name": "Paperchase Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#paperchase-complete"
+        },
+        {
+          "id": 64885378,
+          "name": "Raging Wolf Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#raging-wolf-complete"
+        },
+        {
+          "id": 64885379,
+          "name": "Scavenger Hunt: Grandmaster Feline Gear Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#scavenger-hunt-grandmaster-feline-gear-complete"
+        },
+        {
+          "id": 64885380,
+          "name": "Scavenger Hunt: Grandmaster Griffin Gear Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#scavenger-hunt-grandmaster-griffin-gear-complete"
+        },
+        {
+          "id": 64885381,
+          "name": "Scavenger Hunt: Grandmaster Manticore Gear Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#scavenger-hunt-grandmaster-manticore-gear-complete"
+        },
+        {
+          "id": 64885382,
+          "name": "Scavenger Hunt: Grandmaster Ursine Gear Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#scavenger-hunt-grandmaster-ursine-gear-complete"
+        },
+        {
+          "id": 64885383,
+          "name": "Scavenger Hunt: Grandmaster Wolven Gear Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#scavenger-hunt-grandmaster-wolven-gear-complete"
+        },
+        {
+          "id": 64885384,
+          "name": "Spoontaneous Profits! Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#spoontaneous-profits-complete"
+        },
+        {
+          "id": 64885385,
+          "name": "The Hunger Game Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#the-hunger-game-complete"
+        },
+        {
+          "id": 64885386,
+          "name": "The Warble of a Smitten Knight Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#the-warble-of-a-smitten-knight-complete"
+        },
+        {
+          "id": 64885387,
+          "name": "The Words of the Prophet Are Written on Sarcophagi Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#the-words-of-the-prophet-are-written-on-sarcophagi-complete"
+        },
+        {
+          "id": 64885388,
+          "name": "There Can Be Only One Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#there-can-be-only-one-complete"
+        },
+        {
+          "id": 64885389,
+          "name": "Till Death Do You Part Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#till-death-do-you-part-complete"
+        },
+        {
+          "id": 65307045,
+          "name": "Treasure Hunt: The Suffering of Young Francois Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-the-suffering-of-young-francois-complete"
+        },
+        {
+          "id": 64885390,
+          "name": "Treasure Hunt: Applied Escapology Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-applied-escapology-complete"
+        },
+        {
+          "id": 64885391,
+          "name": "Treasure Hunt: Around the World in... Eight Days Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-around-the-world-in-eight-days-complete"
+        },
+        {
+          "id": 64885392,
+          "name": "Treasure Hunt: But Other Than That, How Did You Enjoy the Play? Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-but-other-than-that-how-did-you-enjoy-the-play-complete"
+        },
+        {
+          "id": 64885393,
+          "name": "Treasure Hunt: Coin Doesn't Stink Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-coin-doesnt-stink-complete"
+        },
+        {
+          "id": 64885394,
+          "name": "Treasure Hunt: Don't Take Candy from a Stranger Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-dont-take-candy-from-a-stranger-complete"
+        },
+        {
+          "id": 64885395,
+          "name": "Treasure Hunt: Filibert Always Pays His Debts Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-filibert-always-pays-his-debts-complete"
+        },
+        {
+          "id": 64885396,
+          "name": "Treasure Hunt: The Black Widow Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-the-black-widow-complete"
+        },
+        {
+          "id": 64885397,
+          "name": "Treasure Hunt: The Curse of Carnarvon Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-the-curse-of-carnarvon-complete"
+        },
+        {
+          "id": 64885398,
+          "name": "Treasure Hunt: The Inconstant Gardener Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-the-inconstant-gardener-complete"
+        },
+        {
+          "id": 64885399,
+          "name": "Treasure Hunt: The Last Exploits of Selina's Gang Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-the-last-exploits-of-selinas-gang-complete"
+        },
+        {
+          "id": 64885401,
+          "name": "Treasure Hunt: The Toussaint Prison Experiment Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-the-toussaint-prison-experiment-complete"
+        },
+        {
+          "id": 64885402,
+          "name": "Treasure Hunt: Waiting for Goe and Doh Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-waiting-for-goe-and-doh-complete"
+        },
+        {
+          "id": 64885403,
+          "name": "Treasure Hunt: What Was This About Again? Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#treasure-hunt-what-was-this-about-again-complete"
+        },
+        {
+          "id": 65309732,
+          "name": "Turn and Face The Strange Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#turn-and-face-the-strange-complete"
+        },
+        {
+          "id": 64885405,
+          "name": "Vitner's Contract: Chuchote Cave Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#vitners-contract-chuchote-cave-complete"
+        },
+        {
+          "id": 64885406,
+          "name": "Vitner's Contract: Cleaning Those Hard-To-Reach Places Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#vitners-contract-cleaning-those-hard-to-reach-places-complete"
+        },
+        {
+          "id": 64885407,
+          "name": "Vitner's Contract: Dun Tynne Hillside Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#vitners-contract-dun-tynne-hillside-complete"
+        },
+        {
+          "id": 64885408,
+          "name": "Vitner's Contract: Griffin-in-the-Vines Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#vitners-contract-griffin-in-the-vines-complete"
+        },
+        {
+          "id": 64885409,
+          "name": "Vitner's Contract: Rivecalme Storehouse Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#vitners-contract-rivecalme-storehouse-complete"
+        },
+        {
+          "id": 64885410,
+          "name": "Wine Wars: Belgaard Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#wine-wars-belgaard-complete"
+        },
+        {
+          "id": 64885411,
+          "name": "Wine Wars: Coronata Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#wine-wars-coronata-complete"
+        },
+        {
+          "id": 64885412,
+          "name": "Wine Wars: Vermentino Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#wine-wars-vermentino-complete"
+        },
+        {
+          "id": 64885338,
+          "name": "Envoys, Wineboys Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#envoys-wineboys-complete"
+        },
+        {
+          "id": 64885339,
+          "name": "The Beast of Toussaint Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#the-beast-of-toussaint-complete"
+        },
+        {
+          "id": 64885353,
+          "name": "What Lies Unseen Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#what-lies-unseen-complete"
+        },
+        {
+          "id": 64885352,
+          "name": "Blood Simple Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#blood-simple-complete"
+        },
+        {
+          "id": 64885351,
+          "name": "Be It Ever So Humble Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Be_It_Ever_So_Humble#be-it-ever-so-humble-complete"
+        },
+        {
+          "id": 64885350,
+          "name": "Burlap is the New Stripe Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#burlap-is-the-new-stripe-complete"
+        },
+        {
+          "id": 64885349,
+          "name": "Pomp and Strange Circumstance Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#pomp-and-strange-circumstance-complete"
+        },
+        {
+          "id": 64885348,
+          "name": "Tesham Mutna Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#tesham-mutna-complete"
+        },
+        {
+          "id": 64885347,
+          "name": "Beyond Hill and Dale Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Beyond_Hill_and_Dale#beyond-hill-and-dale-complete"
+        },
+        {
+          "id": 64885346,
+          "name": "The Night of the Long Fangs Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#the-night-of-the-long-fangs-complete"
+        },
+        {
+          "id": 64885345,
+          "name": "Capture the Castle Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#capture-the-castle-complete"
+        },
+        {
+          "id": 64885344,
+          "name": "The Man from Cintra Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#the-man-from-cintra-complete"
+        },
+        {
+          "id": 64885343,
+          "name": "Wine is Sacred Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#wine-is-sacred-complete"
+        },
+        {
+          "id": 64885342,
+          "name": "Where Children Toil, Toys Waste Away Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#where-children-toil-toys-waste-away-complete"
+        },
+        {
+          "id": 64885341,
+          "name": "La Cage au Fou Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#la-cage-au-fou-complete"
+        },
+        {
+          "id": 64885340,
+          "name": "Blood Run Complete",
+          "groupId": 3614,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#blood-run-complete"
+        },
+        {
+          "id": 64887679,
+          "name": "Wine Wars: The Deus in the Machina Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#wine-wars-the-deus-in-the-machina-complete"
+        },
+        {
+          "id": 65286548,
+          "name": "A Dark Legacy Complete",
+          "groupId": 3613,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Dark_Legacy_Walkthrough#a-dark-legacy-complete"
+        },
+        {
+          "id": 65290181,
+          "name": "Amidst the Mill's Grist Complete",
+          "groupId": 3615,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Amidst_the_Mill%27s_Grist_Walkthrough#amidst-the-mills-grist-complete"
+        }
+      ]
+    },
+    {
+      "id": 16935,
+      "slug": "endings",
+      "name": "Endings",
+      "category": "Story Completion",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/09/21/ss-b74d60ee215337d765e4d20c8ca6710ae2362cc2-1920x1080-1790023202550.jpg",
+      "groups": [
+        {
+          "id": 8859,
+          "name": "Heart of Stone Endings"
+        }
+      ],
+      "items": [
+        {
+          "id": 64885585,
+          "name": "Epilogue 01 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#epilogue-01-complete"
+        },
+        {
+          "id": 64885586,
+          "name": "Epilogue 02 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#epilogue-02-complete"
+        },
+        {
+          "id": 64885587,
+          "name": "Epilogue 03 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#epilogue-03-complete"
+        },
+        {
+          "id": 64885588,
+          "name": "Geralt of Rivia Ending 1 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#geralt-of-rivia-ending-1-complete"
+        },
+        {
+          "id": 64885589,
+          "name": "Geralt of Rivia Ending 2 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#geralt-of-rivia-ending-2-complete"
+        },
+        {
+          "id": 64885590,
+          "name": "Geralt of Rivia Ending 3 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#geralt-of-rivia-ending-3-complete"
+        },
+        {
+          "id": 64885591,
+          "name": "Emperor Emhyr var Emries Ending 1 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#emperor-emhyr-var-emries-ending-1-complete"
+        },
+        {
+          "id": 64885592,
+          "name": "Emperor Emhyr var Emries Ending 2 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#emperor-emhyr-var-emries-ending-2-complete"
+        },
+        {
+          "id": 64885609,
+          "name": "Phillip Strengar Ending 1 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#phillip-strengar-ending-1-complete"
+        },
+        {
+          "id": 64885610,
+          "name": "Phillip Strengar Ending 2 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#phillip-strengar-ending-2-complete"
+        },
+        {
+          "id": 64885611,
+          "name": "The Leader of The North Ending 1 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#the-leader-of-the-north-ending-1-complete"
+        },
+        {
+          "id": 64885612,
+          "name": "The Leader of The North Ending 2 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#the-leader-of-the-north-ending-2-complete"
+        },
+        {
+          "id": 64885613,
+          "name": "The Leader of The North Ending 3 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#the-leader-of-the-north-ending-3-complete"
+        },
+        {
+          "id": 64885614,
+          "name": "The Leader of the Skellige Isles Ending 1 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#the-leader-of-the-skellige-isles-ending-1-complete"
+        },
+        {
+          "id": 64885615,
+          "name": "The Leader of the Skellige Isles Ending 2 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#the-leader-of-the-skellige-isles-ending-2-complete"
+        },
+        {
+          "id": 64885616,
+          "name": "The Leader of the Skellige Isles Ending 3 Complete",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Endings#the-leader-of-the-skellige-isles-ending-3-complete"
+        },
+        {
+          "id": 65287028,
+          "name": "'Don't Get Involved' Hearts of Stone Ending Complete",
+          "groupId": 8859,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Whatsoever_a_Man_Soweth_Walkthrough#dont-get-involved-hearts-of-stone-ending-complete"
+        },
+        {
+          "id": 65287029,
+          "name": "'Help Olgierd' Hearts of Stone Ending Complete",
+          "groupId": 8859,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Whatsoever_a_Man_Soweth_Walkthrough#help-olgierd-hearts-of-stone-ending-complete"
+        },
+        {
+          "id": 65286386,
+          "name": "Side With Horst Ending Achieved",
+          "groupId": 8859,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Open_Sesame!_Walkthrough#side-with-horst-ending-achieved"
+        },
+        {
+          "id": 65286387,
+          "name": "Side With Ewald Ending Achieved",
+          "groupId": 8859,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Open_Sesame!_Walkthrough#side-with-ewald-ending-achieved"
+        },
+        {
+          "id": 65287096,
+          "name": "Witcher Seasonings Complete",
+          "groupId": 8859,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Open_Sesame!_Walkthrough#witcher-seasonings-complete"
+        },
+        {
+          "id": 65287097,
+          "name": "Breaking and Entering Complete",
+          "groupId": 8859,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Open_Sesame!_Walkthrough#breaking-and-entering-complete"
+        },
+        {
+          "id": 65287098,
+          "name": "The Safecracker Complete",
+          "groupId": 8859,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Open_Sesame!_Walkthrough#the-safecracker-complete"
+        }
+      ]
+    },
+    {
+      "id": 18859,
+      "slug": "places-of-power",
+      "name": "Places of Power",
+      "category": "Locations",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/09/21/witcher-3-places-of-power-velen-magic-lamp-2-1790024039280.jpg",
+      "groups": [
+        {
+          "id": 3871,
+          "name": "White Orchard Places of Power"
+        },
+        {
+          "id": 3872,
+          "name": "Velen Places of Power"
+        },
+        {
+          "id": 3873,
+          "name": "Novigrad Places of Power"
+        },
+        {
+          "id": 3875,
+          "name": "Skellige Places of Power"
+        },
+        {
+          "id": 3874,
+          "name": "Toussaint Places of Power"
+        }
+      ],
+      "items": [
+        {
+          "id": 64889736,
+          "name": "White Orchard Cemetery - Igni Completed",
+          "groupId": 3871,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#white-orchard-cemetery-igni-completed"
+        },
+        {
+          "id": 64889737,
+          "name": "Northern Woods - Aard Completed",
+          "groupId": 3871,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#northern-woods-aard-completed"
+        },
+        {
+          "id": 64889738,
+          "name": "Western Forest - Axii Completed",
+          "groupId": 3871,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#western-forest-axii-completed"
+        },
+        {
+          "id": 64889739,
+          "name": "Griffin's Nest - Quen Completed",
+          "groupId": 3871,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#griffins-nest-quen-completed"
+        },
+        {
+          "id": 64889740,
+          "name": "Abandoned Site - Yrden Completed",
+          "groupId": 3871,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#abandoned-site-yrden-completed"
+        },
+        {
+          "id": 64889741,
+          "name": "Battlefield - Quen Completed",
+          "groupId": 3871,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#battlefield-quen-completed"
+        },
+        {
+          "id": 64889743,
+          "name": "Elven Ruins - Yrden Completed",
+          "groupId": 3872,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#elven-ruins-yrden-completed"
+        },
+        {
+          "id": 64889744,
+          "name": "Southern Frischlow Mire - Aard Completed",
+          "groupId": 3872,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#southern-frischlow-mire-aard-completed"
+        },
+        {
+          "id": 64889745,
+          "name": "Bald Mountain - Quen Completed",
+          "groupId": 3872,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#bald-mountain-quen-completed"
+        },
+        {
+          "id": 64889746,
+          "name": "The Ancient Oak - Igni Completed",
+          "groupId": 3872,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#the-ancient-oak-igni-completed"
+        },
+        {
+          "id": 64889747,
+          "name": "Downwarren - Yrden Completed",
+          "groupId": 3872,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#downwarren-yrden-completed"
+        },
+        {
+          "id": 64889748,
+          "name": "Elector’s Square - Igni Completed",
+          "groupId": 3873,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Places_of_Power#electors-square-igni-completed"
+        },
+        {
+          "id": 64889749,
+          "name": "Alness - Axii Completed",
+          "groupId": 3873,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Places_of_Power#alness-axii-completed"
+        },
+        {
+          "id": 64889750,
+          "name": "Crossroads - Axii Completed",
+          "groupId": 3875,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#crossroads-axii-completed"
+        },
+        {
+          "id": 64889757,
+          "name": "The Trail to Yngvar's Fang - Quen Completed",
+          "groupId": 3875,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#the-trail-to-yngvars-fang-quen-completed"
+        },
+        {
+          "id": 64889756,
+          "name": "Harviken - Yrden Completed",
+          "groupId": 3875,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#harviken-yrden-completed"
+        },
+        {
+          "id": 64889755,
+          "name": "Fornhala - Axii Completed",
+          "groupId": 3875,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#fornhala-axii-completed"
+        },
+        {
+          "id": 64889754,
+          "name": "Gedyneith - Aard Completed",
+          "groupId": 3875,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#gedyneith-aard-completed"
+        },
+        {
+          "id": 64889753,
+          "name": "Druid's Camp - Yrden Completed",
+          "groupId": 3875,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#druids-camp-yrden-completed"
+        },
+        {
+          "id": 64889752,
+          "name": "Svorlag - Igni Completed",
+          "groupId": 3875,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#svorlag-igni-completed"
+        },
+        {
+          "id": 64889751,
+          "name": "Ancient Crypt - Igni Completed",
+          "groupId": 3875,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#ancient-crypt-igni-completed"
+        },
+        {
+          "id": 64889758,
+          "name": "Hortense Vineyard - Aard Completed",
+          "groupId": 3874,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#hortense-vineyard-aard-completed"
+        },
+        {
+          "id": 64889762,
+          "name": "Fort Ussar Ruins - Igni Completed",
+          "groupId": 3874,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#fort-ussar-ruins-igni-completed"
+        },
+        {
+          "id": 64889760,
+          "name": "Trading Post Bog - Yrden Completed",
+          "groupId": 3874,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#trading-post-bog-yrden-completed"
+        },
+        {
+          "id": 64889759,
+          "name": "Termese Palace Ruins - Quen Completed",
+          "groupId": 3874,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#termese-palace-ruins-quen-completed"
+        },
+        {
+          "id": 65303592,
+          "name": "Lornruk's Island - Quen Completed",
+          "groupId": 3872,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#lornruks-island-quen-completed"
+        },
+        {
+          "id": 65303593,
+          "name": "Kaer Trolde - Quen Completed",
+          "groupId": 3875,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#kaer-trolde-quen-completed"
+        },
+        {
+          "id": 65303594,
+          "name": "Rioux-Cannes Outpost - Axii Completed",
+          "groupId": 3874,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Places_of_Power#rioux-cannes-outpost-axii-completed"
+        }
+      ]
+    },
+    {
+      "id": 19787,
+      "slug": "monster-hunts",
+      "name": "Monster Hunts",
+      "category": "Story Completion",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/09/21/ss-112b1e176c1bd271d8a565eacb6feaf90f240bb2-1920x1080-1790023277260.jpg",
+      "groups": [
+        {
+          "id": 3878,
+          "name": "White Orchard Monster Hunts"
+        },
+        {
+          "id": 3879,
+          "name": "Velen Monster Hunts"
+        },
+        {
+          "id": 3880,
+          "name": "Novigrad Monster Hunts"
+        },
+        {
+          "id": 3881,
+          "name": "Skellige Isles Monster Hunts"
+        },
+        {
+          "id": 3882,
+          "name": "Blood and Wine Monster Hunts"
+        }
+      ],
+      "items": [
+        {
+          "id": 64859302,
+          "name": "The Beast of White Orchard Complete",
+          "groupId": 3878,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Monster_Hunts#the-beast-of-white-orchard-complete"
+        },
+        {
+          "id": 64885270,
+          "name": "Contract: Devil by the Well Complete",
+          "groupId": 3878,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Devil_by_the_Well#contract-devil-by-the-well-complete"
+        },
+        {
+          "id": 64885275,
+          "name": "Contract: Jenny o' the Woods Complete",
+          "groupId": 3879,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Jenny_o%27_the_Woods#contract-jenny-o-the-woods-complete"
+        },
+        {
+          "id": 64885276,
+          "name": "Contract: Missing Brother Complete",
+          "groupId": 3879,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Missing_Brother#contract-missing-brother-complete"
+        },
+        {
+          "id": 64885277,
+          "name": "Contract: Mysterious Tracks Complete",
+          "groupId": 3879,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Mysterious_Tracks#contract-mysterious-tracks-complete"
+        },
+        {
+          "id": 64885278,
+          "name": "Contract: Phantom of the Trade Route Complete",
+          "groupId": 3879,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Phantom_of_the_Trade_Route#contract-phantom-of-the-trade-route-complete"
+        },
+        {
+          "id": 64885279,
+          "name": "Contract: Shrieker Complete",
+          "groupId": 3879,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Shrieker#contract-shrieker-complete"
+        },
+        {
+          "id": 64885280,
+          "name": "Contract: Swamp Thing Complete",
+          "groupId": 3879,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Swamp_Thing#contract-swamp-thing-complete"
+        },
+        {
+          "id": 64885281,
+          "name": "Contract: The Merry Widow Complete",
+          "groupId": 3879,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_Merry_Widow#contract-the-merry-widow-complete"
+        },
+        {
+          "id": 64885282,
+          "name": "Contract: The Mystery of the Byways Murders Complete",
+          "groupId": 3879,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_Mystery_of_the_Byways_Murders#contract-the-mystery-of-the-byways-murders-complete"
+        },
+        {
+          "id": 64885283,
+          "name": "Contract: Woodland Beast Complete",
+          "groupId": 3880,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Woodland_Beast#contract-woodland-beast-complete"
+        },
+        {
+          "id": 64885298,
+          "name": "Contract: An Elusive Thief Complete",
+          "groupId": 3880,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_An_Elusive_Thief#contract-an-elusive-thief-complete"
+        },
+        {
+          "id": 64885299,
+          "name": "Contract: Deadly Delight Complete",
+          "groupId": 3880,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Deadly_Delight#contract-deadly-delight-complete"
+        },
+        {
+          "id": 64885300,
+          "name": "Contract: Doors Slamming Shut Complete",
+          "groupId": 3880,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Doors_Slamming_Shut#contract-doors-slamming-shut-complete"
+        },
+        {
+          "id": 64885301,
+          "name": "Contract: Lord of the Wood Complete",
+          "groupId": 3880,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Lord_of_the_Wood#contract-lord-of-the-wood-complete"
+        },
+        {
+          "id": 64885302,
+          "name": "Contract: The Apiarian Phantom Complete",
+          "groupId": 3880,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_Apiarian_Phantom#contract-the-apiarian-phantom-complete"
+        },
+        {
+          "id": 64885303,
+          "name": "Contract: The White Lady Complete",
+          "groupId": 3880,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_White_Lady#contract-the-white-lady-complete"
+        },
+        {
+          "id": 64885304,
+          "name": "Contract: The Oxenfurt Drunk Complete",
+          "groupId": 3880,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_Oxenfurt_Drunk#contract-the-oxenfurt-drunk-complete"
+        },
+        {
+          "id": 64885305,
+          "name": "Contract: The Creature from Oxenfurt Forest Complete",
+          "groupId": 3880,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_Creature_from_Oxenfurt_Forest#contract-the-creature-from-oxenfurt-forest-complete"
+        },
+        {
+          "id": 64885310,
+          "name": "Contract: Dragon Complete",
+          "groupId": 3881,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Dragon#contract-dragon-complete"
+        },
+        {
+          "id": 64885311,
+          "name": "Contract: Here Comes the Groom Complete",
+          "groupId": 3881,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Here_Comes_the_Groom#contract-here-comes-the-groom-complete"
+        },
+        {
+          "id": 64885312,
+          "name": "Contract: Muire D'yaeblen Complete",
+          "groupId": 3881,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Muire_D%27yaeblen#contract-muire-dyaeblen-complete"
+        },
+        {
+          "id": 64885313,
+          "name": "Contract: Strange Beast Complete",
+          "groupId": 3881,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_Strange_Beast#contract-strange-beast-complete"
+        },
+        {
+          "id": 64885314,
+          "name": "Contract: The Phantom of Eldberg Complete",
+          "groupId": 3881,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Contract:_The_Phantom_of_Eldberg#contract-the-phantom-of-eldberg-complete"
+        },
+        {
+          "id": 64885365,
+          "name": "Duck, Duck, Goosed! Complete",
+          "groupId": 3882,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#duck-duck-goosed-complete"
+        },
+        {
+          "id": 64885360,
+          "name": "Contract: Big Game Hunter Complete",
+          "groupId": 3882,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#contract-big-game-hunter-complete"
+        },
+        {
+          "id": 64885361,
+          "name": "Contract: Bovine Blues Complete",
+          "groupId": 3882,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#contract-bovine-blues-complete"
+        },
+        {
+          "id": 64885362,
+          "name": "Contract: Equine Phantoms Complete",
+          "groupId": 3882,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#contract-equine-phantoms-complete"
+        },
+        {
+          "id": 64885363,
+          "name": "Contract: Feet as Cold as Ice Complete",
+          "groupId": 3882,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#contract-feet-as-cold-as-ice-complete"
+        },
+        {
+          "id": 64885364,
+          "name": "Contract: The Tufo Monster Complete",
+          "groupId": 3882,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Blood_and_Wine_Quests#contract-the-tufo-monster-complete"
+        }
+      ]
+    },
+    {
+      "id": 79786,
+      "slug": "gwent-cards",
+      "name": "Gwent Cards",
+      "category": "Collectibles",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/09/21/gwent-cards-1790024388319.png",
+      "groups": [
+        {
+          "id": 8853,
+          "name": "Any Deck"
+        },
+        {
+          "id": 8854,
+          "name": "Northern Realms Deck"
+        },
+        {
+          "id": 8855,
+          "name": "Nilfgaard Deck"
+        },
+        {
+          "id": 8856,
+          "name": "Scoia'tael Deck"
+        },
+        {
+          "id": 8857,
+          "name": "Monster Deck"
+        },
+        {
+          "id": 8858,
+          "name": "Skellige Deck"
+        }
+      ],
+      "items": [
+        {
+          "id": 65302068,
+          "name": "Cirilla Fiona Elen Riannon",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#cirilla-fiona-elen-riannon"
+        },
+        {
+          "id": 65302069,
+          "name": "Commander's Horn",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#commanders-horn"
+        },
+        {
+          "id": 65302070,
+          "name": "Cow",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#cow"
+        },
+        {
+          "id": 65302071,
+          "name": "Dandelion",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#dandelion"
+        },
+        {
+          "id": 65302072,
+          "name": "Decoy",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#decoy"
+        },
+        {
+          "id": 65302073,
+          "name": "Gaunter O'Dimm",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#gaunter-odimm"
+        },
+        {
+          "id": 65302074,
+          "name": "Gaunter O'Dimm: Darkness",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#gaunter-odimm-darkness"
+        },
+        {
+          "id": 65302075,
+          "name": "Olgierd von Everec",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#olgierd-von-everec"
+        },
+        {
+          "id": 65302076,
+          "name": "Triss Merigold",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#triss-merigold"
+        },
+        {
+          "id": 65302077,
+          "name": "Vesemir",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#vesemir"
+        },
+        {
+          "id": 65302078,
+          "name": "Yennefer of Vengerberg",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#yennefer-of-vengerberg"
+        },
+        {
+          "id": 65302079,
+          "name": "Zoltan Chivay",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#zoltan-chivay"
+        },
+        {
+          "id": 65302080,
+          "name": "Geralt of Rivia",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#geralt-of-rivia"
+        },
+        {
+          "id": 65302081,
+          "name": "Mysterious Elf",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#mysterious-elf"
+        },
+        {
+          "id": 65302082,
+          "name": "Scorch",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#scorch"
+        },
+        {
+          "id": 65302084,
+          "name": "Emiel Regis Rohellec Terzieff",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#emiel-regis-rohellec-terzieff"
+        },
+        {
+          "id": 65302085,
+          "name": "Villentretenmerth",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#villentretenmerth"
+        },
+        {
+          "id": 65302086,
+          "name": "Biting Frost",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#biting-frost"
+        },
+        {
+          "id": 65302087,
+          "name": "Clear Weather",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#clear-weather"
+        },
+        {
+          "id": 65302088,
+          "name": "Impenetrable Fog",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#impenetrable-fog"
+        },
+        {
+          "id": 65302089,
+          "name": "Torrential Rain",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#torrential-rain"
+        },
+        {
+          "id": 65302090,
+          "name": "Blue Stripes Commando",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#blue-stripes-commando"
+        },
+        {
+          "id": 65302092,
+          "name": "Catapault",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#catapault"
+        },
+        {
+          "id": 65302093,
+          "name": "Crinfrid Revears Dragon Hunter",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#crinfrid-revears-dragon-hunter"
+        },
+        {
+          "id": 65302094,
+          "name": "Esterad Thyssen",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#esterad-thyssen"
+        },
+        {
+          "id": 65302095,
+          "name": "John Natalis",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#john-natalis"
+        },
+        {
+          "id": 65302096,
+          "name": "Philippa Eilhart",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#philippa-eilhart"
+        },
+        {
+          "id": 65302097,
+          "name": "Poor Fucking Infantry",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#poor-fucking-infantry"
+        },
+        {
+          "id": 65302098,
+          "name": "Siege Tower",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#siege-tower"
+        },
+        {
+          "id": 65302099,
+          "name": "Sigismund Dijkstra",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#sigismund-dijkstra"
+        },
+        {
+          "id": 65302100,
+          "name": "Thaler",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#thaler"
+        },
+        {
+          "id": 65302101,
+          "name": "Vernon Roche",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#vernon-roche"
+        },
+        {
+          "id": 65302102,
+          "name": "Foltest: Lord Commander of the North",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#foltest-lord-commander-of-the-north"
+        },
+        {
+          "id": 65302103,
+          "name": "Foltest: Son of Medell",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#foltest-son-of-medell"
+        },
+        {
+          "id": 65302104,
+          "name": "Foltest: The Siegemaster",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#foltest-the-siegemaster"
+        },
+        {
+          "id": 65302105,
+          "name": "Foltest: The Steel-Forged",
+          "groupId": 8854,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#foltest-the-steel-forged"
+        },
+        {
+          "id": 65302106,
+          "name": "Albrich",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#albrich"
+        },
+        {
+          "id": 65302107,
+          "name": "Assire var Anahid",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#assire-var-anahid"
+        },
+        {
+          "id": 65302108,
+          "name": "Black Infantry Archer",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#black-infantry-archer"
+        },
+        {
+          "id": 65302109,
+          "name": "Cahir Mawr Dyffryn aep Ceallach",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#cahir-mawr-dyffryn-aep-ceallach"
+        },
+        {
+          "id": 65302110,
+          "name": "Cynthia",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#cynthia"
+        },
+        {
+          "id": 65302111,
+          "name": "Etolian Auxiliary Archers",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#etolian-auxiliary-archers"
+        },
+        {
+          "id": 65302112,
+          "name": "Fringilla Vigo",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#fringilla-vigo"
+        },
+        {
+          "id": 65302113,
+          "name": "Heavy Zerrikanian Fire Scorpion",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#heavy-zerrikanian-fire-scorpion"
+        },
+        {
+          "id": 65302114,
+          "name": "Impera Brigade Guard",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#impera-brigade-guard"
+        },
+        {
+          "id": 65302115,
+          "name": "Letho of Gulet",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#letho-of-gulet"
+        },
+        {
+          "id": 65302116,
+          "name": "Menno Coehoorn",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#menno-coehoorn"
+        },
+        {
+          "id": 65302117,
+          "name": "Morteisen",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#morteisen"
+        },
+        {
+          "id": 65302118,
+          "name": "Morvran Voorhis",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#morvran-voorhis"
+        },
+        {
+          "id": 65302119,
+          "name": "Nausicaa Cavalry Rider",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#nausicaa-cavalry-rider"
+        },
+        {
+          "id": 65302120,
+          "name": "Puttkammer",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#puttkammer"
+        },
+        {
+          "id": 65302121,
+          "name": "Rainfarn",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#rainfarn"
+        },
+        {
+          "id": 65302122,
+          "name": "Renuald aep Matsen",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#renuald-aep-matsen"
+        },
+        {
+          "id": 65302123,
+          "name": "Rotten Mangonel",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#rotten-mangonel"
+        },
+        {
+          "id": 65302124,
+          "name": "Shilard Fitz-Oesterlen",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#shilard-fitz-oesterlen"
+        },
+        {
+          "id": 65302125,
+          "name": "Siege Engineer",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#siege-engineer"
+        },
+        {
+          "id": 65302126,
+          "name": "Siege Technician",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#siege-technician"
+        },
+        {
+          "id": 65302127,
+          "name": "Stefan Skellen",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#stefan-skellen"
+        },
+        {
+          "id": 65302128,
+          "name": "Sweers",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#sweers"
+        },
+        {
+          "id": 65302129,
+          "name": "Tibor Eggebracht",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#tibor-eggebracht"
+        },
+        {
+          "id": 65302130,
+          "name": "Vanhemar",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#vanhemar"
+        },
+        {
+          "id": 65302131,
+          "name": "Vattier de Rideaux",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#vattier-de-rideaux"
+        },
+        {
+          "id": 65302132,
+          "name": "Vreemde",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#vreemde"
+        },
+        {
+          "id": 65302133,
+          "name": "Young Emissary",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#young-emissary"
+        },
+        {
+          "id": 65302134,
+          "name": "Zerrikanian Fire Scorpion",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#zerrikanian-fire-scorpion"
+        },
+        {
+          "id": 65302135,
+          "name": "Emhyr var Emreis: Emperor of Nilgaard",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#emhyr-var-emreis-emperor-of-nilgaard"
+        },
+        {
+          "id": 65302136,
+          "name": "Emhyr var Emreis: Invader of the North",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#emhyr-var-emreis-invader-of-the-north"
+        },
+        {
+          "id": 65302137,
+          "name": "Emhyr var Emreis: The Relentless",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#emhyr-var-emreis-the-relentless"
+        },
+        {
+          "id": 65302138,
+          "name": "Emhyr var Emreis: The White Flame",
+          "groupId": 8855,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#emhyr-var-emreis-the-white-flame"
+        },
+        {
+          "id": 65302139,
+          "name": "Barclay Els",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#barclay-els"
+        },
+        {
+          "id": 65302140,
+          "name": "Ciaran aep Easnillien",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#ciaran-aep-easnillien"
+        },
+        {
+          "id": 65302141,
+          "name": "Dennis Cranmer",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#dennis-cranmer"
+        },
+        {
+          "id": 65302142,
+          "name": "Dol Blathanna Archer",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#dol-blathanna-archer"
+        },
+        {
+          "id": 65302143,
+          "name": "Dol Blathanna Scout",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#dol-blathanna-scout"
+        },
+        {
+          "id": 65302144,
+          "name": "Dwarven Skirmisher",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#dwarven-skirmisher"
+        },
+        {
+          "id": 65302145,
+          "name": "Eithne",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#eithne"
+        },
+        {
+          "id": 65302146,
+          "name": "Elven Skirmisher",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#elven-skirmisher"
+        },
+        {
+          "id": 65302147,
+          "name": "Filavandrel aen Fidhail",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#filavandrel-aen-fidhail"
+        },
+        {
+          "id": 65302148,
+          "name": "Havekar Healer",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#havekar-healer"
+        },
+        {
+          "id": 65302149,
+          "name": "Havekar Smuggler",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#havekar-smuggler"
+        },
+        {
+          "id": 65302150,
+          "name": "Ida Emean aep Sivney",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#ida-emean-aep-sivney"
+        },
+        {
+          "id": 65302151,
+          "name": "Iorveth",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#iorveth"
+        },
+        {
+          "id": 65302152,
+          "name": "Isengrim Faoiltiarna",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#isengrim-faoiltiarna"
+        },
+        {
+          "id": 65302153,
+          "name": "Mahakaman Defender",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#mahakaman-defender"
+        },
+        {
+          "id": 65302154,
+          "name": "Milva",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#milva"
+        },
+        {
+          "id": 65302155,
+          "name": "Riordain",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#riordain"
+        },
+        {
+          "id": 65302156,
+          "name": "Saesenthessis",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#saesenthessis"
+        },
+        {
+          "id": 65302157,
+          "name": "Schirru",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#schirru"
+        },
+        {
+          "id": 65302158,
+          "name": "Toruviel",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#toruviel"
+        },
+        {
+          "id": 65302159,
+          "name": "Vrihedd Brigade Recruit",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#vrihedd-brigade-recruit"
+        },
+        {
+          "id": 65302160,
+          "name": "Vrihedd Brigade Veteran",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#vrihedd-brigade-veteran"
+        },
+        {
+          "id": 65302161,
+          "name": "Yaevinn",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#yaevinn"
+        },
+        {
+          "id": 65302162,
+          "name": "Francesca Findabair: Daisy of the Valley",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#francesca-findabair-daisy-of-the-valley"
+        },
+        {
+          "id": 65302163,
+          "name": "Francesca Findabair: Hope of the Aen Seidhe",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#francesca-findabair-hope-of-the-aen-seidhe"
+        },
+        {
+          "id": 65302164,
+          "name": "Francesca Findabair: Queen of the Dol Blathanna",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#francesca-findabair-queen-of-the-dol-blathanna"
+        },
+        {
+          "id": 65302165,
+          "name": "Francesca Findabair: The Beautiful",
+          "groupId": 8856,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#francesca-findabair-the-beautiful"
+        },
+        {
+          "id": 65302166,
+          "name": "Arachas",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#arachas"
+        },
+        {
+          "id": 65302167,
+          "name": "Arachas Behemoth",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#arachas-behemoth"
+        },
+        {
+          "id": 65302168,
+          "name": "Botchling",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#botchling"
+        },
+        {
+          "id": 65302169,
+          "name": "Celaeno Harpy",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#celaeno-harpy"
+        },
+        {
+          "id": 65302170,
+          "name": "Cockatrice",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#cockatrice"
+        },
+        {
+          "id": 65302171,
+          "name": "Crone: Brewess",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#crone-brewess"
+        },
+        {
+          "id": 65302172,
+          "name": "Crone: Weavess",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#crone-weavess"
+        },
+        {
+          "id": 65302173,
+          "name": "Crone: Whispess",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#crone-whispess"
+        },
+        {
+          "id": 65302174,
+          "name": "Draug",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#draug"
+        },
+        {
+          "id": 65302175,
+          "name": "Earth Elemental",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#earth-elemental"
+        },
+        {
+          "id": 65302176,
+          "name": "Endrega",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#endrega"
+        },
+        {
+          "id": 65302177,
+          "name": "Fiend",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#fiend"
+        },
+        {
+          "id": 65302178,
+          "name": "Fire Elemental",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#fire-elemental"
+        },
+        {
+          "id": 65302179,
+          "name": "Foglet",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#foglet"
+        },
+        {
+          "id": 65302180,
+          "name": "Forktail",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#forktail"
+        },
+        {
+          "id": 65302181,
+          "name": "Frightener",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#frightener"
+        },
+        {
+          "id": 65302182,
+          "name": "Gargoyle",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#gargoyle"
+        },
+        {
+          "id": 65302183,
+          "name": "Ghoul",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#ghoul"
+        },
+        {
+          "id": 65302184,
+          "name": "Grave Hag",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#grave-hag"
+        },
+        {
+          "id": 65302185,
+          "name": "Griffin",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#griffin"
+        },
+        {
+          "id": 65302186,
+          "name": "Harpy",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#harpy"
+        },
+        {
+          "id": 65302187,
+          "name": "Ice Giant",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#ice-giant"
+        },
+        {
+          "id": 65302188,
+          "name": "Imlerith",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#imlerith"
+        },
+        {
+          "id": 65302189,
+          "name": "Kayran",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#kayran"
+        },
+        {
+          "id": 65302190,
+          "name": "Leshen",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#leshen"
+        },
+        {
+          "id": 65302191,
+          "name": "Nekker",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#nekker"
+        },
+        {
+          "id": 65302192,
+          "name": "Plague Maiden",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#plague-maiden"
+        },
+        {
+          "id": 65302193,
+          "name": "Toad",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#toad"
+        },
+        {
+          "id": 65302194,
+          "name": "Vampire: Bruxa",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#vampire-bruxa"
+        },
+        {
+          "id": 65302195,
+          "name": "Vampire: Ekimmara",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#vampire-ekimmara"
+        },
+        {
+          "id": 65302196,
+          "name": "Vampire: Fleder",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#vampire-fleder"
+        },
+        {
+          "id": 65302197,
+          "name": "Vampire: Garkain",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#vampire-garkain"
+        },
+        {
+          "id": 65302198,
+          "name": "Vampire: Katakan",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#vampire-katakan"
+        },
+        {
+          "id": 65302199,
+          "name": "Werewolf",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#werewolf"
+        },
+        {
+          "id": 65302200,
+          "name": "Wyvern",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#wyvern"
+        },
+        {
+          "id": 65302201,
+          "name": "Eredin Breacc Glas: The Treacherous",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#eredin-breacc-glas-the-treacherous"
+        },
+        {
+          "id": 65302202,
+          "name": "Eredin: Bringer of Death",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#eredin-bringer-of-death"
+        },
+        {
+          "id": 65302203,
+          "name": "Eredin: Commander of the Red Riders",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#eredin-commander-of-the-red-riders"
+        },
+        {
+          "id": 65302204,
+          "name": "Eredin: Destroyer of Worlds",
+          "groupId": 8857,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#eredin-destroyer-of-worlds"
+        },
+        {
+          "id": 65302205,
+          "name": "Berserker",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#berserker"
+        },
+        {
+          "id": 65302206,
+          "name": "Birna Bran",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#birna-bran"
+        },
+        {
+          "id": 65302207,
+          "name": "Blueboy Lugos",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#blueboy-lugos"
+        },
+        {
+          "id": 65302208,
+          "name": "Cerys",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#cerys"
+        },
+        {
+          "id": 65302209,
+          "name": "Clan an Craite Warrior",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#clan-an-craite-warrior"
+        },
+        {
+          "id": 65302210,
+          "name": "Clan Brokvar Archer",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#clan-brokvar-archer"
+        },
+        {
+          "id": 65302211,
+          "name": "Clan Dimun Pirate",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#clan-dimun-pirate"
+        },
+        {
+          "id": 65302212,
+          "name": "Clan Drummond Shield Maiden",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#clan-drummond-shield-maiden"
+        },
+        {
+          "id": 65302213,
+          "name": "Clan Heymaey Skald",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#clan-heymaey-skald"
+        },
+        {
+          "id": 65303616,
+          "name": "Clan Tordarroch Armorsmith",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#clan-tordarroch-armorsmith"
+        },
+        {
+          "id": 65302215,
+          "name": "Donar an Hindar",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#donar-an-hindar"
+        },
+        {
+          "id": 65302216,
+          "name": "Draig Bon-Dhu",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#draig-bon-dhu"
+        },
+        {
+          "id": 65302217,
+          "name": "Ermion",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#ermion"
+        },
+        {
+          "id": 65302218,
+          "name": "Hjalmar",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#hjalmar"
+        },
+        {
+          "id": 65302219,
+          "name": "Holger Blackhand",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#holger-blackhand"
+        },
+        {
+          "id": 65302220,
+          "name": "Kambi",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#kambi"
+        },
+        {
+          "id": 65302221,
+          "name": "Light Longship",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#light-longship"
+        },
+        {
+          "id": 65302222,
+          "name": "Madman Lugos",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#madman-lugos"
+        },
+        {
+          "id": 65302223,
+          "name": "Mardroeme",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#mardroeme"
+        },
+        {
+          "id": 65302224,
+          "name": "Olaf",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#olaf"
+        },
+        {
+          "id": 65302225,
+          "name": "Svanrige",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#svanrige"
+        },
+        {
+          "id": 65302226,
+          "name": "Udalryk",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#udalryk"
+        },
+        {
+          "id": 65302227,
+          "name": "War Longship",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#war-longship"
+        },
+        {
+          "id": 65302228,
+          "name": "Young Berserker",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#young-berserker"
+        },
+        {
+          "id": 65302229,
+          "name": "Crach an Craite",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#crach-an-craite"
+        },
+        {
+          "id": 65302230,
+          "name": "King Bran",
+          "groupId": 8858,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#king-bran"
+        },
+        {
+          "id": 65302233,
+          "name": "Skellige Storm",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#skellige-storm"
+        },
+        {
+          "id": 65303615,
+          "name": "Roach",
+          "groupId": 8853,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Gwent_Card_Locations#roach"
+        }
+      ]
+    },
+    {
+      "id": 79791,
+      "slug": "bosses",
+      "name": "Bosses",
+      "category": "Story Completion",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/09/21/ss-dc55eeb409d6e187456a8e159018e8da098fa468-1920x1080-1790023137800.jpg",
+      "groups": [],
+      "items": [
+        {
+          "id": 65284768,
+          "name": "Defeated the Toad Prince",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Evil%27s_First_Soft_Touches_Walkthrough#defeated-the-toad-prince"
+        },
+        {
+          "id": 65284769,
+          "name": "Defeated the Ofieri Mage",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Evil%27s_First_Soft_Touches_Walkthrough#defeated-the-ofieri-mage"
+        },
+        {
+          "id": 65286486,
+          "name": "Caretaker Boss Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scenes_From_a_Marriage_Walkthrough#caretaker-boss-defeated"
+        },
+        {
+          "id": 65286487,
+          "name": "Wraith From the Painting Boss Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scenes_From_a_Marriage_Walkthrough#wraith-from-the-painting-boss-defeated"
+        },
+        {
+          "id": 65286488,
+          "name": "Iris' Greatest Fear Boss Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scenes_From_a_Marriage_Walkthrough#iris-greatest-fear-boss-defeated"
+        },
+        {
+          "id": 65289381,
+          "name": "Golyat Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Beast_of_Toussaint_Walkthrough#golyat-defeated"
+        },
+        {
+          "id": 65289382,
+          "name": "Bruxa Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Beast_of_Toussaint_Walkthrough#bruxa-defeated"
+        },
+        {
+          "id": 65289383,
+          "name": "Shaelmaar Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Beast_of_Toussaint_Walkthrough#shaelmaar-defeated"
+        },
+        {
+          "id": 65303714,
+          "name": "Nithral Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Nithral#nithral-defeated"
+        },
+        {
+          "id": 65304148,
+          "name": "Crones Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/The_Crones#crones-defeated"
+        },
+        {
+          "id": 65304607,
+          "name": "Imlerith Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Imlerith#imlerith-defeated"
+        },
+        {
+          "id": 65307588,
+          "name": "Caleb Menge Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Caleb_Menge#caleb-menge-defeated"
+        },
+        {
+          "id": 65307589,
+          "name": "Royal Griffin Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Royal_Griffin#royal-griffin-defeated"
+        },
+        {
+          "id": 65309902,
+          "name": "Mancomb Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Fists_of_Fury:_Toussaint_Walkthrough#mancomb-defeated"
+        },
+        {
+          "id": 65309903,
+          "name": "Still Waters Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Fists_of_Fury:_Toussaint_Walkthrough#still-waters-defeated"
+        },
+        {
+          "id": 65309904,
+          "name": "Colossus Defeated",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Fists_of_Fury:_Toussaint_Walkthrough#colossus-defeated"
+        }
+      ]
+    },
+    {
+      "id": 79792,
+      "slug": "home-renovations",
+      "name": "Home Renovations",
+      "category": "Crafting",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/09/21/ss-90a33d7764a2d23306091bfcb52265c3506b4fdb-1920x1080-1790023261205.jpg",
+      "groups": [],
+      "items": [
+        {
+          "id": 65301243,
+          "name": "Armor Repair Table",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/No_Place_Like_Home_Walkthrough#armor-repair-table"
+        },
+        {
+          "id": 65301247,
+          "name": "Armor Stands",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/No_Place_Like_Home_Walkthrough#armor-stands"
+        },
+        {
+          "id": 65301250,
+          "name": "Garden",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/No_Place_Like_Home_Walkthrough#garden"
+        },
+        {
+          "id": 65301244,
+          "name": "Grindstone",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/No_Place_Like_Home_Walkthrough#grindstone"
+        },
+        {
+          "id": 65301248,
+          "name": "Guest Room",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/No_Place_Like_Home_Walkthrough#guest-room"
+        },
+        {
+          "id": 65301242,
+          "name": "House Renovation",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/No_Place_Like_Home_Walkthrough#house-renovation"
+        },
+        {
+          "id": 65301245,
+          "name": "Royal Bed",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/No_Place_Like_Home_Walkthrough#royal-bed"
+        },
+        {
+          "id": 65301249,
+          "name": "Stable",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/No_Place_Like_Home_Walkthrough#stable"
+        },
+        {
+          "id": 65301246,
+          "name": "Weapon Racks",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/No_Place_Like_Home_Walkthrough#weapon-racks"
+        }
+      ]
+    },
+    {
+      "id": 79793,
+      "slug": "romance",
+      "name": "Romance",
+      "category": "Story Completion",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/09/21/ss-d1b73b18cbcd5e9e412c7a1dead3c5cd7303d2ad-1920x1080-1790023119261.jpg",
+      "groups": [],
+      "items": [
+        {
+          "id": 65289241,
+          "name": "Jutta an Dimun Romance",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Jutta_an_Dimun_Romance_Guide#jutta-an-dimun-romance"
+        },
+        {
+          "id": 65289242,
+          "name": "Kiera Metz Romance",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Kiera_Metz_Romance_Guide#kiera-metz-romance"
+        },
+        {
+          "id": 65289243,
+          "name": "Sasha Romance",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Sasha_Romance_Guide#sasha-romance"
+        }
+      ]
+    },
+    {
+      "id": 79794,
+      "slug": "armor-and-gear",
+      "name": "Armor and Gear",
+      "category": "Collectibles",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/09/21/witcher-gear-1790024066868.png",
+      "groups": [],
+      "items": [
+        {
+          "id": 65289148,
+          "name": "Ofieri Armor",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/From_Ofier%27s_Distant_Shores_Walkthrough#ofieri-armor"
+        },
+        {
+          "id": 65289149,
+          "name": "Ofieri Gauntlets",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/From_Ofier%27s_Distant_Shores_Walkthrough#ofieri-gauntlets"
+        },
+        {
+          "id": 65289150,
+          "name": "Ofieri  Boots",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/From_Ofier%27s_Distant_Shores_Walkthrough#ofieri-boots"
+        },
+        {
+          "id": 65289151,
+          "name": "Ofieri Sharovary",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/From_Ofier%27s_Distant_Shores_Walkthrough#ofieri-sharovary"
+        },
+        {
+          "id": 65289692,
+          "name": "Tesham Mutna Armor Collected",
+          "groupId": null,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/La_Cage_au_Fou_Walkthrough#tesham-mutna-armor-collected"
+        }
+      ]
+    },
+    {
+      "id": 17943,
+      "slug": "gear-diagrams",
+      "name": "Gear Diagrams",
+      "category": "Collectibles",
+      "imageUrl": null,
+      "groups": [
+        {
+          "id": 3672,
+          "name": "Starting Gear"
+        },
+        {
+          "id": 3673,
+          "name": "Serpentine Gear"
+        },
+        {
+          "id": 3674,
+          "name": "Griffin Gear"
+        },
+        {
+          "id": 3675,
+          "name": "Feline Gear"
+        },
+        {
+          "id": 3676,
+          "name": "Ursine Gear"
+        },
+        {
+          "id": 3677,
+          "name": "Wolven Gear"
+        },
+        {
+          "id": 3678,
+          "name": "Viper Gear"
+        },
+        {
+          "id": 3679,
+          "name": "Manticore Gear"
+        },
+        {
+          "id": 3680,
+          "name": "Forgotten Wolf School Gear"
+        },
+        {
+          "id": 8867,
+          "name": "Oferi Diagrams"
+        }
+      ],
+      "items": [
+        {
+          "id": 64861501,
+          "name": "Kaer Morhen Armor Diagram",
+          "groupId": 3672,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Kaer_Morhen_Armor#kaer-morhen-armor-diagram"
+        },
+        {
+          "id": 64861500,
+          "name": "Warrior's Leather Jacket Diagram",
+          "groupId": 3672,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Starting_Witcher_Gear#warriors-leather-jacket-diagram"
+        },
+        {
+          "id": 64859976,
+          "name": "Serpentine Steel Sword Diagram",
+          "groupId": 3673,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Viper_School_Gear#serpentine-steel-sword-diagram"
+        },
+        {
+          "id": 64859977,
+          "name": "Serpentine Silver Sword Diagram",
+          "groupId": 3673,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Viper_School_Gear#serpentine-silver-sword-diagram"
+        },
+        {
+          "id": 64860500,
+          "name": "Griffin Steel Sword Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Steel_Sword#griffin-steel-sword-diagram"
+        },
+        {
+          "id": 64860499,
+          "name": "Griffin Silver Sword Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Silver_Sword#griffin-silver-sword-diagram"
+        },
+        {
+          "id": 64860501,
+          "name": "Griffin Armor Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Armor#griffin-armor-diagram"
+        },
+        {
+          "id": 64860504,
+          "name": "Griffin Boots Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Boots#griffin-boots-diagram"
+        },
+        {
+          "id": 64860502,
+          "name": "Griffin Gauntlets Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Gauntlets#griffin-gauntlets-diagram"
+        },
+        {
+          "id": 64860503,
+          "name": "Griffin Trousers Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Trousers#griffin-trousers-diagram"
+        },
+        {
+          "id": 64861143,
+          "name": "Feline Steel Sword Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Steel_Sword#feline-steel-sword-diagram"
+        },
+        {
+          "id": 64861142,
+          "name": "Feline Silver Sword Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Silver_Sword#feline-silver-sword-diagram"
+        },
+        {
+          "id": 64861144,
+          "name": "Feline Crossbow Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Crossbow#feline-crossbow-diagram"
+        },
+        {
+          "id": 64861145,
+          "name": "Feline Armor Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Armor#feline-armor-diagram"
+        },
+        {
+          "id": 64861147,
+          "name": "Feline Boots Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Boots#feline-boots-diagram"
+        },
+        {
+          "id": 64861148,
+          "name": "Feline Gauntlets Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Gauntlets#feline-gauntlets-diagram"
+        },
+        {
+          "id": 64861146,
+          "name": "Feline Trousers Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Trousers#feline-trousers-diagram"
+        },
+        {
+          "id": 64861153,
+          "name": "Ursine Steel Sword Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Bear_School_Gear#ursine-steel-sword-diagram"
+        },
+        {
+          "id": 64861152,
+          "name": "Ursine Silver Sword Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Bear_School_Gear#ursine-silver-sword-diagram"
+        },
+        {
+          "id": 64861154,
+          "name": "Ursine Crossbow Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Bear_School_Gear#ursine-crossbow-diagram"
+        },
+        {
+          "id": 64861155,
+          "name": "Ursine Armor Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Bear_School_Gear#ursine-armor-diagram"
+        },
+        {
+          "id": 64861158,
+          "name": "Ursine Boots Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Bear_School_Gear#ursine-boots-diagram"
+        },
+        {
+          "id": 64861157,
+          "name": "Ursine Gauntlets Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Bear_School_Gear#ursine-gauntlets-diagram"
+        },
+        {
+          "id": 64861156,
+          "name": "Ursine Trousers Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Bear_School_Gear#ursine-trousers-diagram"
+        },
+        {
+          "id": 64861594,
+          "name": "Wolven Steel Sword Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#wolven-steel-sword-diagram"
+        },
+        {
+          "id": 64861595,
+          "name": "Wolven Silver Sword Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#wolven-silver-sword-diagram"
+        },
+        {
+          "id": 64861596,
+          "name": "Wolven Armor Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#wolven-armor-diagram"
+        },
+        {
+          "id": 64861599,
+          "name": "Wolven Boots Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#wolven-boots-diagram"
+        },
+        {
+          "id": 64861597,
+          "name": "Wolven Gauntlets Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#wolven-gauntlets-diagram"
+        },
+        {
+          "id": 64861598,
+          "name": "Wolven Trousers Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#wolven-trousers-diagram"
+        },
+        {
+          "id": 64887719,
+          "name": "Viper Venomous Steel Sword Diagram",
+          "groupId": 3678,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Viper_Witcher_Gear#viper-venomous-steel-sword-diagram"
+        },
+        {
+          "id": 64887720,
+          "name": "Viper Venomous Silver Sword Diagram",
+          "groupId": 3678,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Viper_Witcher_Gear#viper-venomous-silver-sword-diagram"
+        },
+        {
+          "id": 64887721,
+          "name": "Viper Armor Diagram",
+          "groupId": 3678,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Viper_Witcher_Gear#viper-armor-diagram"
+        },
+        {
+          "id": 64887722,
+          "name": "Viper Boots Diagram",
+          "groupId": 3678,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Viper_Witcher_Gear#viper-boots-diagram"
+        },
+        {
+          "id": 64887723,
+          "name": "Viper Gauntlets Diagram",
+          "groupId": 3678,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Viper_Witcher_Gear#viper-gauntlets-diagram"
+        },
+        {
+          "id": 64887724,
+          "name": "Viper Trousers Diagram",
+          "groupId": 3678,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Viper_Witcher_Gear#viper-trousers-diagram"
+        },
+        {
+          "id": 64887725,
+          "name": "Manticore Steel Sword Diagram",
+          "groupId": 3679,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Manticore_Witcher_Gear#manticore-steel-sword-diagram"
+        },
+        {
+          "id": 64887726,
+          "name": "Manticore Silver Sword Diagram",
+          "groupId": 3679,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Manticore_Witcher_Gear#manticore-silver-sword-diagram"
+        },
+        {
+          "id": 64887727,
+          "name": "Manticore Armor Diagram",
+          "groupId": 3679,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Manticore_Witcher_Gear#manticore-armor-diagram"
+        },
+        {
+          "id": 64887728,
+          "name": "Manticore Boots Diagram",
+          "groupId": 3679,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Manticore_Witcher_Gear#manticore-boots-diagram"
+        },
+        {
+          "id": 64887729,
+          "name": "Manticore Gauntlets Diagram",
+          "groupId": 3679,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Manticore_Witcher_Gear#manticore-gauntlets-diagram"
+        },
+        {
+          "id": 64887730,
+          "name": "Manticore Trousers Diagram",
+          "groupId": 3679,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Manticore_Witcher_Gear#manticore-trousers-diagram"
+        },
+        {
+          "id": 64862393,
+          "name": "Forgotten Wolven Steel Sword Diagram",
+          "groupId": 3680,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Forgotten_Wolf_School_Gear#forgotten-wolven-steel-sword-diagram"
+        },
+        {
+          "id": 64862394,
+          "name": "Forgotten Wolven Silver Sword Diagram",
+          "groupId": 3680,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Forgotten_Wolf_School_Gear#forgotten-wolven-silver-sword-diagram"
+        },
+        {
+          "id": 64862395,
+          "name": "Forgotten Wolven Armor Diagram",
+          "groupId": 3680,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Forgotten_Wolf_School_Gear#forgotten-wolven-armor-diagram"
+        },
+        {
+          "id": 64862396,
+          "name": "Forgotten Wolven Boots Diagram",
+          "groupId": 3680,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Forgotten_Wolf_School_Gear#forgotten-wolven-boots-diagram"
+        },
+        {
+          "id": 64862397,
+          "name": "Forgotten Wolven Gauntlets Diagram",
+          "groupId": 3680,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Forgotten_Wolf_School_Gear#forgotten-wolven-gauntlets-diagram"
+        },
+        {
+          "id": 64862398,
+          "name": "Forgotten Wolven Trousers Diagram",
+          "groupId": 3680,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Forgotten_Wolf_School_Gear#forgotten-wolven-trousers-diagram"
+        },
+        {
+          "id": 64861895,
+          "name": "Enhanced Feline Steel Sword Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Feline_Steel_Sword#enhanced-feline-steel-sword-diagram"
+        },
+        {
+          "id": 64861896,
+          "name": "Enhanced Feline Silver Sword Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Feline_Silver_Sword#enhanced-feline-silver-sword-diagram"
+        },
+        {
+          "id": 64861891,
+          "name": "Enhanced Feline Armor Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Feline_Armor#enhanced-feline-armor-diagram"
+        },
+        {
+          "id": 64861892,
+          "name": "Enhanced Feline Boots Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Feline_Boots#enhanced-feline-boots-diagram"
+        },
+        {
+          "id": 64861893,
+          "name": "Enhanced Feline Gauntlets Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Feline_Gauntlets#enhanced-feline-gauntlets-diagram"
+        },
+        {
+          "id": 64861894,
+          "name": "Enhanced Feline Trousers Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Feline_Trousers#enhanced-feline-trousers-diagram"
+        },
+        {
+          "id": 64861149,
+          "name": "Enhanced Griffin Steel Sword Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Griffin_Steel_Sword#enhanced-griffin-steel-sword-diagram"
+        },
+        {
+          "id": 64861713,
+          "name": "Enhanced Griffin Silver Sword Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Griffin_Silver_Sword#enhanced-griffin-silver-sword-diagram"
+        },
+        {
+          "id": 64861714,
+          "name": "Enhanced Griffin Armor Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Griffin_Armor#enhanced-griffin-armor-diagram"
+        },
+        {
+          "id": 64861151,
+          "name": "Enhanced Griffin Boots Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Griffin_Boots#enhanced-griffin-boots-diagram"
+        },
+        {
+          "id": 64861715,
+          "name": "Enhanced Griffin Gauntlets Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Griffin_Gauntlets#enhanced-griffin-gauntlets-diagram"
+        },
+        {
+          "id": 64861150,
+          "name": "Enhanced Griffin Trousers Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Griffin_Trousers#enhanced-griffin-trousers-diagram"
+        },
+        {
+          "id": 64862428,
+          "name": "Enhanced Ursine Steel Sword Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Ursine_Steel_Sword#enhanced-ursine-steel-sword-diagram"
+        },
+        {
+          "id": 64861160,
+          "name": "Enhanced Ursine Silver Sword Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Ursine_Silver_Sword#enhanced-ursine-silver-sword-diagram"
+        },
+        {
+          "id": 64861161,
+          "name": "Enhanced Ursine Armor Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Ursine_Armor#enhanced-ursine-armor-diagram"
+        },
+        {
+          "id": 64861162,
+          "name": "Enhanced Ursine Boots Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Ursine_Boots#enhanced-ursine-boots-diagram"
+        },
+        {
+          "id": 64862429,
+          "name": "Enhanced Ursine Gauntlets Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Ursine_Gauntlets#enhanced-ursine-gauntlets-diagram"
+        },
+        {
+          "id": 64862430,
+          "name": "Enhanced Ursine Trousers Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Ursine_Trousers#enhanced-ursine-trousers-diagram"
+        },
+        {
+          "id": 64862404,
+          "name": "Enhanced Wolven Steel Sword Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Wolven_Steel_Sword#enhanced-wolven-steel-sword-diagram"
+        },
+        {
+          "id": 64862403,
+          "name": "Enhanced Wolven Silver Sword Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Wolven_Silver_Sword#enhanced-wolven-silver-sword-diagram"
+        },
+        {
+          "id": 64862405,
+          "name": "Enhanced Wolven Armor Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Wolven_Armor#enhanced-wolven-armor-diagram"
+        },
+        {
+          "id": 64862408,
+          "name": "Enhanced Wolven Boots Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Wolven_Boots#enhanced-wolven-boots-diagram"
+        },
+        {
+          "id": 64862406,
+          "name": "Enhanced Wolven Gauntlets Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Wolven_Gauntlets#enhanced-wolven-gauntlets-diagram"
+        },
+        {
+          "id": 64862407,
+          "name": "Enhanced Wolven Trousers Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Enhanced_Wolven_Trousers#enhanced-wolven-trousers-diagram"
+        },
+        {
+          "id": 64862604,
+          "name": "Superior Feline Steel Sword Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#superior-feline-steel-sword-diagram"
+        },
+        {
+          "id": 64862603,
+          "name": "Superior Feline Silver Sword Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#superior-feline-silver-sword-diagram"
+        },
+        {
+          "id": 64862605,
+          "name": "Superior Feline Armor Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#superior-feline-armor-diagram"
+        },
+        {
+          "id": 64862608,
+          "name": "Superior Feline Boots Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#superior-feline-boots-diagram"
+        },
+        {
+          "id": 64862606,
+          "name": "Superior Feline Gauntlets Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#superior-feline-gauntlets-diagram"
+        },
+        {
+          "id": 64862607,
+          "name": "Superior Feline Trousers Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#superior-feline-trousers-diagram"
+        },
+        {
+          "id": 64887904,
+          "name": "Mastercrafted Feline Steel Sword Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#mastercrafted-feline-steel-sword-diagram"
+        },
+        {
+          "id": 64887905,
+          "name": "Mastercrafted Feline Silver Sword Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#mastercrafted-feline-silver-sword-diagram"
+        },
+        {
+          "id": 64887906,
+          "name": "Mastercrafted Feline Armor Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#mastercrafted-feline-armor-diagram"
+        },
+        {
+          "id": 64887907,
+          "name": "Mastercrafted Feline Boots Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#mastercrafted-feline-boots-diagram"
+        },
+        {
+          "id": 64887908,
+          "name": "Mastercrafted Feline Gauntlets Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#mastercrafted-feline-gauntlets-diagram"
+        },
+        {
+          "id": 64887909,
+          "name": "Mastercrafted Feline Trousers Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#mastercrafted-feline-trousers-diagram"
+        },
+        {
+          "id": 64887910,
+          "name": "Grandmaster Feline Steel Sword Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#grandmaster-feline-steel-sword-diagram"
+        },
+        {
+          "id": 64887911,
+          "name": "Grandmaster Feline Silver Sword Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#grandmaster-feline-silver-sword-diagram"
+        },
+        {
+          "id": 64878336,
+          "name": "Grandmaster Feline Armor Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#grandmaster-feline-armor-diagram"
+        },
+        {
+          "id": 64887913,
+          "name": "Grandmaster Feline Boots Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#grandmaster-feline-boots-diagram"
+        },
+        {
+          "id": 64887914,
+          "name": "Grandmaster Feline Gauntlets Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#grandmaster-feline-gauntlets-diagram"
+        },
+        {
+          "id": 64887915,
+          "name": "Grandmaster Feline Trousers Diagram",
+          "groupId": 3675,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Feline_Witcher_Gear#grandmaster-feline-trousers-diagram"
+        },
+        {
+          "id": 64862592,
+          "name": "Superior Griffin Steel Sword Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#superior-griffin-steel-sword-diagram"
+        },
+        {
+          "id": 64862591,
+          "name": "Superior Griffin Silver Sword Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#superior-griffin-silver-sword-diagram"
+        },
+        {
+          "id": 64862593,
+          "name": "Superior Griffin Armor Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#superior-griffin-armor-diagram"
+        },
+        {
+          "id": 64862596,
+          "name": "Superior Griffin Boots Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#superior-griffin-boots-diagram"
+        },
+        {
+          "id": 64862594,
+          "name": "Superior Griffin Gauntlets Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#superior-griffin-gauntlets-diagram"
+        },
+        {
+          "id": 64862595,
+          "name": "Superior Griffin Trousers Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#superior-griffin-trousers-diagram"
+        },
+        {
+          "id": 64887892,
+          "name": "Mastercrafted Griffin Steel Sword Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#mastercrafted-griffin-steel-sword-diagram"
+        },
+        {
+          "id": 64887893,
+          "name": "Mastercrafted Griffin Silver Sword Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#mastercrafted-griffin-silver-sword-diagram"
+        },
+        {
+          "id": 64887894,
+          "name": "Mastercrafted Griffin Armor Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#mastercrafted-griffin-armor-diagram"
+        },
+        {
+          "id": 64887895,
+          "name": "Mastercrafted Griffin Boots Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#mastercrafted-griffin-boots-diagram"
+        },
+        {
+          "id": 64887896,
+          "name": "Mastercrafted Griffin Gauntlets Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#mastercrafted-griffin-gauntlets-diagram"
+        },
+        {
+          "id": 64887897,
+          "name": "Mastercrafted Griffin Trousers Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#mastercrafted-griffin-trousers-diagram"
+        },
+        {
+          "id": 64887898,
+          "name": "Grandmaster Griffin Steel Sword Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#grandmaster-griffin-steel-sword-diagram"
+        },
+        {
+          "id": 64887899,
+          "name": "Grandmaster Griffin Silver Sword Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#grandmaster-griffin-silver-sword-diagram"
+        },
+        {
+          "id": 64887900,
+          "name": "Grandmaster Griffin Armor Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#grandmaster-griffin-armor-diagram"
+        },
+        {
+          "id": 64887901,
+          "name": "Grandmaster Griffin Boots Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#grandmaster-griffin-boots-diagram"
+        },
+        {
+          "id": 64887902,
+          "name": "Grandmaster Griffin Gauntlets Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#grandmaster-griffin-gauntlets-diagram"
+        },
+        {
+          "id": 64887903,
+          "name": "Grandmaster Griffin Trousers Diagram",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Griffin_Witcher_Gear#grandmaster-griffin-trousers-diagram"
+        },
+        {
+          "id": 64887916,
+          "name": "Superior Ursine Steel Sword Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ursine_Witcher_Gear#superior-ursine-steel-sword-diagram"
+        },
+        {
+          "id": 64887917,
+          "name": "Superior Ursine Silver Sword Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ursine_Witcher_Gear#superior-ursine-silver-sword-diagram"
+        },
+        {
+          "id": 64887918,
+          "name": "Superior Ursine Armor Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ursine_Witcher_Gear#superior-ursine-armor-diagram"
+        },
+        {
+          "id": 64887919,
+          "name": "Superior Ursine Boots Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ursine_Witcher_Gear#superior-ursine-boots-diagram"
+        },
+        {
+          "id": 64887920,
+          "name": "Superior Ursine Gauntlets Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ursine_Witcher_Gear#superior-ursine-gauntlets-diagram"
+        },
+        {
+          "id": 64887921,
+          "name": "Superior Ursine Trousers Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ursine_Witcher_Gear#superior-ursine-trousers-diagram"
+        },
+        {
+          "id": 64887922,
+          "name": "Mastercrafted Ursine Steel Sword Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ursine_Witcher_Gear#mastercrafted-ursine-steel-sword-diagram"
+        },
+        {
+          "id": 64887923,
+          "name": "Mastercrafted Ursine Silver Sword Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ursine_Witcher_Gear#mastercrafted-ursine-silver-sword-diagram"
+        },
+        {
+          "id": 64887924,
+          "name": "Mastercrafted Ursine Armor Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ursine_Witcher_Gear#mastercrafted-ursine-armor-diagram"
+        },
+        {
+          "id": 64887925,
+          "name": "Mastercrafted Ursine Boots Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ursine_Witcher_Gear#mastercrafted-ursine-boots-diagram"
+        },
+        {
+          "id": 64887926,
+          "name": "Mastercrafted Ursine Gauntlets Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ursine_Witcher_Gear#mastercrafted-ursine-gauntlets-diagram"
+        },
+        {
+          "id": 64887927,
+          "name": "Mastercrafted Ursine Trousers Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Ursine_Witcher_Gear#mastercrafted-ursine-trousers-diagram"
+        },
+        {
+          "id": 64887928,
+          "name": "Grandmaster Ursine Steel Sword Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Grandmaster_Ursine_Gear_Walkthrough#grandmaster-ursine-steel-sword-diagram"
+        },
+        {
+          "id": 64887929,
+          "name": "Grandmaster Ursine Silver Sword Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Grandmaster_Ursine_Gear_Walkthrough#grandmaster-ursine-silver-sword-diagram"
+        },
+        {
+          "id": 64887930,
+          "name": "Grandmaster Ursine Armor Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Grandmaster_Ursine_Gear_Walkthrough#grandmaster-ursine-armor-diagram"
+        },
+        {
+          "id": 64887931,
+          "name": "Grandmaster Ursine Boots Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Grandmaster_Ursine_Gear_Walkthrough#grandmaster-ursine-boots-diagram"
+        },
+        {
+          "id": 64887932,
+          "name": "Grandmaster Ursine Gauntlets Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Grandmaster_Ursine_Gear_Walkthrough#grandmaster-ursine-gauntlets-diagram"
+        },
+        {
+          "id": 64887933,
+          "name": "Grandmaster Ursine Trousers Diagram",
+          "groupId": 3676,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Grandmaster_Ursine_Gear_Walkthrough#grandmaster-ursine-trousers-diagram"
+        },
+        {
+          "id": 64887934,
+          "name": "Superior Wolven Steel Sword Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#superior-wolven-steel-sword-diagram"
+        },
+        {
+          "id": 64887935,
+          "name": "Superior Wolven Silver Sword Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#superior-wolven-silver-sword-diagram"
+        },
+        {
+          "id": 64887936,
+          "name": "Superior Wolven Armor Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#superior-wolven-armor-diagram"
+        },
+        {
+          "id": 64887937,
+          "name": "Superior Wolven Boots Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#superior-wolven-boots-diagram"
+        },
+        {
+          "id": 64887938,
+          "name": "Superior Wolven Gauntlets Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#superior-wolven-gauntlets-diagram"
+        },
+        {
+          "id": 64887939,
+          "name": "Superior Wolven Trousers Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#superior-wolven-trousers-diagram"
+        },
+        {
+          "id": 64887940,
+          "name": "Mastercrafted Wolven Steel Sword Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#mastercrafted-wolven-steel-sword-diagram"
+        },
+        {
+          "id": 64887941,
+          "name": "Mastercrafted Wolven Silver Sword Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#mastercrafted-wolven-silver-sword-diagram"
+        },
+        {
+          "id": 64887942,
+          "name": "Mastercrafted Wolven Armor Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#mastercrafted-wolven-armor-diagram"
+        },
+        {
+          "id": 64887943,
+          "name": "Mastercrafted Wolven Boots Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#mastercrafted-wolven-boots-diagram"
+        },
+        {
+          "id": 64887944,
+          "name": "Mastercrafted Wolven Gauntlets Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#mastercrafted-wolven-gauntlets-diagram"
+        },
+        {
+          "id": 64887945,
+          "name": "Mastercrafted Wolven Trousers Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Witcher_Gear#mastercrafted-wolven-trousers-diagram"
+        },
+        {
+          "id": 64887946,
+          "name": "Grandmaster Wolven Steel Sword Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Grandmaster_Wolven_Gear_Walkthrough#grandmaster-wolven-steel-sword-diagram"
+        },
+        {
+          "id": 64887947,
+          "name": "Grandmaster Wolven Silver Sword Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Grandmaster_Wolven_Gear_Walkthrough#grandmaster-wolven-silver-sword-diagram"
+        },
+        {
+          "id": 64887948,
+          "name": "Grandmaster Wolven Armor Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Grandmaster_Wolven_Gear_Walkthrough#grandmaster-wolven-armor-diagram"
+        },
+        {
+          "id": 64887949,
+          "name": "Grandmaster Wolven Boots Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Grandmaster_Wolven_Gear_Walkthrough#grandmaster-wolven-boots-diagram"
+        },
+        {
+          "id": 64887950,
+          "name": "Grandmaster Wolven Gauntlets Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Grandmaster_Wolven_Gear_Walkthrough#grandmaster-wolven-gauntlets-diagram"
+        },
+        {
+          "id": 64887951,
+          "name": "Grandmaster Wolven Trousers Diagram",
+          "groupId": 3677,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Scavenger_Hunt:_Grandmaster_Wolven_Gear_Walkthrough#grandmaster-wolven-trousers-diagram"
+        },
+        {
+          "id": 64885308,
+          "name": "Scavenger Hunt: Griffin School Diagrams - Part 1 Complete",
+          "groupId": 3674,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Novigrad_Side_Quests#scavenger-hunt-griffin-school-diagrams-part-1-complete"
+        },
+        {
+          "id": 65287328,
+          "name": "Ofieri Trousers Diagram Untranslated Found",
+          "groupId": 8867,
+          "wikiUrl": "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Rose_on_a_Red_Field_Walkthrough#ofieri-trousers-diagram-untranslated-found"
+        }
+      ]
+    }
+  ]
+}
