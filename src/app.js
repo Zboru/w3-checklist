@@ -396,32 +396,42 @@ function renderMapRegions() {
 function popupFor(item) {
   const box = document.createElement("div");
   box.className = "map-pop";
+
   const name = document.createElement("div");
   name.className = "map-pop-name";
   name.textContent = item.namePl || item.name;
+  name.title = item.namePl && item.namePl !== item.name ? `${item.namePl} — ${item.name}` : item.name;
   box.append(name);
+
   if (item.namePl && item.namePl !== item.name) {
     const en = document.createElement("div");
     en.className = "map-pop-en";
     en.textContent = item.name;
     box.append(en);
   }
-  const row = document.createElement("label");
-  row.className = "map-pop-check";
+
+  const row = document.createElement("div");
+  row.className = "map-pop-row";
+
+  const label = document.createElement("label");
+  label.className = "map-pop-check";
   const cb = document.createElement("input");
   cb.type = "checkbox";
   cb.checked = isDone(item.id);
   cb.addEventListener("change", () => setDone(item.id, cb.checked));
-  row.append(cb, document.createTextNode(" zrobione"));
-  box.append(row);
+  label.append(cb, document.createTextNode(" zrobione"));
+  row.append(label);
+
   if (item.wikiUrl) {
     const a = document.createElement("a");
     a.href = item.wikiUrl;
     a.target = "_blank";
     a.rel = "noopener noreferrer";
     a.textContent = "IGN ↗";
-    box.append(a);
+    row.append(a);
   }
+
+  box.append(row);
   return box;
 }
 
@@ -474,7 +484,7 @@ function selectMap(slug) {
       fillOpacity: 1
     });
     if (item) {
-      marker.bindPopup(() => popupFor(item), { minWidth: 190 });
+      marker.bindPopup(() => popupFor(item), { minWidth: 150, maxWidth: 220, autoPanPadding: [12, 12] });
       circles.set(mk.itemId, marker);
     } else {
       marker.bindPopup(esc(mk.name));
