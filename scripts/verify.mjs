@@ -149,7 +149,7 @@ async function smoke() {
 
   // Widok planu
   const planRows = page.locator("#plan .item");
-  check("plan sie renderuje (458)", (await planRows.count()) === 458, `${await planRows.count()} wierszy`);
+  check("plan sie renderuje (452)", (await planRows.count()) === 452, `${await planRows.count()} wierszy`);
   check("brak bledow JS", errors.length === 0, errors.join("; "));
 
   // Brak poziomego scrolla
@@ -283,7 +283,7 @@ async function smoke() {
     await context.setOffline(true);
     await page.reload({ waitUntil: "load", timeout: 15000 });
     const offlineRows = await page.locator("#plan .item").count();
-    check("apka otwiera się offline z cache", offlineRows === 458, `${offlineRows} wierszy`);
+    check("apka otwiera się offline z cache", offlineRows === 452, `${offlineRows} wierszy`);
     check("brak błędów JS offline", offlineErrors.length === 0, offlineErrors.join("; "));
     await context.setOffline(false);
   }

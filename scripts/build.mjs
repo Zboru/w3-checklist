@@ -3,6 +3,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { build } from "esbuild";
 import { normalizeName, nameVariants, titleFromWikiUrl, buildPlIndex, lookupIndex, lookupPl } from "./lib/names.mjs";
+import { isExcludedPlanStep } from "./lib/sheet.mjs";
 import { buildManifest, buildServiceWorker, cacheVersionFrom } from "./lib/pwa.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -54,25 +55,27 @@ async function main() {
   let planWithLink = 0;
   let planWithPl = 0;
   for (const chapter of sheet.chapters) {
-    const steps = chapter.steps.map((step) => {
-      const hit = lookupIndex(step.name, ignIndex);
-      const wikiUrl = hit?.url || null;
-      const namePl = lookupPl(step.name, plIndex);
-      if (wikiUrl) planWithLink++;
-      if (namePl) planWithPl++;
-      planSteps++;
-      return {
-        id: keyOf(step.name),
-        name: step.name,
-        namePl,
-        level: step.level,
-        tips: step.tips,
-        nonMissable: step.nonMissable,
-        wikiUrl,
-        mapUrl: hit?.mapUrl || null
-      };
-    });
-    plan.push({ region: chapter.region, steps });
+    const steps = chapter.steps
+      .filter((step) => !isExcludedPlanStep(step.name))
+      .map((step) => {
+        const hit = lookupIndex(step.name, ignIndex);
+        const wikiUrl = hit?.url || null;
+        const namePl = lookupPl(step.name, plIndex);
+        if (wikiUrl) planWithLink++;
+        if (namePl) planWithPl++;
+        planSteps++;
+        return {
+          id: keyOf(step.name),
+          name: step.name,
+          namePl,
+          level: step.level,
+          tips: step.tips,
+          nonMissable: step.nonMissable,
+          wikiUrl,
+          mapUrl: hit?.mapUrl || null
+        };
+      });
+    if (steps.length) plan.push({ region: chapter.region, steps });
   }
 
   /* ---- kolekcje ---- */

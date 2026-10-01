@@ -4,7 +4,7 @@ Mobilna checklista do Wiedźmina 3: Wild Hunt (baza + **Serca z Kamienia** +
 **Krew i Wino**), która prowadzi Cię przez grę w optymalnej kolejności i pozwala
 odhaczać postęp — żeby niczego nie pominąć.
 
-- **Plan gry** — 458 kroków (questy, kontrakty, wyścigi, walki na pięści,
+- **Plan gry** — 452 kroków (questy, kontrakty, wyścigi, walki na pięści,
   skarby…), pogrupowane w rozdziały regionów, z sugerowanym poziomem
   i wskazówkami z arkusza „optimal order".
 - **Kolekcje** — 710 pozycji w 12 kategoriach IGN: karty do gwinta, miejsca
@@ -123,7 +123,7 @@ działa offline, korzystając z plików w `data/`.
 | Fandom (EN ↔ PL, interwiki) | polskie nazwy questów |
 | `data/overrides.json` | ręczne korekty dopasowań (opcjonalny) |
 
-Pokrycie nazw PL (stan bieżący): plan **440/458**, kolekcje **422/710**.
+Pokrycie nazw PL (stan bieżący): plan **434/452**, kolekcje **422/710**.
 Kategorie questów: główne 55/58, poboczne 127/134, dodatki 92/95, kontrakty 29/30,
 miejsca mocy 26/28. Uzupełnienia ręczne: `data/overrides.json` (nazwy potwierdzone
 linkiem zwrotnym na polskiej wiki).
@@ -143,6 +143,9 @@ linkiem zwrotnym na polskiej wiki).
 - Wskazówki pochodzą z angielskiego arkusza i są w oryginale (mogą zawierać
   spoilery — domyślnie ukryte pod klikalnym tytułem kroku).
 - Ten sam quest w planie i w kolekcjach dzieli jedno odhaczenie.
+- Quest „Gwent: Collect 'em All!" (żmudne zebranie całej kolekcji kart) jest
+  celowo pomijany w planie gry — karty do gwinta zostają w zakładce Kolekcje.
+  Lista wykluczeń: `EXCLUDED_PLAN_STEPS` w `scripts/lib/sheet.mjs`.
 - Nieoficjalny projekt fanowski; Wiedźmin 3 należy do CD Projekt RED.
 
 ## Struktura

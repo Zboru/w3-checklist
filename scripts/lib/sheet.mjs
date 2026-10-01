@@ -1,8 +1,25 @@
-import { extractLevel, titleCaseRegion } from "./names.mjs";
+import { extractLevel, titleCaseRegion, normalizeName } from "./names.mjs";
 
 const REGION_MARKER = /OPTIMAL ORDER TO DO ALL THE QUESTS/i;
 const NON_MISSABLE_MARKER = /^THE FOLLOWING QUESTS/i;
 const REGION_LIKE = /^[A-Z0-9][A-Z0-9 &/'’.\-/]*$/;
+
+/**
+ * Kroki planu świadomie pomijane w buildzie: żmudne/opcjonalne pozycje, których
+ * nie chcemy w głównej liście. Dopasowanie po znormalizowanej nazwie
+ * (`normalizeName` zdejmuje m.in. prefiks "Gwent:").
+ */
+export const EXCLUDED_PLAN_STEPS = new Set(["collect em all"]);
+
+/**
+ * Czy krok planu ma zostać pominięty przy budowie.
+ *
+ * @param {string} name
+ * @returns {boolean}
+ */
+export function isExcludedPlanStep(name) {
+  return EXCLUDED_PLAN_STEPS.has(normalizeName(String(name ?? "").trim()));
+}
 
 const pad = (row, n) => {
   const out = row.slice();

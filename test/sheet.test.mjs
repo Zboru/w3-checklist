@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { buildPlan } from "../scripts/lib/sheet.mjs";
+import { buildPlan, isExcludedPlanStep } from "../scripts/lib/sheet.mjs";
 
 const fixture = [
   ["TOTAL QUEST COMPLETION =     0%"],
@@ -63,4 +63,18 @@ test("id kroków są unikalne", () => {
 test("pusty / niepoprawny input zwraca pustą strukturę", () => {
   assert.deepEqual(buildPlan(null), { chapters: [] });
   assert.deepEqual(buildPlan([]), { chapters: [] });
+});
+
+test("wyklucza 'Gwent: Collect 'em All!' niezależnie od wielkości liter i spacji", () => {
+  assert.equal(isExcludedPlanStep("Gwent: Collect 'em All!"), true);
+  assert.equal(isExcludedPlanStep("  gwent:  collect 'em all!  "), true);
+  assert.equal(isExcludedPlanStep("Collect 'em All!"), true);
+});
+
+test("nie wyklucza innych questów Gwent ani zwykłych kroków", () => {
+  assert.equal(isExcludedPlanStep("Gwent: Old Pals"), false);
+  assert.equal(isExcludedPlanStep("Gwent: High Stakes"), false);
+  assert.equal(isExcludedPlanStep("Funeral Pyres"), false);
+  assert.equal(isExcludedPlanStep(""), false);
+  assert.equal(isExcludedPlanStep(null), false);
 });
