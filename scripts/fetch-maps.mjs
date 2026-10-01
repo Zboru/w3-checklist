@@ -1,6 +1,7 @@
 import { writeFile, mkdir, readFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { selectMarkers } from "./lib/markers.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -75,9 +76,12 @@ async function main() {
     })).mapGenieMarkersMultiple || [];
 
     const typeName = Object.fromEntries((widget.types || []).map((t) => [t.typeSlug, t.typeName]));
-    const wanted = raw.filter((mk) => taskMapSlug.get(String(mk.checklistTaskId)) === slug);
-    if (!wanted.length) {
-      console.warn(`  "${slug}": brak znaczników dla naszych pozycji`);
+    const matchedIds = new Set(
+      raw.filter((mk) => taskMapSlug.get(String(mk.checklistTaskId)) === slug).map((mk) => String(mk.id))
+    );
+    const chosen = selectMarkers(raw, matchedIds);
+    if (!chosen.length) {
+      console.warn(`  "${slug}": brak znaczników do zapisania`);
       continue;
     }
 
@@ -92,8 +96,8 @@ async function main() {
       initialLng: widget.initialLng,
       backgroundColor: widget.backgroundColor || "#ffffff",
       types: (widget.types || []).map((t) => ({ slug: t.typeSlug, name: t.typeName })),
-      markers: wanted.map((mk) => ({
-        taskId: String(mk.checklistTaskId),
+      markers: chosen.map((mk) => ({
+        taskId: mk.taskId,
         lat: mk.lat,
         lng: mk.lng,
         name: mk.markerName,
@@ -102,8 +106,8 @@ async function main() {
         typeName: typeName[mk.typeSlug] || mk.typeSlug
       }))
     });
-    totalMarkers += wanted.length;
-    console.log(`  ${slug.padEnd(26)} ${String(wanted.length).padStart(3)} znaczników (z ${raw.length}) kafelki: ${(widget.tilesets || [])[0] ? "tak" : "brak"}`);
+    totalMarkers += chosen.length;
+    console.log(`  ${slug.padEnd(26)} ${String(chosen.length).padStart(4)} znaczników (checklist: ${matchedIds.size}, z ${raw.length}) kafelki: ${(widget.tilesets || [])[0] ? "tak" : "brak"}`);
   }
 
   const out = { fetchedAt: new Date().toISOString(), attribution: "MapGenie / IGN", maps };

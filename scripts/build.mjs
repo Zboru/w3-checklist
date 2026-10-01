@@ -117,7 +117,9 @@ async function main() {
       maps = (raw.maps || [])
         .map((mp) => ({
           ...mp,
-          markers: mp.markers.map((mk) => ({ ...mk, itemId: taskToId.get(mk.taskId) || null })).filter((mk) => mk.itemId)
+          markers: mp.markers
+            .map((mk) => ({ ...mk, itemId: mk.taskId != null ? taskToId.get(String(mk.taskId)) || null : null }))
+            .filter((mk) => mk.itemId || mk.taskId == null)
         }))
         .filter((mp) => mp.tileUrl && mp.markers.length);
 

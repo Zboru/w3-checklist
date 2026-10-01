@@ -27,10 +27,13 @@ Wynik to jeden plik `index.html` — bez zależności, działa offline.
 1. Otwórz `index.html` w przeglądarce (albo opublikuj go — patrz niżej).
 2. Przechodź kroki po kolei i odhaczaj. Przycisk **„Następny krok →"** zawsze
    przenosi do pierwszego nieodhaczonego zadania.
-3. Trzy przyciski obok siebie: **„ukryj zrobione"** (czysta lista tego, co
-   zostało), **„pokaż wskazówki"** (odkrywa spoilery/uwagi), **szukajka**
-   (działa po nazwach PL i EN).
-4. Postęp zapisuje się automatycznie w przeglądarce.
+3. **„ukryj zrobione"** daje czystą listę tego, co zostało; **szukajka**
+   działa po nazwach PL i EN.
+4. Kroki, które mają wskazówki, rozwijasz klikając w ich **tytuł** (spoiler
+   pokazuje się tylko dla tego jednego zadania).
+5. Krok oznaczony jako **„przepadające"** (czerwony chip) można nieodwracalnie
+   przegapić — zrób go, zanim zniknie.
+6. Postęp zapisuje się automatycznie w przeglądarce.
 
 ### Mapa
 
@@ -45,8 +48,8 @@ Wynik to jeden plik `index.html` — bez zależności, działa offline.
 
 W menu (☰):
 
-- **Eksportuj (JSON)** / **Importuj** — kopia postępu i notatek; przenieś je na
-  inne urządzenie lub zabezpiecz przed wyczyszczeniem danych przeglądarki.
+- **Eksportuj (JSON)** / **Importuj** — kopia postępu; przenieś ją na inne
+  urządzenie lub zabezpiecz przed wyczyszczeniem danych przeglądarki.
 - **Kopiuj link z postępem** — link z całym postępem w adresie.
 - **Reset** — czyści wszystko.
 
@@ -98,7 +101,7 @@ działa offline, korzystając z plików w `data/`.
 | --- | --- |
 | IGN GraphQL (`mollusk.apis.ign.com`) | 12 kategorii / 710 pozycji kolekcji, link do wiki IGN i do mapy IGN przy każdej |
 | IGN / MapGenie (kafelki + znaczniki) | 7 regionów mapy, 409 znaczników dopasowanych do pozycji |
-| Arkusz „optimal order" (Google Sheets) | kolejność kroków planu, poziomy, wskazówki i znaczniki „nieprzepadające" |
+| Arkusz „optimal order" (Google Sheets) | kolejność kroków planu, poziomy, wskazówki i znaczniki „przepadające" |
 | Fandom (EN ↔ PL, interwiki) | polskie nazwy questów |
 | `data/overrides.json` | ręczne korekty dopasowań (opcjonalny) |
 
@@ -117,7 +120,7 @@ linkiem zwrotnym na polskiej wiki).
 - Polskie nazwy pokrywają większość questów, ale nie wszystkie; brakujące
   wyświetlają się po angielsku.
 - Wskazówki pochodzą z angielskiego arkusza i są w oryginale (mogą zawierać
-  spoilery — domyślnie ukryte).
+  spoilery — domyślnie ukryte pod klikalnym tytułem kroku).
 - Ten sam quest w planie i w kolekcjach dzieli jedno odhaczenie.
 - Nieoficjalny projekt fanowski; Wiedźmin 3 należy do CD Projekt RED.
 

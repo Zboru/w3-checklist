@@ -46,11 +46,15 @@ async function structural() {
   const maps = data.maps || [];
   if (maps.length) {
     const markers = maps.flatMap((m) => m.markers);
+    const linked = markers.filter((m) => m.itemId);
+    const extras = markers.filter((m) => !m.itemId);
     const ids = new Set([...planSteps, ...collectionItems].map((i) => i.id));
     check("mapy: 7 regionow", maps.length === 7, `jest ${maps.length}`);
     check("mapy: kazdy region ma URL kafelkow", maps.every((m) => /^https:\/\/tiles\./.test(m.tileUrl || "")));
-    check("mapy: znaczniki maja itemId", markers.length > 300 && markers.every((m) => m.itemId), `${markers.length} znacznikow`);
-    check("mapy: znaczniki wskazuja istniejace pozycje", markers.every((m) => ids.has(m.itemId)));
+    check("mapy: znaczniki checklisty maja itemId", linked.length > 300, `${linked.length} powiazanych`);
+    check("mapy: znaczniki wskazuja istniejace pozycje", linked.every((m) => ids.has(m.itemId)));
+    check("mapy: extra POI maja typ i brak itemId", extras.length > 100 && extras.every((m) => m.taskId == null && m.typeSlug), `${extras.length} extra`);
+    check("mapy: kazdy znacznik ma typ", markers.every((m) => m.typeSlug), `${markers.length} znacznikow`);
     check("mapy: wspolrzedne w zakresie", markers.every((m) => Math.abs(m.lat) <= 90 && Math.abs(m.lng) <= 180));
     const withMap = [...planSteps, ...collectionItems].filter((i) => i.mapUrl).length;
     console.log(`INFO  mapy: ${maps.length} regionow, ${markers.length} znacznikow; pozycji z linkiem do mapy: ${withMap}`);
@@ -143,6 +147,25 @@ async function smoke() {
     const switched = await page.locator("#mapRegions button").nth(2).textContent();
     await page.locator("#mapRegions button").nth(2).click();
     check("przelaczanie regionu", (await page.locator("#mapRegions button.active").textContent()) === switched, switched);
+
+    // filtr typow: przycisk otwiera panel z polskimi nazwami
+    check("przycisk Filtry widoczny", await page.locator("#map #mapFilterBtn").isVisible());
+    check("panel filtrow zamkniety na start", !(await page.locator("#map #mapFilterPanel").isVisible()));
+    await page.locator("#map #mapFilterBtn").click();
+    check("przycisk Filtry otwiera panel", await page.locator("#map #mapFilterPanel").isVisible());
+    const panelText = await page.locator("#map #mapFilterPanel").textContent();
+    check("panel filtrow po polsku", /Miejsce mocy|Drogowskaz|Punkt zainteresowania/.test(panelText), panelText.slice(0, 40));
+    const typeToggle = page.locator("#map #mapFilterPanel input:checked").first();
+    check("panel ma przelaczniki typow", (await page.locator("#map #mapFilterPanel input").count()) > 0);
+    const beforeFilter = await page.locator("#mapCanvas path.leaflet-interactive").count();
+    await typeToggle.uncheck();
+    const afterFilter = await page.locator("#mapCanvas path.leaflet-interactive").count();
+    check("filtr typu ukrywa znaczniki", afterFilter < beforeFilter, `${beforeFilter} -> ${afterFilter}`);
+    await typeToggle.check();
+    await page.locator("#map #mapFilterPanel button", { hasText: "Żadne" }).click();
+    check("skrot Zadne chowa znaczniki", (await page.locator("#mapCanvas path.leaflet-interactive").count()) === 0);
+    await page.locator("#map #mapFilterPanel button", { hasText: "Wszystkie" }).click();
+    check("skrot Wszystkie przywraca znaczniki", (await page.locator("#mapCanvas path.leaflet-interactive").count()) > 0);
 
     // integracja: link "Na mapie" przy pozycji otwiera mape ze znacznikiem
     await page.locator('.tab[data-tab="plan"]').click();

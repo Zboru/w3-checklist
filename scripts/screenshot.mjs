@@ -31,9 +31,11 @@ async function main() {
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: resolve(outDir, "mobile-collections.png") });
 
-  await page.locator("#showTips").check();
   await page.locator('.tab[data-tab="plan"]').click();
-  await page.evaluate(() => window.scrollTo(0, 300));
+  const tipStep = page.locator("#plan .item .title.has-tips").first();
+  await tipStep.scrollIntoViewIfNeeded();
+  await tipStep.click();
+  await page.waitForTimeout(150);
   await page.screenshot({ path: resolve(outDir, "mobile-tips.png") });
 
   await page.locator("#menuBtn").click();

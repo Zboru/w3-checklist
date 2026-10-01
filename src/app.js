@@ -4,7 +4,11 @@ import {
   parseState,
   computeProgress,
   nextStep,
-  normalizeQuery
+  normalizeQuery,
+  isMissable,
+  defaultEnabledTypes,
+  isMarkerVisible,
+  typeLabelPl
 } from "./core.js";
 import L from "leaflet";
 
@@ -32,7 +36,7 @@ const MAPS = (DATA.maps || []).filter((m) => m.tileUrl && m.markers.length);
 const markerByItem = new Map();
 for (const mp of MAPS) {
   for (const mk of mp.markers) {
-    if (!markerByItem.has(mk.itemId)) markerByItem.set(mk.itemId, { mapSlug: mp.slug, marker: mk });
+    if (mk.itemId && !markerByItem.has(mk.itemId)) markerByItem.set(mk.itemId, { mapSlug: mp.slug, marker: mk });
   }
 }
 
@@ -51,6 +55,7 @@ function loadState() {
   try {
     const raw = localStorage.getItem(LS_KEY);
     if (raw) return parseState(raw, validIds);
+    return emptyState();
   } catch {
     /* localStorage niedostepny (tryb prywatny) */
   }
@@ -70,7 +75,7 @@ function readHash() {
 
 function saveState(next = state) {
   try {
-    localStorage.setItem(LS_KEY, serializeState(next.done, next.notes));
+    localStorage.setItem(LS_KEY, serializeState(next.done));
   } catch {
     /* ignoruj */
   }
@@ -86,12 +91,6 @@ function setDone(id, value) {
   for (const item of byId.get(id) || []) syncRow(item, value);
   saveState();
   refresh();
-}
-
-function setNote(id, value) {
-  if (value) state.notes[id] = value;
-  else delete state.notes[id];
-  saveState();
 }
 
 /* ---------------- rendering ---------------- */
@@ -131,11 +130,19 @@ function renderItem(item) {
   const body = document.createElement("div");
   body.className = "body";
 
-  const title = document.createElement("div");
+  const hasTips = Boolean(item.tips && item.tips.length);
+  const title = document.createElement(hasTips ? "button" : "div");
   title.className = "title";
+  if (hasTips) {
+    title.type = "button";
+    title.classList.add("has-tips");
+    title.setAttribute("aria-expanded", "false");
+  }
+  const chevron = hasTips ? '<span class="chev" aria-hidden="true">▸</span>' : "";
   const pl = document.createElement("span");
   pl.className = "name-pl";
   pl.textContent = item.namePl || item.name;
+  title.innerHTML = chevron;
   title.append(pl);
   if (item.namePl && item.namePl !== item.name) {
     const en = document.createElement("span");
@@ -153,10 +160,10 @@ function renderItem(item) {
     chip.textContent = `poz. ${item.level}`;
     meta.append(chip);
   }
-  if (item.nonMissable) {
+  if (isMissable(item)) {
     const chip = document.createElement("span");
-    chip.className = "chip";
-    chip.textContent = "nieprzepadające";
+    chip.className = "chip missable";
+    chip.textContent = "przepadające";
     meta.append(chip);
   }
   if (item.wikiUrl) {
@@ -185,16 +192,10 @@ function renderItem(item) {
     }
     meta.append(a);
   }
-  const noteBtn = document.createElement("button");
-  noteBtn.className = "note-btn";
-  noteBtn.type = "button";
-  noteBtn.textContent = state.notes[item.id] ? "notatka •" : "notatka";
-  meta.append(noteBtn);
   body.append(meta);
 
-  let tips = null;
-  if (item.tips && item.tips.length) {
-    tips = document.createElement("ul");
+  if (hasTips) {
+    const tips = document.createElement("ul");
     tips.className = "tips";
     for (const t of item.tips) {
       const li2 = document.createElement("li");
@@ -202,19 +203,12 @@ function renderItem(item) {
       tips.append(li2);
     }
     body.append(tips);
+    title.addEventListener("click", () => {
+      const open = tips.classList.toggle("open");
+      title.classList.toggle("open", open);
+      title.setAttribute("aria-expanded", String(open));
+    });
   }
-
-  const note = document.createElement("textarea");
-  note.className = "note";
-  note.placeholder = "Własna notatka…";
-  note.value = state.notes[item.id] || "";
-  note.addEventListener("input", () => {
-    setNote(item.id, note.value.trim());
-    noteBtn.textContent = note.value.trim() ? "notatka •" : "notatka";
-  });
-  if (note.value) note.classList.add("open");
-  noteBtn.addEventListener("click", () => note.classList.toggle("open"));
-  body.append(note);
 
   li.append(label, body);
   return li;
@@ -370,6 +364,9 @@ let leafletMap = null;
 let currentMapSlug = null;
 let pendingFocus = null;
 let circles = new Map();
+let enabledTypes = defaultEnabledTypes(MAPS.flatMap((m) => m.markers));
+let renderedByType = new Map();
+let currentMapTypeSlugs = [];
 
 function renderMapRegions() {
   const bar = document.createElement("div");
@@ -383,14 +380,124 @@ function renderMapRegions() {
     b.addEventListener("click", () => selectMap(mp.slug));
     bar.append(b);
   }
+  const wrap = document.createElement("div");
+  wrap.className = "map-wrap";
+
   const canvas = document.createElement("div");
   canvas.id = "mapCanvas";
-  const legend = document.createElement("div");
-  legend.className = "map-legend";
+
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.id = "mapFilterBtn";
+  btn.className = "map-filter-btn";
+  btn.setAttribute("aria-expanded", "false");
+  btn.textContent = "Filtry";
+  btn.addEventListener("click", () => toggleFilterPanel());
+
+  const panel = document.createElement("div");
+  panel.id = "mapFilterPanel";
+  panel.className = "map-panel";
+  panel.hidden = true;
+
+  wrap.append(canvas, btn, panel);
+
   const note = document.createElement("p");
   note.className = "muted small map-note";
   note.textContent = "Kafelki pobierane online z serwera MapGenie. Pozycje bez znacznika nie mają odpowiednika na mapie.";
-  mapEl.append(bar, canvas, legend, note);
+  mapEl.append(bar, wrap, note);
+}
+
+function toggleFilterPanel(force) {
+  const btn = mapEl.querySelector("#mapFilterBtn");
+  const panel = mapEl.querySelector("#mapFilterPanel");
+  if (!btn || !panel) return;
+  const open = typeof force === "boolean" ? force : panel.hidden;
+  panel.hidden = !open;
+  btn.setAttribute("aria-expanded", String(open));
+}
+
+function updateFilterButton() {
+  const btn = mapEl.querySelector("#mapFilterBtn");
+  if (!btn) return;
+  const n = currentMapTypeSlugs.filter((s) => enabledTypes.has(s)).length;
+  btn.textContent = `Filtry (${n})`;
+}
+
+/** Panel filtrów per typ: liczniki, polskie nazwy i przełączniki widoczności. */
+function renderFilterPanel(mp) {
+  const panel = mapEl.querySelector("#mapFilterPanel");
+  panel.textContent = "";
+
+  const counts = new Map();
+  for (const mk of mp.markers) counts.set(String(mk.typeSlug), (counts.get(String(mk.typeSlug)) || 0) + 1);
+
+  const entries = [];
+  const seen = new Set();
+  for (const t of mp.types) {
+    const key = String(t.slug);
+    if (!counts.has(key) || seen.has(key)) continue;
+    seen.add(key);
+    entries.push({ slug: key, name: t.name, count: counts.get(key) });
+  }
+  for (const [key, count] of counts) {
+    if (seen.has(key)) continue;
+    const known = mp.markers.find((mk) => String(mk.typeSlug) === key);
+    entries.push({ slug: key, name: (known && known.typeName) || key, count });
+  }
+  currentMapTypeSlugs = entries.map((e) => e.slug);
+
+  const list = document.createElement("div");
+  list.className = "map-panel-list";
+  for (const e of entries) {
+    const label = document.createElement("label");
+    label.className = "map-legend-item";
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.checked = enabledTypes.has(e.slug);
+    cb.addEventListener("change", () => setTypeEnabled(e.slug, cb.checked));
+    const i = document.createElement("i");
+    i.style.background = colorForType(e.slug);
+    label.append(cb, i, document.createTextNode(`${typeLabelPl(e.slug, e.name)} (${e.count})`));
+    list.append(label);
+  }
+
+  const actions = document.createElement("div");
+  actions.className = "map-panel-actions";
+  const all = document.createElement("button");
+  all.type = "button";
+  all.textContent = "Wszystkie";
+  all.addEventListener("click", () => setAllTypes(true));
+  const none = document.createElement("button");
+  none.type = "button";
+  none.textContent = "Żadne";
+  none.addEventListener("click", () => setAllTypes(false));
+  actions.append(all, none);
+
+  panel.append(list, actions);
+  updateFilterButton();
+}
+
+function setAllTypes(on) {
+  for (const slug of currentMapTypeSlugs) setTypeEnabled(slug, on);
+  const mp = MAPS.find((m) => m.slug === currentMapSlug) || MAPS[0];
+  if (mp) renderFilterPanel(mp);
+}
+
+function setTypeEnabled(slug, on) {
+  const key = String(slug);
+  if (on) enabledTypes.add(key);
+  else enabledTypes.delete(key);
+  for (const layer of renderedByType.get(key) || []) {
+    if (on) layer.addTo(leafletMap);
+    else layer.removeFrom(leafletMap);
+  }
+  updateFilterButton();
+}
+
+/** Popup znacznika bez powiązania z checklistą (POI/znajdźka). */
+function popupTextFor(mk) {
+  const type = typeLabelPl(mk.typeSlug, String(mk.typeName || "").trim());
+  return type ? `${esc(mk.name)}<div class="map-pop-en">${esc(type)}</div>` : esc(mk.name);
 }
 
 function popupFor(item) {
@@ -443,16 +550,7 @@ function selectMap(slug) {
   for (const b of mapEl.querySelectorAll(".map-regions button")) {
     b.classList.toggle("active", b.dataset.slug === mp.slug);
   }
-  const legend = mapEl.querySelector(".map-legend");
-  legend.textContent = "";
-  for (const t of mp.types) {
-    if (!mp.markers.some((mk) => mk.typeSlug === t.slug)) continue;
-    const s = document.createElement("span");
-    const i = document.createElement("i");
-    i.style.background = colorForType(t.slug);
-    s.append(i, document.createTextNode(t.name));
-    legend.append(s);
-  }
+  renderFilterPanel(mp);
 
   if (leafletMap) {
     leafletMap.remove();
@@ -474,6 +572,7 @@ function selectMap(slug) {
   }).addTo(leafletMap);
 
   const bounds = L.latLngBounds(mp.markers.map((mk) => [mk.lat, mk.lng]));
+  renderedByType = new Map();
   for (const mk of mp.markers) {
     const [item] = byId.get(mk.itemId) || [];
     const marker = L.circleMarker([mk.lat, mk.lng], {
@@ -487,9 +586,12 @@ function selectMap(slug) {
       marker.bindPopup(() => popupFor(item), { minWidth: 150, maxWidth: 220, autoPanPadding: [12, 12] });
       circles.set(mk.itemId, marker);
     } else {
-      marker.bindPopup(esc(mk.name));
+      marker.bindPopup(popupTextFor(mk), { minWidth: 120 });
     }
-    marker.addTo(leafletMap);
+    const key = String(mk.typeSlug);
+    if (!renderedByType.has(key)) renderedByType.set(key, []);
+    renderedByType.get(key).push(marker);
+    if (isMarkerVisible(mk, enabledTypes)) marker.addTo(leafletMap);
   }
   leafletMap.fitBounds(bounds.pad(0.18));
   applyMapFocus();
@@ -547,8 +649,6 @@ for (const t of document.querySelectorAll(".tab")) {
 
 $("#search").addEventListener("input", applyFilter);
 $("#hideDone").addEventListener("change", applyFilter);
-$("#showTips").addEventListener("change", (e) => document.body.classList.toggle("show-tips", e.target.checked));
-
 $("#nextBtn").addEventListener("click", () => {
   if (!currentNext) return;
   switchTab("plan");
@@ -583,7 +683,7 @@ menu.addEventListener("click", (e) => {
 });
 
 $("#exportBtn").addEventListener("click", () => {
-  const blob = new Blob([serializeState(state.done, state.notes)], { type: "application/json" });
+  const blob = new Blob([serializeState(state.done)], { type: "application/json" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
   a.download = `wiedzmin3-postep-${new Date().toISOString().slice(0, 10)}.json`;
@@ -609,7 +709,7 @@ $("#importInput").addEventListener("change", (e) => {
 });
 
 $("#shareBtn").addEventListener("click", async () => {
-  const encoded = btoa(unescape(encodeURIComponent(serializeState(state.done, state.notes))));
+  const encoded = btoa(unescape(encodeURIComponent(serializeState(state.done))));
   const url = `${location.origin}${location.pathname}#s=${encoded}`;
   try {
     await navigator.clipboard.writeText(url);
@@ -620,7 +720,7 @@ $("#shareBtn").addEventListener("click", async () => {
 });
 
 $("#resetBtn").addEventListener("click", () => {
-  if (!confirm("Wyczyścić cały postęp i notatki?")) return;
+  if (!confirm("Wyczyścić cały postęp?")) return;
   state = emptyState();
   saveState();
   renderAll();

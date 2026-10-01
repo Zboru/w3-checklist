@@ -6,29 +6,40 @@
 export const STATE_VERSION = 1;
 
 export function emptyState() {
-  return { done: new Set(), notes: {} };
+  return { done: new Set() };
 }
 
 /**
  * @param {Set<string>} done
- * @param {Record<string,string>} notes
  * @returns {string}
  */
-export function serializeState(done, notes) {
+export function serializeState(done) {
   return JSON.stringify({
     v: STATE_VERSION,
-    done: Object.fromEntries([...(done || [])].map((id) => [id, 1])),
-    notes: notes || {}
+    done: Object.fromEntries([...(done || [])].map((id) => [id, 1]))
   });
+}
+
+/**
+ * Krok „przepadający" to ten, który arkusz oznaczył jawnie jako
+ * `nonMissable: false`. Pozycje bez tego pola (kolekcje) nie są oznaczane.
+ *
+ * @param {{ nonMissable?: boolean }|null|undefined} item
+ * @returns {boolean}
+ */
+export function isMissable(item) {
+  return Boolean(item) && item.nonMissable === false;
 }
 
 /**
  * Bezpiecznie parsuje stan. Uszkodzony JSON, złe typy lub nieznane ID nie
  * powodują wyjątku — zwracany jest pusty (lub częściowo odfiltrowany) stan.
  *
+ * Starsze zapisy z polem `notes` wczytują się bez błędu — pole jest ignorowane.
+ *
  * @param {string} text
  * @param {Set<string>|null} validIds
- * @returns {{ done: Set<string>, notes: Record<string,string> }}
+ * @returns {{ done: Set<string> }}
  */
 export function parseState(text, validIds = null) {
   let raw;
@@ -48,16 +59,7 @@ export function parseState(text, validIds = null) {
     }
   }
 
-  const notes = {};
-  if (raw.notes && typeof raw.notes === "object") {
-    for (const [id, val] of Object.entries(raw.notes)) {
-      if (typeof val !== "string" || val === "") continue;
-      if (validIds && !validIds.has(id)) continue;
-      notes[id] = val;
-    }
-  }
-
-  return { done, notes };
+  return { done };
 }
 
 /**
@@ -117,4 +119,94 @@ export function nextStep(plan, done) {
     }
   }
   return null;
+}
+
+/* ---------------- mapa: typy znaczników ---------------- */
+
+/** Slug-i typów MapGenie, które dokładamy jako POI/znajdźki (poza checklistą). */
+export const MARKER_TYPES = {
+  pointOfInterest: "608",
+  signpost: "610",
+  placeOfPower: "607",
+  gwentCard: "641",
+  witcherGear: "638",
+  hiddenTreasure: "637",
+  smugglerCache: "611",
+  noticeBoard: "605",
+  monsterNest: "604",
+  monsterDen: "603",
+  guardedTreasure: "598"
+};
+
+/** Wszystkie extra typy wchodzące do builda. */
+export const EXTRA_TYPES = new Set(Object.values(MARKER_TYPES));
+
+/** Extra typy włączone domyślnie po otwarciu mapy. */
+export const DEFAULT_ON_TYPES = new Set([
+  MARKER_TYPES.pointOfInterest,
+  MARKER_TYPES.signpost,
+  MARKER_TYPES.placeOfPower,
+  MARKER_TYPES.gwentCard,
+  MARKER_TYPES.witcherGear,
+  MARKER_TYPES.hiddenTreasure
+]);
+
+/**
+ * Zbiór typów widocznych domyślnie: każdy typ powiązany z checklistą oraz
+ * extra typy z DEFAULT_ON_TYPES.
+ *
+ * @param {Array<{ itemId?: string|null, typeSlug: string|number }>} markers
+ * @param {Set<string>} [defaultOn]
+ * @returns {Set<string>}
+ */
+export function defaultEnabledTypes(markers, defaultOn = DEFAULT_ON_TYPES) {
+  const enabled = new Set();
+  for (const mk of markers || []) {
+    const t = String(mk.typeSlug);
+    if (mk.itemId || defaultOn.has(t)) enabled.add(t);
+  }
+  return enabled;
+}
+
+/**
+ * @param {{ typeSlug: string|number }} marker
+ * @param {Set<string>} enabledTypes
+ * @returns {boolean}
+ */
+export function isMarkerVisible(marker, enabledTypes) {
+  return enabledTypes.has(String(marker.typeSlug));
+}
+
+/** Polskie nazwy typów znaczników (slug MapGenie -> PL). */
+export const MARKER_TYPE_NAMES_PL = {
+  598: "Strzeżony skarb",
+  603: "Legowisko potwora",
+  604: "Gniazdo potworów",
+  605: "Tablica ogłoszeń",
+  607: "Miejsce mocy",
+  608: "Punkt zainteresowania",
+  610: "Drogowskaz",
+  611: "Schowek przemytnika",
+  616: "Kontrakt winiarza",
+  617: "Kontrakt",
+  632: "Zadanie główne",
+  633: "Zadanie poboczne",
+  636: "Wyścig konny",
+  637: "Ukryty skarb",
+  638: "Rynsztunek wiedźmina",
+  641: "Karta Gwinta",
+  649: "Postać"
+};
+
+/**
+ * Etykieta typu znacznika po polsku; nieznany typ spada do nazwy angielskiej
+ * (albo samego slug-a, gdy brak i jej).
+ *
+ * @param {string|number} typeSlug
+ * @param {string} [fallback]
+ * @returns {string}
+ */
+export function typeLabelPl(typeSlug, fallback) {
+  const key = String(typeSlug);
+  return MARKER_TYPE_NAMES_PL[key] || fallback || key;
 }
