@@ -6,6 +6,7 @@ import {
   matchIgnUrl,
   buildIgnIndex,
   titleFromWikiUrl,
+  wikiArticleUrl,
   titleCaseRegion,
   nameVariants,
   lookupPl,
@@ -73,6 +74,20 @@ test("titleFromWikiUrl czyta tytuł z segmentu", () => {
     titleFromWikiUrl("/wikis/the-witcher-3-wild-hunt/A_Towerful_of_Mice#x"),
     "A Towerful of Mice"
   );
+});
+
+test("wikiArticleUrl usuwa kotwicę, żeby link prowadził do początku artykułu", () => {
+  assert.equal(
+    wikiArticleUrl(
+      "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Kaer_Morhen#kaer-morhen-complete"
+    ),
+    "https://www.ign.com/wikis/the-witcher-3-wild-hunt/Kaer_Morhen"
+  );
+  assert.equal(
+    wikiArticleUrl("https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Princess_in_Distress"),
+    "https://www.ign.com/wikis/the-witcher-3-wild-hunt/A_Princess_in_Distress"
+  );
+  assert.equal(wikiArticleUrl(null), null);
 });
 
 test("titleCaseRegion formatuje region do wyświetlenia", () => {

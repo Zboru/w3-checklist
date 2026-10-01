@@ -1,6 +1,7 @@
 import { writeFile, mkdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { wikiArticleUrl } from "./lib/names.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -50,7 +51,7 @@ async function main() {
         id: task.id,
         name: task.name,
         groupId: groupOf.get(task.id) ?? null,
-        wikiUrl: page ? WIKI_PREFIX + page.wikiUrl : null,
+        wikiUrl: page ? wikiArticleUrl(WIKI_PREFIX + page.wikiUrl) : null,
         mapUrl: task.mapUrl ? WIKI_PREFIX + task.mapUrl : null,
         mapName: task.map?.mapName ?? null
       };

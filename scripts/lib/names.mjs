@@ -72,6 +72,18 @@ export function buildIgnIndex(pages) {
 }
 
 /**
+ * Usuwa kotwicę (#...) z URL-a wiki IGN, żeby link prowadził do początku
+ * artykułu, a nie do sekcji-checklisty. Null pozostaje nullem.
+ *
+ * @param {string|null|undefined} wikiUrl
+ * @returns {string|null}
+ */
+export function wikiArticleUrl(wikiUrl) {
+  if (wikiUrl == null) return null;
+  return String(wikiUrl).split("#")[0];
+}
+
+/**
  * Wyciąga czytelny tytuł z URL-a wiki, np.
  * "/wikis/the-witcher-3-wild-hunt/A_Towerful_of_Mice#x" -> "A Towerful of Mice".
  *
@@ -79,7 +91,7 @@ export function buildIgnIndex(pages) {
  * @returns {string}
  */
 export function titleFromWikiUrl(wikiUrl) {
-  const withoutHash = String(wikiUrl).split("#")[0];
+  const withoutHash = wikiArticleUrl(wikiUrl) ?? "";
   const segment = withoutHash.split("/").filter(Boolean).pop() || "";
   return decodeURIComponent(segment).replace(/_/g, " ").trim();
 }
