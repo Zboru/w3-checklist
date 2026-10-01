@@ -25,8 +25,8 @@ Wynik to jeden plik `index.html` — bez zależności, działa offline.
 ## Jak używać na telefonie
 
 1. Otwórz `index.html` w przeglądarce (albo opublikuj go — patrz niżej).
-2. Przechodź kroki po kolei i odhaczaj. Przycisk **„Następny krok →"** zawsze
-   przenosi do pierwszego nieodhaczonego zadania.
+2. Przechodź kroki po kolei i odhaczaj. Okrągły przycisk **→** w prawym dolnym
+   rogu zawsze przenosi do pierwszego nieodhaczonego zadania.
 3. **„ukryj zrobione"** daje czystą listę tego, co zostało; **szukajka**
    działa po nazwach PL i EN.
 4. Kroki, które mają wskazówki, rozwijasz klikając w ich **tytuł** (spoiler

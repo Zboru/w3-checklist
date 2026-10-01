@@ -336,9 +336,13 @@ function updateNext() {
   btn.disabled = !n;
   if (n) {
     const label = n.step.namePl || n.step.name;
-    btn.innerHTML = `Następny krok <span class="nowrap">→ ${esc(label)}</span>`;
+    btn.innerHTML = `<span aria-hidden="true">→</span>`;
+    btn.title = `Następny krok: ${label}`;
+    btn.setAttribute("aria-label", `Następny krok: ${label}`);
   } else {
-    btn.textContent = "Wszystko zrobione 🎉";
+    btn.innerHTML = `<span aria-hidden="true">✓</span>`;
+    btn.title = "Wszystko zrobione 🎉";
+    btn.setAttribute("aria-label", "Wszystko zrobione");
   }
 }
 

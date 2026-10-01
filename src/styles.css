@@ -25,7 +25,7 @@ html, body {
   overflow-x: clip;
 }
 
-body { padding-bottom: env(safe-area-inset-bottom); }
+body { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
 
 h1, h2, h3, p, ul, li { margin: 0; }
 ul { list-style: none; padding: 0; }
@@ -81,13 +81,25 @@ a { color: var(--accent); }
 .switch { display: inline-flex; align-items: center; gap: 7px; font-size: .85rem; color: var(--fg-dim); min-height: 32px; }
 .switch input { width: 18px; height: 18px; accent-color: var(--accent); }
 
-.next {
-  width: 100%; min-height: var(--tap); margin-top: 8px;
-  background: var(--bg-soft); color: var(--accent);
-  border: 1px solid var(--accent); border-radius: 10px;
-  font-size: .95rem; font-weight: 650; cursor: pointer;
+.fab {
+  position: fixed;
+  right: calc(16px + env(safe-area-inset-right));
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  z-index: 30;
+  width: 56px; height: 56px;
+  display: grid; place-items: center;
+  background: var(--accent); color: #1a1508;
+  border: 1px solid var(--accent); border-radius: 50%;
+  font-size: 1.5rem; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .45);
+  cursor: pointer;
+  transition: transform .12s, box-shadow .12s, opacity .12s;
 }
-.next:disabled { opacity: .55; border-color: var(--line); color: var(--fg-dim); }
+.fab:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(0, 0, 0, .5); }
+.fab:active { transform: translateY(0) scale(.96); }
+.fab:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
+.fab:disabled { opacity: .55; background: var(--bg-soft); color: var(--fg-dim); border-color: var(--line); box-shadow: none; cursor: default; transform: none; }
+.fab[hidden] { display: none; }
 
 /* ---------- content ---------- */
 .main { padding: 10px 12px 24px; max-width: 760px; margin: 0 auto; }
@@ -143,7 +155,6 @@ button.title {
 .name-pl { font-weight: 600; word-break: break-word; }
 .item.done .name-pl { color: var(--fg-dim); }
 .name-en { font-size: .78rem; color: var(--fg-dim); }
-.nowrap { white-space: nowrap; }
 
 .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 5px; font-size: .78rem; }
 .chip { background: var(--bg-soft); border: 1px solid var(--line); border-radius: 99px; padding: 1px 8px; color: var(--fg-dim); font-variant-numeric: tabular-nums; }
