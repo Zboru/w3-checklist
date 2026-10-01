@@ -9,6 +9,7 @@
     "build": "node scripts/build.mjs",
     "build:nomap": "node scripts/build.mjs --no-map",
     "verify": "node scripts/verify.mjs",
+    "icons": "node scripts/make-icons.mjs",
     "screenshot": "node scripts/screenshot.mjs",
     "test": "node --test"
   },

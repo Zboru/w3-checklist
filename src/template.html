@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark light">
 <meta name="description" content="Checklista Wiedźmina 3 krok po kroku — baza, Serca z Kamienia i Krew i Wino. Bez pomijania, z linkami do IGN.">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-180.png">
+<meta name="theme-color" content="#101014">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Wiedźmin 3">
 <title>Wiedźmin 3 — krok po kroku</title>
 <style>/*__CSS__*/</style>
 </head>
@@ -63,5 +71,13 @@
 
 <script>window.__DATA__ = /*__DATA__*/;</script>
 <script>/*__JS__*/</script>
+<script>
+// PWA: powłokę apki trzyma service worker, żeby działała bez internetu.
+if ("serviceWorker" in navigator && location.protocol !== "file:") {
+  addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
+  });
+}
+</script>
 </body>
 </html>

@@ -3,6 +3,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { build } from "esbuild";
 import { normalizeName, nameVariants, titleFromWikiUrl, buildPlIndex, lookupIndex, lookupPl } from "./lib/names.mjs";
+import { buildManifest, buildServiceWorker, cacheVersionFrom } from "./lib/pwa.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -175,10 +176,16 @@ async function main() {
   const outFile = resolve(ROOT, "index.html");
   await writeFile(outFile, html, "utf8");
 
+  /* ---- PWA: manifest + service worker (wersjonowany per build) ---- */
+  const version = cacheVersionFrom(data.generatedAt);
+  await writeFile(resolve(ROOT, "manifest.json"), JSON.stringify(buildManifest(), null, 2) + "\n", "utf8");
+  await writeFile(resolve(ROOT, "sw.js"), buildServiceWorker(version), "utf8");
+
   const kb = (Buffer.byteLength(html, "utf8") / 1024).toFixed(0);
   console.log(`Plan: ${plan.length} rozdzialow, ${planSteps} krokow (${planWithLink} z linkiem IGN, ${planWithPl} z PL)`);
   console.log(`Kolekcje: ${collections.length} kategorii, ${collectionItems.length} pozycji`);
   console.log(`index.html: ${kb} kB`);
+  console.log(`PWA: manifest.json + sw.js (cache ${version})`);
 }
 
 main().catch((err) => {

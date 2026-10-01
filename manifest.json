@@ -1,0 +1,26 @@
+{
+  "name": "Wiedźmin 3 — krok po kroku",
+  "short_name": "Wiedźmin 3",
+  "description": "Checklista Wiedźmina 3 krok po kroku — baza, Serca z Kamienia i Krew i Wino. Bez pomijania, z linkami do IGN.",
+  "lang": "pl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#101014",
+  "theme_color": "#101014",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

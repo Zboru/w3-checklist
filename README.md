@@ -18,7 +18,9 @@ odhaczać postęp — żeby niczego nie pominąć.
 - Nazwy: **polskie + angielskie** (polskie z wiki Fandom, gdzie udało się
   zmapować; inaczej tylko angielska).
 
-Wynik to jeden plik `index.html` — bez zależności, działa offline.
+Wynik to `index.html` oraz pliki PWA (`manifest.json`, `sw.js`, `icons/`) —
+bez zależności runtime. Zainstalowana apka działa **offline**; tylko mapa
+potrzebuje internetu.
 
 ![Plan gry](docs/screens/mobile-plan-top.png)
 
@@ -34,6 +36,21 @@ Wynik to jeden plik `index.html` — bez zależności, działa offline.
 5. Krok oznaczony jako **„przepadające"** (czerwony chip) można nieodwracalnie
    przegapić — zrób go, zanim zniknie.
 6. Postęp zapisuje się automatycznie w przeglądarce.
+
+### Instalacja na iPhonie (PWA)
+
+Apka jest PWA, więc można ją dodać do ekranu początkowego i uruchamiać jak
+zwykłą aplikację (pełny ekran, własna ikona, bez paska Safari). Musi być
+otwarta z **HTTPS** (np. z GitHub Pages) — z pliku lokalnego nie zadziała.
+
+1. Otwórz adres apki w **Safari** (na iPhonie tylko Safari potrafi dodać PWA).
+2. **Udostępnij** → **„Dodaj do ekranu początkowego"**.
+3. Uruchamiaj z ikony na ekranie głównym. Lista, kolekcje i postęp działają
+   **bez internetu**; mapa (kafelki MapGenie) potrzebuje sieci.
+
+> **Uwaga:** PWA na iPhonie ma **własny magazyn danych**, oddzielny od Safari.
+> Postęp z Safari nie przeniesie się sam — użyj **Eksportuj/Importuj** albo
+> **„Kopiuj link z postępem"** z menu (☰).
 
 ### Mapa
 
@@ -63,8 +80,8 @@ W menu (☰):
 3. **Source:** `Deploy from a branch`, **Branch:** `main`, katalog **`/ (root)`**, zapisz.
 4. Po chwili strona będzie pod `https://<użytkownik>.github.io/<repo>/`.
 
-`index.html` jest już zbudowany i zacommitowany, więc Pages nie wymaga żadnego
-builda.
+`index.html`, `manifest.json`, `sw.js` i `icons/` są już zbudowane i
+zacommitowane, więc Pages nie wymaga żadnego builda.
 
 > **Wersja bez mapy:** jeśli nie chcesz publikować wersji z osadzoną mapą
 > (hotlinkuje kafelki MapGenie), zbuduj bez niej i to wgraj na Pages:
@@ -74,7 +91,7 @@ builda.
 > ```
 >
 > Powstanie `index.html` bez zakładki „Mapa", bez Leafletu i bez danych map
-> (~505 kB zamiast ~750 kB). Linki „Mapa ↗" do IGN zostają.
+> (~483 kB zamiast ~847 kB). Linki „Mapa ↗" do IGN zostają.
 
 ## Przebudowa / aktualizacja danych
 
@@ -88,7 +105,8 @@ npm run fetch                     # IGN + Google Sheet + nazwy PL + mapy -> data
 npm run build                     # data/*.json + src/* -> index.html
 npm run build:nomap               # to samo, ale bez osadzonej mapy
 npm test                          # testy jednostkowe (node:test)
-npm run verify                    # asercje danych + smoke test (Playwright)
+npm run verify                    # asercje danych + smoke test (Playwright, w tym offline)
+npm run icons                     # raz: wygeneruj ikony PWA do icons/ (wymaga Playwrighta)
 npm run screenshot                # zrzuty do docs/screens/
 ```
 
@@ -116,7 +134,10 @@ linkiem zwrotnym na polskiej wiki).
   (te, które mają — pokazują „IGN ↗").
 - Link „Mapa" mają tylko pozycje z odpowiednikiem na mapie IGN (675/1168);
   znacznik w apce ma 409 z nich.
-- Mapa w apce wymaga internetu (kafelki MapGenie) i nie działa offline.
+- Mapa w apce wymaga internetu (kafelki MapGenie) i nie działa offline; reszta
+  apki (plan, kolekcje, postęp) działa offline po zainstalowaniu jako PWA.
+- PWA na iPhonie ma osobny magazyn danych od Safari — przenieś postęp
+  eksportem lub linkiem z postępem.
 - Polskie nazwy pokrywają większość questów, ale nie wszystkie; brakujące
   wyświetlają się po angielsku.
 - Wskazówki pochodzą z angielskiego arkusza i są w oryginale (mogą zawierać
@@ -127,11 +148,14 @@ linkiem zwrotnym na polskiej wiki).
 ## Struktura
 
 ```
-scripts/            pipeline (fetch-ign/sheet/pl/maps, build, verify, screenshot)
-  lib/              parser CSV, budowa planu, dopasowanie nazw
+scripts/            pipeline (fetch-ign/sheet/pl/maps, build, verify, screenshot, make-icons)
+  lib/              parser CSV, budowa planu, dopasowanie nazw, artefakty PWA
 data/               dane źródłowe (cache) — źródło prawdy dla build
 src/                template.html, app.js, core.js, styles.css, leaflet-stub.js
 test/               testy jednostkowe (node:test)
-index.html          wynik (samodzielny plik)
+index.html          wynik (samodzielny widok aplikacji)
+manifest.json       manifest PWA (generowany przez build)
+sw.js               service worker — tryb offline (generowany przez build)
+icons/              ikony PWA (generowane przez npm run icons)
 docs/               specyfikacja, plan, zrzuty ekranu
 ```

@@ -1,11 +1,58 @@
-import { readFile } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 import { createServer } from "node:http";
-import { dirname, resolve } from "node:path";
+import { dirname, extname, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "playwright";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
+
+/** Prefiks, pod ktorym symulujemy hosting na GitHub Pages w podkatalogu. */
+const PREFIX = "/witcher-checklist/";
+const MIME = {
+  ".html": "text/html; charset=utf-8",
+  ".js": "text/javascript; charset=utf-8",
+  ".json": "application/json; charset=utf-8",
+  ".webmanifest": "application/manifest+json; charset=utf-8",
+  ".png": "image/png",
+  ".svg": "image/svg+xml",
+  ".css": "text/css; charset=utf-8"
+};
+
+/** Serwuje katalog builda pod prefiksem (1:1 jak GitHub Pages w podkatalogu). */
+function staticServer(root, prefix) {
+  return createServer(async (req, res) => {
+    let pathname;
+    try {
+      pathname = decodeURIComponent(new URL(req.url, "http://x").pathname);
+    } catch {
+      res.writeHead(400).end();
+      return;
+    }
+    if (!pathname.startsWith(prefix)) {
+      res.writeHead(404, { "content-type": "text/plain" });
+      res.end("not found");
+      return;
+    }
+    let rel = pathname.slice(prefix.length);
+    if (rel === "" || rel.endsWith("/")) rel += "index.html";
+    const file = resolve(root, rel);
+    if (file !== resolve(root) && !file.startsWith(resolve(root) + sep)) {
+      res.writeHead(403).end();
+      return;
+    }
+    try {
+      const body = await readFile(file);
+      res.writeHead(200, { "content-type": MIME[extname(file).toLowerCase()] || "application/octet-stream" });
+      res.end(body);
+    } catch {
+      res.writeHead(404, { "content-type": "text/plain" });
+      res.end("not found");
+    }
+  });
+}
+
+const fileExists = (file) => access(file).then(() => true).catch(() => false);
 
 let failures = 0;
 function check(name, cond, extra = "") {
@@ -61,17 +108,36 @@ async function structural() {
   } else {
     console.log("INFO  brak map w buildzie (--no-map)");
   }
+
+  /* ---- PWA ---- */
+  check("index.html linkuje manifest", /<link[^>]+rel="manifest"[^>]+href="\.\/manifest\.json"/.test(html));
+  check("index.html ma apple-touch-icon 180", /rel="apple-touch-icon"[^>]+href="\.\/icons\/apple-touch-180\.png"/.test(html));
+  check("index.html ma theme-color #101014", /<meta[^>]+name="theme-color"[^>]+content="#101014"/.test(html));
+  check("index.html ma apple-mobile-web-app-capable", /name="apple-mobile-web-app-capable"[^>]+content="yes"/.test(html));
+  check("index.html ma apple-mobile-web-app-title", /name="apple-mobile-web-app-title"/.test(html));
+  check("index.html ma pasek statusu dla iOS", /name="apple-mobile-web-app-status-bar-style"/.test(html));
+  check("index.html rejestruje service worker", /serviceWorker[^\n]*register\(\s*["']\.\/sw\.js["']/.test(html));
+
+  const manifest = JSON.parse(await readFile(resolve(ROOT, "manifest.json"), "utf8").catch(() => "{}"));
+  check("manifest: tryb standalone", manifest.display === "standalone");
+  check("manifest: start_url i scope względne", manifest.start_url === "./" && manifest.scope === "./");
+  check("manifest: ikony 192 i 512", ["192x192", "512x512"].every((s) => (manifest.icons || []).some((i) => i.sizes === s)));
+  check("manifest: kolor zgodny z apką", manifest.theme_color === "#101014" && manifest.background_color === "#101014");
+
+  const sw = await readFile(resolve(ROOT, "sw.js"), "utf8").catch(() => "");
+  check("sw.js ma handler instalacji", /addEventListener\(\s*["']install["']/.test(sw));
+  check("sw.js ma handler fetch", /addEventListener\(\s*["']fetch["']/.test(sw));
+  check("sw.js czyści stare cache", /caches\.delete/.test(sw));
+  for (const icon of ["icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-180.png"]) {
+    check(`ikona istnieje: ${icon}`, await fileExists(resolve(ROOT, icon)));
+  }
 }
 
 async function smoke() {
-  const html = await readFile(resolve(ROOT, "index.html"), "utf8");
-  const server = createServer((req, res) => {
-    res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
-    res.end(html);
-  });
+  const server = staticServer(ROOT, PREFIX);
   await new Promise((r) => server.listen(0, "127.0.0.1", r));
   const port = server.address().port;
-  const url = `http://127.0.0.1:${port}/`;
+  const base = `http://127.0.0.1:${port}${PREFIX}`;
 
   const browser = await chromium.launch();
   const context = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 3 });
@@ -79,7 +145,7 @@ async function smoke() {
   const errors = [];
   page.on("pageerror", (e) => errors.push(String(e)));
   await page.route("**/*mapgenie.io/**", (r) => r.abort());
-  await page.goto(url, { waitUntil: "load" });
+  await page.goto(base, { waitUntil: "load" });
 
   // Widok planu
   const planRows = page.locator("#plan .item");
@@ -184,6 +250,43 @@ async function smoke() {
   page.once("dialog", (d) => d.accept());
   await page.locator("#resetBtn").click();
   check("reset czysci stan", (await page.locator("#count").textContent()).startsWith("0/"));
+
+  // PWA: rejestracja service workera, cache powloki i dzialanie offline
+  const swSupported = await page.evaluate(() => "serviceWorker" in navigator && isSecureContext);
+  check("service worker dostepny (secure context)", swSupported);
+  if (swSupported) {
+    const reg = await page.evaluate(() =>
+      Promise.race([
+        navigator.serviceWorker.ready.then((r) => (r.active ? "ok" : "no-active")),
+        new Promise((res) => setTimeout(() => res("timeout"), 10000))
+      ]).catch((e) => "error: " + String(e))
+    );
+    check("service worker się rejestruje i aktywuje", reg === "ok", String(reg));
+
+    const scope = await page.evaluate(() => navigator.serviceWorker.ready.then((r) => r.scope));
+    check("scope = podkatalog apki", scope.endsWith(PREFIX.slice(1)), scope);
+
+    const cached = await page.evaluate(async () => {
+      const out = [];
+      for (const name of await caches.keys()) {
+        const cache = await caches.open(name);
+        for (const req of await cache.keys()) out.push(req.url);
+      }
+      return out;
+    });
+    check("powłoka apki w cache", cached.includes(base + "index.html"), `${cached.length} wpisów`);
+    const foreign = cached.filter((u) => !u.startsWith(base));
+    check("obce zasoby poza cache (kafelki mapy)", foreign.length === 0, foreign.join(", "));
+
+    const offlineErrors = [];
+    page.on("pageerror", (e) => offlineErrors.push(String(e)));
+    await context.setOffline(true);
+    await page.reload({ waitUntil: "load", timeout: 15000 });
+    const offlineRows = await page.locator("#plan .item").count();
+    check("apka otwiera się offline z cache", offlineRows === 458, `${offlineRows} wierszy`);
+    check("brak błędów JS offline", offlineErrors.length === 0, offlineErrors.join("; "));
+    await context.setOffline(false);
+  }
 
   await browser.close();
   await new Promise((r) => server.close(r));
