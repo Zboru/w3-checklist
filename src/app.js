@@ -8,7 +8,10 @@ import {
   isMissable,
   defaultEnabledTypes,
   isMarkerVisible,
-  typeLabelPl
+  typeLabelPl,
+  isCheckableMarker,
+  mapMarkerId,
+  CHECKABLE_MARKER_TYPES
 } from "./core.js";
 import L from "leaflet";
 
@@ -39,6 +42,15 @@ for (const mp of MAPS) {
     if (mk.itemId && !markerByItem.has(mk.itemId)) markerByItem.set(mk.itemId, { mapSlug: mp.slug, marker: mk });
   }
 }
+
+/** Id dodatkowych, odhaczalnych znaczników mapy (własne „zrobione"). */
+const mapProgressIds = new Set();
+for (const mp of MAPS) {
+  for (const mk of mp.markers) {
+    if (isCheckableMarker(mk)) mapProgressIds.add(mapMarkerId(mp.slug, mk));
+  }
+}
+for (const id of mapProgressIds) validIds.add(id);
 
 let state = loadState();
 let activeTab = "plan";
@@ -368,9 +380,18 @@ let leafletMap = null;
 let currentMapSlug = null;
 let pendingFocus = null;
 let circles = new Map();
+let progressLayers = new Map();
 let enabledTypes = defaultEnabledTypes(MAPS.flatMap((m) => m.markers));
 let renderedByType = new Map();
 let currentMapTypeSlugs = [];
+
+const currentMap = () => MAPS.find((m) => m.slug === currentMapSlug) || MAPS[0] || null;
+
+/** Styl odhaczonego znacznika dodatkowego — przygaszony, ale nadal klikalny. */
+function applyDoneStyle(layer, done) {
+  if (!layer) return;
+  layer.setStyle(done ? { opacity: 0.35, fillOpacity: 0.25 } : { opacity: 1, fillOpacity: 1 });
+}
 
 function renderMapRegions() {
   const bar = document.createElement("div");
@@ -461,7 +482,10 @@ function renderFilterPanel(mp) {
     cb.addEventListener("change", () => setTypeEnabled(e.slug, cb.checked));
     const i = document.createElement("i");
     i.style.background = colorForType(e.slug);
-    label.append(cb, i, document.createTextNode(`${typeLabelPl(e.slug, e.name)} (${e.count})`));
+    const countLabel = CHECKABLE_MARKER_TYPES.has(e.slug)
+      ? (() => { const p = typeProgress(mp, e.slug); return `(${p.done}/${p.total})`; })()
+      : `(${e.count})`;
+    label.append(cb, i, document.createTextNode(`${typeLabelPl(e.slug, e.name)} ${countLabel}`));
     list.append(label);
   }
 
@@ -546,6 +570,55 @@ function popupFor(item) {
   return box;
 }
 
+/** Popup dodatkowego, zbieralnego znacznika: nazwa, typ i własne „zrobione". */
+function popupForMarker(mp, mk) {
+  const id = mapMarkerId(mp.slug, mk);
+  const box = document.createElement("div");
+  box.className = "map-pop";
+
+  const name = document.createElement("div");
+  name.className = "map-pop-name";
+  name.textContent = mk.name;
+  box.append(name);
+
+  const type = typeLabelPl(mk.typeSlug, String(mk.typeName || "").trim());
+  if (type) {
+    const en = document.createElement("div");
+    en.className = "map-pop-en";
+    en.textContent = type;
+    box.append(en);
+  }
+
+  const row = document.createElement("div");
+  row.className = "map-pop-row";
+  const label = document.createElement("label");
+  label.className = "map-pop-check";
+  const cb = document.createElement("input");
+  cb.type = "checkbox";
+  cb.checked = isDone(id);
+  cb.addEventListener("change", () => {
+    setDone(id, cb.checked);
+    applyDoneStyle(progressLayers.get(id), cb.checked);
+    renderFilterPanel(currentMap());
+  });
+  label.append(cb, document.createTextNode(" zrobione"));
+  row.append(label);
+  box.append(row);
+  return box;
+}
+
+/** Postęp typu: ukończone znaczniki powiązane z checklistą + dodatkowe zbieralne. */
+function typeProgress(mp, slug) {
+  let done = 0;
+  let total = 0;
+  for (const mk of mp.markers) {
+    if (String(mk.typeSlug) !== slug) continue;
+    total++;
+    if (mk.itemId ? isDone(mk.itemId) : isDone(mapMarkerId(mp.slug, mk))) done++;
+  }
+  return { done, total };
+}
+
 function selectMap(slug) {
   const mp = MAPS.find((m) => m.slug === slug) || MAPS[0];
   if (!mp) return;
@@ -561,6 +634,7 @@ function selectMap(slug) {
     leafletMap = null;
   }
   circles = new Map();
+  progressLayers = new Map();
   const canvas = mapEl.querySelector("#mapCanvas");
   leafletMap = L.map(canvas, {
     minZoom: Math.max(1, (mp.minZoom || 2)),
@@ -589,6 +663,11 @@ function selectMap(slug) {
     if (item) {
       marker.bindPopup(() => popupFor(item), { minWidth: 150, maxWidth: 220, autoPanPadding: [12, 12] });
       circles.set(mk.itemId, marker);
+    } else if (isCheckableMarker(mk)) {
+      const id = mapMarkerId(mp.slug, mk);
+      marker.bindPopup(() => popupForMarker(mp, mk), { minWidth: 150, maxWidth: 220, autoPanPadding: [12, 12] });
+      progressLayers.set(id, marker);
+      applyDoneStyle(marker, isDone(id));
     } else {
       marker.bindPopup(popupTextFor(mk), { minWidth: 120 });
     }

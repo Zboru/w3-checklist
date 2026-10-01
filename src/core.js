@@ -152,6 +152,47 @@ export const DEFAULT_ON_TYPES = new Set([
 ]);
 
 /**
+ * Dodatkowe typy znaczników, które można odhaczać bezpośrednio na mapie
+ * (rzeczy do zebrania/zaliczenia). Pozostałe dodatkowe typy (drogowskazy,
+ * tablice, POI) nie są „zadaniami" do odhaczenia.
+ */
+export const CHECKABLE_MARKER_TYPES = new Set([
+  MARKER_TYPES.gwentCard,
+  MARKER_TYPES.hiddenTreasure,
+  MARKER_TYPES.guardedTreasure,
+  MARKER_TYPES.smugglerCache,
+  MARKER_TYPES.witcherGear,
+  MARKER_TYPES.placeOfPower,
+  MARKER_TYPES.monsterNest
+]);
+
+/**
+ * Czy znacznik jest dodatkowym (bez pozycji w checkliście) znacznikiem typu
+ * zbieralnego, dla którego pokazujemy własne „zrobione".
+ *
+ * @param {{ itemId?: string|null, typeSlug: string|number }|null|undefined} marker
+ * @returns {boolean}
+ */
+export function isCheckableMarker(marker) {
+  return Boolean(marker) && !marker.itemId && CHECKABLE_MARKER_TYPES.has(String(marker.typeSlug));
+}
+
+/**
+ * Stabilny identyfikator postępu dla dodatkowego znacznika mapy. Nie koliduje
+ * z identyfikatorami checklisty (prefiks `m:`); używa też współrzędnych, bo
+ * część znaczników dzieli ten sam slug w obrębie mapy.
+ *
+ * @param {string} mapSlug
+ * @param {{ slug: string|number, lat: number, lng: number }} marker
+ * @returns {string}
+ */
+export function mapMarkerId(mapSlug, marker) {
+  const lat = Number(marker.lat).toFixed(5);
+  const lng = Number(marker.lng).toFixed(5);
+  return `m:${mapSlug}:${marker.slug}@${lat},${lng}`;
+}
+
+/**
  * Zbiór typów widocznych domyślnie: każdy typ powiązany z checklistą oraz
  * extra typy z DEFAULT_ON_TYPES.
  *

@@ -57,6 +57,12 @@ otwarta z **HTTPS** (np. z GitHub Pages) — z pliku lokalnego nie zadziała.
 - Zakładka **Mapa** pokazuje 7 regionów z 409 znacznikami dopasowanymi do
   pozycji z listy. Kafelki pobierane są **online** z serwera MapGenie, więc
   mapa wymaga internetu — reszta aplikacji (i postęp) działa offline.
+- Dodatkowe znaczniki „zbieralne" (karty Gwinta, ukryte i strzeżone skarby,
+  schowki przemytnika, rynsztunek wiedźmina, miejsca mocy, gniazda potworów)
+  można odhaczać wprost na mapie — odhaczone są **przygaszone**, więc od razu
+  widać, co jeszcze zostało. Licznik typu pokazuje `zrobione/wszystkie`.
+  Ten postęp jest osobny i **nie wlicza się** do postępu planu ani kolekcji
+  (ale zapisuje się razem z nim, także w eksporcie i linku z postępem).
 - Gdy nie ma sieci, użyj linku **„Mapa ↗"**, który otwiera mapę IGN w przeglądarce.
 - Dane i grafika mapy należą do **MapGenie** (udostępniane przez IGN); aplikacja
   tylko je wyświetla i nie hostuje.

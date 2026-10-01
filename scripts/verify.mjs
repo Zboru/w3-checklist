@@ -3,6 +3,7 @@ import { createServer } from "node:http";
 import { dirname, extname, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "playwright";
+import { isCheckableMarker, mapMarkerId } from "../src/core.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -103,6 +104,10 @@ async function structural() {
     check("mapy: extra POI maja typ i brak itemId", extras.length > 100 && extras.every((m) => m.taskId == null && m.typeSlug), `${extras.length} extra`);
     check("mapy: kazdy znacznik ma typ", markers.every((m) => m.typeSlug), `${markers.length} znacznikow`);
     check("mapy: wspolrzedne w zakresie", markers.every((m) => Math.abs(m.lat) <= 90 && Math.abs(m.lng) <= 180));
+    const progressIds = [];
+    for (const mp of maps) for (const mk of mp.markers) if (isCheckableMarker(mk)) progressIds.push(mapMarkerId(mp.slug, mk));
+    check("mapy: dodatkowe zbieralne znaczniki sa odhaczalne", progressIds.length > 100, `${progressIds.length}`);
+    check("mapy: id postepu znacznikow sa unikalne", new Set(progressIds).size === progressIds.length, `${new Set(progressIds).size}/${progressIds.length}`);
     const withMap = [...planSteps, ...collectionItems].filter((i) => i.mapUrl).length;
     console.log(`INFO  mapy: ${maps.length} regionow, ${markers.length} znacznikow; pozycji z linkiem do mapy: ${withMap}`);
   } else {
@@ -239,6 +244,36 @@ async function smoke() {
     await page.waitForSelector("#mapCanvas.leaflet-container");
     await page.waitForTimeout(300);
     check("'Na mapie' otwiera popup na mapie", (await page.locator("#mapCanvas .leaflet-popup").count()) > 0);
+
+    // Odhaczanie dodatkowego (zbieralnego) znacznika: karta Gwinta / ukryty skarb.
+    await page.locator("#mapRegions button").nth(0).click();
+    await page.waitForSelector("#mapCanvas path.leaflet-interactive");
+    const progressBefore = await page.locator("#count").textContent();
+    const paths = page.locator("#mapCanvas path.leaflet-interactive");
+    const totalPaths = Math.min(await paths.count(), 150);
+    let found = false;
+    for (let i = 0; i < totalPaths && !found; i++) {
+      await paths.nth(i).click({ force: true });
+      await page.waitForTimeout(60);
+      const popup = page.locator("#mapCanvas .leaflet-popup");
+      if (!(await popup.count())) continue;
+      const text = (await popup.textContent()) || "";
+      if (!/zrobione/.test(text) || text.includes("IGN")) continue;
+      const box = popup.locator('input[type="checkbox"]');
+      if (!(await box.count())) continue;
+      const opacityOf = () => paths.nth(i).evaluate((el) => getComputedStyle(el).strokeOpacity);
+      const opacityBefore = await opacityOf();
+      await box.check();
+      const opacityAfter = await opacityOf();
+      check("odhaczenie znacznika dodatkowego przygasza go", Number(opacityAfter) < Number(opacityBefore), `${opacityBefore} -> ${opacityAfter}`);
+      const stored = await page.evaluate(() => localStorage.getItem("w3checklist.v1") || "");
+      check("postep znacznika mapy zapisany", stored.includes('"m:'));
+      found = true;
+    }
+    check("znaleziono odhaczalny znacznik dodatkowy", found);
+    const progressAfter = await page.locator("#count").textContent();
+    check("odhaczenie mapy nie zmienia postepu planu", progressAfter === progressBefore, `${progressBefore} -> ${progressAfter}`);
+
     check("brak bledow JS po mapie", errors.length === 0, errors.join("; "));
   } else {
     check("brak zakladki Mapa w buildzie --no-map", await page.locator("#mapTab").isHidden());

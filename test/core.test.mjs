@@ -12,8 +12,11 @@ import {
   defaultEnabledTypes,
   isMarkerVisible,
   typeLabelPl,
+  isCheckableMarker,
+  mapMarkerId,
   MARKER_TYPES,
   MARKER_TYPE_NAMES_PL,
+  CHECKABLE_MARKER_TYPES,
   DEFAULT_ON_TYPES
 } from "../src/core.js";
 
@@ -144,5 +147,32 @@ test("isMarkerVisible respektuje włączone typy", () => {
 test("DEFAULT_ON_TYPES to podzbiór typów znaczników", () => {
   const all = new Set(Object.values(MARKER_TYPES));
   for (const t of DEFAULT_ON_TYPES) assert.equal(all.has(t), true, `nieznany typ ${t}`);
+});
+
+test("isCheckableMarker tylko dla dodatkowych znaczników typu zbieralnego", () => {
+  assert.equal(isCheckableMarker({ itemId: null, typeSlug: MARKER_TYPES.gwentCard }), true);
+  assert.equal(isCheckableMarker({ itemId: null, typeSlug: MARKER_TYPES.hiddenTreasure }), true);
+  assert.equal(isCheckableMarker({ itemId: "k:1", typeSlug: MARKER_TYPES.gwentCard }), false, "powiązany z checklistą ma już odhaczenie");
+  assert.equal(isCheckableMarker({ itemId: null, typeSlug: MARKER_TYPES.signpost }), false, "drogowskaz nie jest zbieralny");
+  assert.equal(isCheckableMarker({ itemId: null, typeSlug: MARKER_TYPES.noticeBoard }), false);
+  assert.equal(isCheckableMarker(null), false);
+});
+
+test("CHECKABLE_MARKER_TYPES to podzbiór typów znaczników", () => {
+  const all = new Set(Object.values(MARKER_TYPES));
+  for (const t of CHECKABLE_MARKER_TYPES) assert.equal(all.has(t), true, `nieznany typ ${t}`);
+});
+
+test("mapMarkerId jest stabilny i rozróżnia znaczniki o tym samym slug-u", () => {
+  const a = { slug: "caches", lat: 83.89127, lng: -168.287 };
+  const b = { slug: "caches", lat: 83.89345, lng: -168.28398 };
+  assert.equal(mapMarkerId("velen-novigrad", a), mapMarkerId("velen-novigrad", a));
+  assert.notEqual(mapMarkerId("velen-novigrad", a), mapMarkerId("velen-novigrad", b));
+  assert.notEqual(mapMarkerId("velen-novigrad", a), mapMarkerId("skellige-isles", a));
+});
+
+test("mapMarkerId nie koliduje z identyfikatorami checklisty", () => {
+  const id = mapMarkerId("toussaint", { slug: "1", lat: 1, lng: 2 });
+  assert.ok(id.startsWith("m:"));
 });
 

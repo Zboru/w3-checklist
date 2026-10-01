@@ -1,5 +1,5 @@
 /* Wiedźmin 3 — service worker. Plik generowany przez scripts/build.mjs; nie edytuj ręcznie. */
-const CACHE = "w3checklist-20261001073742";
+const CACHE = "w3checklist-20261001074103";
 const PRECACHE = ["./","./index.html","./manifest.json","./icons/icon-192.png","./icons/icon-512.png","./icons/apple-touch-180.png"];
 
 self.addEventListener("install", (event) => {
